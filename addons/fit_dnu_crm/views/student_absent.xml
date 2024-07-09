@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_student_absent_form" model="ir.ui.view">
+            <field name="name">student_absent</field>
+            <field name="model">student_absent</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_edit_only" style="font-size:25px" attrs="{'invisible': [('id', '=', False)], }">
+                            Chỉnh sửa Sinh viên vắng
+                        </div>
+                        <div class="oe_edit_only" style="font-size:25px" attrs="{'invisible': [('id', '!=', False)], }">
+                            Tạo mới Sinh viên vắng
+                        </div>
+                        <div class="oe_read_only" style="font-size:25px">Sinh viên vắng</div>
+                        <group col="4" string="Thông tin chung">
+                            <field name="student_id" required="1" options="{'no_open': True, 'no_create': True, 'no_create_edit': True}"/>
+                            <field name="full_name"/>
+                            <field name="student_class_id" required="1" options="{'no_open': True, 'no_create': True, 'no_create_edit': True}"/>
+                            <!-- <field name="student_cohort_id" required="1" options="{'no_open': True, 'no_create': True, 'no_create_edit': True}"/> -->
+                            <!-- <field name="student_class_absent_id" /> -->
+                            <field name="date_absent" required="1"/>
+                            <field name="reason"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_student_absent_tree" model="ir.ui.view">
+            <field name="name">student_absent</field>
+            <field name="model">student_absent</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="student_code"/>
+                    <field name="full_name"/>
+                    <field name="student_class_id"/>
+                    <!-- <field name="student_class_absent_id" /> -->
+                    <field name="date_absent"/>
+                    <field name="reason"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="student_absent_search">
+            <field name="model">student_absent</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="student_id"/>
+                    <field name="full_name"/>
+                    <searchpanel>
+                        <field name="student_cohort_id" select="multi"/>
+                        <field name="student_class_id" select="multi"/>
+                        <field name="day" select="multi"/>
+                        <field name="month" select="multi"/>
+                        <field name="year" select="multi"/>
+                    </searchpanel>
+                </search>
+                
+            </field>
+        </record>
+
+        <record id="action_student_absent" model="ir.actions.act_window">
+            <field name="name">Sinh viên vắng</field>
+            <field name="res_model">student_absent</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref = "student_absent_search"/>
+        </record>
+
+        
+    </data>
+</odoo>

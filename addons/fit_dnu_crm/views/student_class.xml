@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>s
+        <record id="view_student_class_form" model="ir.ui.view">
+            <field name="name">student_class</field>
+            <field name="model">student_class</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_edit_only" style="font-size:25px" attrs="{'invisible': [('id', '=', False)], }">
+                            Chỉnh sửa Lớp
+                        </div>
+                        <div class="oe_edit_only" style="font-size:25px" attrs="{'invisible': [('id', '!=', False)], }">
+                            Tạo mới Lớp
+                        </div>
+                        <div class="oe_read_only" style="font-size:25px">Lớp</div>
+                        <group col="4" string="Thông tin chung">
+                            <field name="student_cohort_id" required="1" options="{'no_open': True, 'no_create': True, 'no_create_edit': True}"/>
+                            <field name="class_name" required="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_student_class_tree" model="ir.ui.view">
+            <field name="name">student_class</field>
+            <field name="model">student_class</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="class_name" required="1"/>
+                    <field name="student_cohort_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="student_class_search">
+            <field name="model">student_class</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="class_name"/>
+                    <field name="student_cohort_id"/>
+                    <searchpanel>
+                        <field name="student_cohort_id" select="multi"/>
+                    </searchpanel>
+                </search>
+                
+            </field>
+        </record>
+
+        <record id="action_student_class" model="ir.actions.act_window">
+            <field name="name">Lớp</field>
+            <field name="res_model">student_class</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref = "student_class_search"/>
+        </record>
+
+        
+    </data>
+</odoo>

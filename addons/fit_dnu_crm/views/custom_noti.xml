@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="noti_thong_bao_form">
+            <field name="name">Thông báo hệ thống</field>
+            <field name="model">custom_noti</field>
+            <field name="arch" type="xml">
+                <form string="Thông báo hệ thống">
+                    <sheet>
+                        <field name="noti_html" widget="html" string=""/>
+                        <footer>
+                            <button string='Đồng ý' class='btn-primary' special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="action_noti_thong_bao">
+            <field name="name">Thông báo hệ thống</field>
+            <field name="res_model">custom_noti</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

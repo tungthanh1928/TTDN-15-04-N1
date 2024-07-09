@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_student_class_tuition_fee_form" model="ir.ui.view">
+            <field name="name">student_class_tuition_fee</field>
+            <field name="model">student_class_tuition_fee</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <!-- <div class="oe_edit_only" style="font-size:25px" attrs="{'invisible': [('id', '=', False)], }">
+                            Chỉnh sửa Lớp - SV vắng
+                        </div>
+                        <div class="oe_edit_only" style="font-size:25px" attrs="{'invisible': [('id', '!=', False)], }">
+                            Tạo mới Lớp - SV vắng
+                        </div> -->
+                        <div class="oe_read_only" style="font-size:25px">Thống kê học phí theo lớp</div>
+                        <group col="4" string="Thông tin chung">
+                            <field name="student_class_id" required="1" options="{'no_open': True, 'no_create': True, 'no_create_edit': True}"/>
+                            <field name="number_unpaid"/>
+                            <field name="semester_id" />
+                        </group>
+                        <notebook>
+                            <page string="Danh sách">
+                                <field name="student_tuition_fee_ids" options="{'no_create': True, 'no_create_edit': True}" readonly = '1'>
+                                    <tree>
+                                        <field name="student_id"/>
+                                        <field name="full_name"/>
+                                        <field name="status"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_student_class_tuition_fee_tree" model="ir.ui.view">
+            <field name="name">student_class_tuition_fee</field>
+            <field name="model">student_class_tuition_fee</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="student_class_id"/>
+                    <field name="semester_id" />
+                    <field name="number_unpaid"/>
+                    <field name="total"/>
+                    <!-- <field name="student_tuition_fee_ids" widget="many2many_tags"/> -->
+                    
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="student_class_tuition_fee_search">
+            <field name="model">student_class_tuition_fee</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="student_class_id"/>
+                    <searchpanel>
+                        <field name="student_cohort_id" select="multi"/>
+                        <field name="student_class_id" select="multi"/>
+                        <field name="school_year_id" select="multi"/>
+                        <field name="semester_id" select="multi"/>
+                    </searchpanel>
+                </search>
+                
+            </field>
+        </record>
+
+        <record id="action_student_class_tuition_fee" model="ir.actions.act_window">
+            <field name="name">Thống kê vắng theo lớp</field>
+            <field name="res_model">student_class_tuition_fee</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref = "student_class_tuition_fee_search"/>
+        </record>
+
+        
+    </data>
+</odoo>

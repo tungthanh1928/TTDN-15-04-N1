@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>s
+        <record id="view_student_cohort_form" model="ir.ui.view">
+            <field name="name">student_cohort</field>
+            <field name="model">student_cohort</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_edit_only" style="font-size:25px" attrs="{'invisible': [('id', '=', False)], }">
+                            Chỉnh sửa Khóa
+                        </div>
+                        <div class="oe_edit_only" style="font-size:25px" attrs="{'invisible': [('id', '!=', False)], }">
+                            Tạo mới Khóa
+                        </div>
+                        <div class="oe_read_only" style="font-size:25px">Khóa</div>
+                        <group col="4" string="Thông tin chung">
+                            <field name="number" required="1"/>
+                            <field name="number" invisible = "1"/>
+                        </group>
+                        <notebook>
+                            <page string="Danh sách lớp">
+                                <field name="student_classes" options="{'no_create': True, 'no_create_edit': True}">
+                                    <tree>
+                                        <field name="class_name"
+                                            
+                                        />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_student_cohort_tree" model="ir.ui.view">
+            <field name="name">student_cohort</field>
+            <field name="model">student_cohort</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="number"/>
+                    <field name="student_classes" widget="many2many_tags"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="student_cohort_search_all">
+            <field name="model">student_cohort</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="number"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_student_cohort" model="ir.actions.act_window">
+            <field name="name">Khóa</field>
+            <field name="res_model">student_cohort</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref = "student_cohort_search_all"/>
+        </record>
+    </data>
+</odoo>

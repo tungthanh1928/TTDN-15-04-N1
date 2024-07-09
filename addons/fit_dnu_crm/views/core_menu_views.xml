@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem
+            id="menu_core_root"
+            name="FIT-DNU-CSSV"
+            web_icon="fit_dnu_crm,static/src/img/icon.png"
+            sequence="0"/>
+
+        <!-- Các menu chính -->
+        <menuitem name="Dashboard" 
+            id="menu_dashboard" 
+            parent="menu_core_root" 
+            sequence="0"
+            action="action_dashboard"
+        />
+        <menuitem name="Quản lý thông tin chung" 
+            id="menu_general_information" 
+            parent="menu_core_root" 
+            sequence="1"
+        />
+        <menuitem name="Quản lý sinh viên" 
+            id="menu_student_manage" 
+            parent="menu_core_root" 
+            sequence="2"
+            action="action_student"
+        />
+        <menuitem name="Quản lý vắng" 
+            id="menu_manage_absent" 
+            parent="menu_core_root" 
+            sequence="3"
+        />
+        <menuitem name="Quản lý học phí" 
+            id="menu_manage_tuition_fee" 
+            parent="menu_core_root" 
+            sequence="4"
+        />
+        
+        <!-- Sub menu năm, kỳ học -->
+        <menuitem
+            id="menu_school_year"
+            name="Quản lý năm học"
+            action="action_school_year"
+            parent="menu_general_information"
+            sequence="1"
+        />
+
+        <menuitem
+            id="menu_semester"
+            name="Quản lý kỳ học"
+            action="action_semester"
+            parent="menu_general_information"
+            sequence="2"
+        />
+
+        <menuitem
+            id="menu_student_cohort"
+            name="Quản lý khóa"
+            action="action_student_cohort"
+            parent="menu_general_information"
+            sequence="3"
+        />
+        <menuitem
+            id="menu_student_class"
+            name="Quản lý lớp"
+            action="action_student_class"
+            parent="menu_general_information"
+            sequence="4"
+        />        
+
+        <!-- Sub menu quản lý vắng -->
+        <menuitem
+            id="menu_student_absent"
+            name="Theo sinh viên"
+            parent="menu_manage_absent"
+            sequence="1"
+            action="action_student_absent"
+        />
+        <menuitem
+            id="menu_student_class_absent"
+            name="Theo lớp"
+            parent="menu_manage_absent"
+            sequence="2"
+            action="action_student_class_absent"
+        />
+
+        <!-- Sub menu quản lý học phí -->
+        <menuitem name="Theo sinh viên" 
+            id="menu_student_tuition_fee" 
+            parent="menu_manage_tuition_fee" 
+            sequence="1"
+            action="action_student_tuition_fee"
+        />
+        <menuitem name="Theo lớp" 
+            id="menu_student_class_tuition_fee" 
+            parent="menu_manage_tuition_fee" 
+            sequence="2"
+            action="action_student_class_tuition_fee"
+        />
+    </data>
+</odoo>
