@@ -67,7 +67,14 @@
             action="action_student_class"
             parent="menu_general_information"
             sequence="4"
-        />        
+        />
+        <menuitem
+            id="menu_subjet"
+            name="Quản lý môn học"
+            action="action_subject"
+            parent="menu_general_information"
+            sequence="5"
+        />           
 
         <!-- Sub menu quản lý vắng -->
         <menuitem

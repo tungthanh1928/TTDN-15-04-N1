@@ -25,6 +25,9 @@ class StudentAbsent(models.Model):
                 string = "Khóa",
                 store = True,
                 )
+    semester_id = fields.Many2one("semester", string = "Kỳ học", ondelete = 'cascade', required = True)
+    subject_id = fields.Many2one("subject", string = "Môn học", ondelete = 'cascade', required = True)
+    number_lesson_absent = fields.Integer("Số tiết học vắng mặt", default = 4, required = True)
     # date_id = fields.Many2one("date_manager", 
     #                         string = "Ngày",
     #                         compute = "_compute_date_id",

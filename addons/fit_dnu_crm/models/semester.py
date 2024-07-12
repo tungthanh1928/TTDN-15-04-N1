@@ -18,7 +18,8 @@ class Semester(models.Model):
                                 store = True
                             )
     current_semester = fields.Boolean("Kỳ hiện tại", default = False, required = True)
-
+    subject_ids = fields.Many2many("subject", relation= "semester_subject", string = "Danh sách môn học trong kỳ")
+    
     _sql_constraints = [
         ('display_name_uniq', 'unique (display_name)', """Kỳ học đã tồn tại"""),
     ]

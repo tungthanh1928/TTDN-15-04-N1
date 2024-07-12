@@ -14,3 +14,4 @@ access_custom_noti_user,access.custom_noti_user,model_custom_noti,base.group_use
 access_student_tuition_fee_import_wizard_user,access.student_tuition_fee_import_wizard_user,model_student_tuition_fee_import_wizard,base.group_user,1,1,1,1
 access_student_tuition_fee_import_wizard_user,access.student_tuition_fee_import_wizard_user,model_student_tuition_fee_import_wizard,base.group_user,1,1,1,1
 access_dashboard_base_user,access.dashboard_base_user,model_dashboard_base,base.group_user,1,1,1,1
+access_subject_user,access.subject_user,model_subject,base.group_user,1,1,1,1

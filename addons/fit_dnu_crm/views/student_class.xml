@@ -18,6 +18,21 @@
                             <field name="student_cohort_id" required="1" options="{'no_open': True, 'no_create': True, 'no_create_edit': True}"/>
                             <field name="class_name" required="1"/>
                         </group>
+                        <notebook>
+                            <page string="Danh sách sinh viên">
+                                <field name="student_ids" options="{'no_create': True, 'no_create_edit': True}">
+                                    <tree>
+                                        <field name="student_code"/>
+                                        <field name="full_name"/>
+                                        <field name="sex"/>
+                                        <field name="date_of_birth"/>
+                                        <field name="phone_number"/>
+                                        <field name="email"/>
+                                        <field name="status"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>

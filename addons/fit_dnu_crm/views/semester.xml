@@ -46,6 +46,14 @@
                                     </tree>
                                 </field>
                             </page>
+                            <page string="Môn học">
+                                <field name="subject_ids" options="{'no_create': True, 'no_create_edit': True}">
+                                    <tree>
+                                        <field name="subject_code"/>
+                                        <field name="subject_name"/>
+                                    </tree>
+                                </field>
+                            </page>
                             
                         </notebook>
                     </sheet>
