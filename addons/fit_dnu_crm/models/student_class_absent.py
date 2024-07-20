@@ -5,6 +5,7 @@ class StudentClassAbsent(models.Model):
     _name = 'student_class_absent'
     _description = 'Quản lý sinh viên vắng theo lớp'
     _rec_name = 'display_name'
+    _order = 'class_name asc'
 
     display_name = fields.Char(
                         compute = "_compute_display_name",
@@ -17,6 +18,8 @@ class StudentClassAbsent(models.Model):
                 string = "Khóa",
                 store = True,
                 )
+    class_name = fields.Char("Tên lớp", related = 'student_class_id.class_name', store = True)
+    number = fields.Integer("Khoá", related = 'student_cohort_id.number', store = True)
     number_absent = fields.Integer("Số lượng vắng",
                                     compute = "_compute_number_absent",
                                     store = True
@@ -126,5 +129,10 @@ class StudentClassAbsent(models.Model):
     )
     def _compute_number_absent(self):
         for record in self:
+            list_student_ids = []
             if record.student_absent_ids:
-                record.number_absent = len(record.student_absent_ids)
+                for stu_absent in record.student_absent_ids:
+                    stu_id = stu_absent.student_id.id
+                    if stu_id not in list_student_ids:
+                        list_student_ids.append(stu_id) 
+            record.number_absent = len(list_student_ids)

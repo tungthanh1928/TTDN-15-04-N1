@@ -7,6 +7,7 @@ class StudentCohort(models.Model):
     _rec_name = 'number'
 
     number = fields.Integer("Khóa", required = True)
+    color_code = fields.Char("Màu hiển thị", default = '#f37423')
     student_classes = fields.One2many("student_class", inverse_name="student_cohort_id", string = "Danh sách lớp")
 
     _sql_constraints = [

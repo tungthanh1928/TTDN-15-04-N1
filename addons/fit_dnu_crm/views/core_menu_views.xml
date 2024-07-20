@@ -91,6 +91,12 @@
             sequence="2"
             action="action_student_class_absent"
         />
+        <menuitem name="Theo môn học" 
+            id="menu_student_subject_absent" 
+            parent="menu_manage_absent" 
+            sequence="3"
+            action="action_student_subject_absent"
+        />
 
         <!-- Sub menu quản lý học phí -->
         <menuitem name="Theo sinh viên" 
@@ -105,5 +111,7 @@
             sequence="2"
             action="action_student_class_tuition_fee"
         />
+        
+
     </data>
 </odoo>

@@ -28,16 +28,6 @@ class StudentAbsent(models.Model):
     semester_id = fields.Many2one("semester", string = "Kỳ học", ondelete = 'cascade', required = True)
     subject_id = fields.Many2one("subject", string = "Môn học", ondelete = 'cascade', required = True)
     number_lesson_absent = fields.Integer("Số tiết học vắng mặt", default = 4, required = True)
-    # date_id = fields.Many2one("date_manager", 
-    #                         string = "Ngày",
-    #                         compute = "_compute_date_id",
-    #                         store = True,
-    #                         )
-    student_class_absent_id = fields.Many2one("student_class_absent", 
-                            string = "Lớp - SV vắng",
-                            compute = "_compute_student_class_absent_id",
-                            store = True,
-                        )
     date_absent = fields.Date("Ngày vắng", required = True)
     reason = fields.Char("Lý do")
     day = fields.Selection([
@@ -104,8 +94,20 @@ class StudentAbsent(models.Model):
         ('2034', '2034'),
     ], string='Năm', compute = "_compute_day_month_year", store = True)
 
+    student_class_absent_id = fields.Many2one("student_class_absent", 
+                            string = "Lớp - SV vắng",
+                            compute = "_compute_student_class_absent_id",
+                            store = True,
+                        )
+    student_subject_absent_id = fields.Many2one("student_subject_absent", 
+                            string = "Môn học - SV vắng",
+                            compute = "_compute_student_subject_absent_id",
+                            store = True,
+                        )
+
+
     _sql_constraints = [
-        ('student_day_absent_uniq', 'unique(student_id, date_absent)', 'Đã tồn tại bản ghi sinh viên với ngày vắng này'),
+        ('student_day_absent_semester_subject_uniq', 'unique(student_id, date_absent, semester_id, subject_id)', 'Đã tồn tại bản ghi sinh viên, môn học với ngày vắng này'),
     ]
 
 
@@ -119,22 +121,28 @@ class StudentAbsent(models.Model):
                 record.month = str(record.date_absent.month)
                 record.year = str(record.date_absent.year)
 
-    # @api.depends(
-    #     "date_absent",
-    # )
-    # def _compute_date_id(self):
-    #     for record in self:
-    #         if record.date_absent:
-    #             date = self.env["date_manager"].search([
-    #                 ('date','=', record.date_absent)
-    #             ])
-    #             if len(date) > 0:
-    #                 record.date_id = date.id
-    #             else:
-    #                 date_cre = self.env["date_manager"].create({
-    #                     'date': record.date_absent
-    #                 })
-    #                 record.date_id = date_cre.id
+    @api.depends(
+        "semester_id",
+        "student_id",
+        "subject_id"
+    )
+    def _compute_student_subject_absent_id(self):
+        for record in self:
+            if record.semester_id and record.student_id and record.subject_id:
+                stu_subject_abs = self.env["student_subject_absent"].search([
+                    ('student_id','=', record.student_id.id),
+                    ('semester_id', '=', record.semester_id.id),
+                    ('subject_id', '=', record.subject_id.id)
+                ])
+                if len(stu_subject_abs) > 0:
+                    record.student_subject_absent_id = stu_subject_abs.id
+                else:
+                    data_cre = self.env["student_subject_absent"].create({
+                        'student_id': record.student_id.id,
+                        'subject_id': record.subject_id.id,
+                        'semester_id': record.semester_id.id
+                    })
+                    record.student_subject_absent_id = data_cre.id
     
     @api.depends(
         "date_absent",

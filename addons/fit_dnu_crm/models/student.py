@@ -39,6 +39,27 @@ class Student(models.Model):
     #                            store = True
     #                            )
 
+    # @api.model    
+    # def get_student_by_list_id(self, list_id):
+    #     result = self.env['student'].browse(list_id)
+    #     list_result = []
+    #     if len(result) > 0:
+    #         for stu in result:
+    #             list_result.append({
+    #                 "id": stu.id,
+    #                 'student_code': stu.student_code,
+    #                 'full_name': stu.full_name,
+    #                 'student_class_id': stu.student_class_id,
+    #                 'phone_number': stu.phone_number,
+    #                 'email': stu.email,
+    #                 'sex': stu.sex,
+    #                 'date_of_birth': stu.date_of_birth,
+    #                 'status': stu.status,
+    #             })
+    #     print("???", list_result)
+    #     return list_result
+
+    
     @api.depends(
         "student_code",
         "full_name",
@@ -47,3 +68,5 @@ class Student(models.Model):
         for record in self:
             if record.student_code and record.full_name:
                 record.display_name = f'{record.full_name} ({record.student_code})'
+    
+    
