@@ -13,6 +13,7 @@ class StudentTuitionFee(models.Model):
                             related = "semester_id.school_year_id", 
                             store = True)
     student_id = fields.Many2one("student", string = "Mã sinh viên", ondelete = 'cascade', required = True)
+    student_code = fields.Char(related = 'student_id.student_code', string = "Mã sinh viên")
     full_name = fields.Char(related = 'student_id.full_name', string = "Họ tên")
     student_class_id = fields.Many2one(
                 comodel_name='student_class',

@@ -17,6 +17,7 @@ class StudentClassTuitionFee(models.Model):
                 string = "Khóa",
                 store = True,
                 )
+    number = fields.Integer("Khoá", related = 'student_cohort_id.number', store = True)
     semester_id = fields.Many2one("semester", string = "Học kỳ", ondelete = 'cascade', required = True)
     current_semester = fields.Boolean("Kỳ hiện tại", 
                         related = "semester_id.current_semester",

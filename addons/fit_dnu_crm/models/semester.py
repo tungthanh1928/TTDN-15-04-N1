@@ -5,6 +5,7 @@ class Semester(models.Model):
     _name = 'semester'
     _description = 'Quản lý kỳ học'
     _rec_name = 'display_name'
+    _order = 'display_name desc'
 
     school_year_id = fields.Many2one("school_year", string = "Năm học", required = True)
     display_name = fields.Char("Kỳ học", 
