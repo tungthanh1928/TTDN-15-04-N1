@@ -5,6 +5,7 @@ class SchoolYear(models.Model):
     _name = 'school_year'
     _description = 'Quản lý năm học'
     _rec_name = 'display_name'
+    _order = 'start_year desc'
 
     display_name = fields.Char("Năm học", 
                                compute = "_compute_display_name",

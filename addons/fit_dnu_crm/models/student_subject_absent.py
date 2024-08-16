@@ -40,7 +40,7 @@ class StudentSubjectAbsent(models.Model):
                                         )
     percent_absent = fields.Float("Phần trăm vắng",
                                     compute = "_compute_percent_absent",
-                                    store = True
+                                    # store = True
                                 )
     
     range_absent = fields.Selection([
@@ -50,7 +50,7 @@ class StudentSubjectAbsent(models.Model):
         ('20%', '20%'),
     ], string='Mức độ vắng', 
         compute = "_compute_range_absent", 
-        store = True
+        # store = True
     )
 
     _sql_constraints = [

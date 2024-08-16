@@ -16,7 +16,7 @@
                         <div class="oe_read_only" style="font-size:25px">Khóa</div>
                         <group col="4" string="Thông tin chung">
                             <field name="number" required="1"/>
-                            <field name="number" invisible = "1"/>
+                            <field name="color_code"/>
                         </group>
                         <notebook>
                             <page string="Danh sách lớp">
