@@ -21,8 +21,8 @@ class Student(models.Model):
     phone_number = fields.Char("Số điện thoại")
     email = fields.Char("Email")
     sex = fields.Selection([
-        ('Nam', 'Nam'),
-        ('Nữ', 'Nữ'),
+        ('male', 'Nam'),
+        ('female', 'Nữ'),
     ], string='Giới tính')
     date_of_birth = fields.Date("Ngày sinh")
     status = fields.Selection([

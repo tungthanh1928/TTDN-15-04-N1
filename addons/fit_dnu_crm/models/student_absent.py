@@ -5,6 +5,7 @@ class StudentAbsent(models.Model):
     _name = 'student_absent'
     _description = 'Quản lý sinh viên vắng'
     _rec_name = 'student_id'
+    _order = 'date_absent desc, student_class_id asc, student_code asc'
 
     # display_name = fields.Char(
     #                     compute = "_compute_display_name",
@@ -27,6 +28,7 @@ class StudentAbsent(models.Model):
                 )
     semester_id = fields.Many2one("semester", string = "Kỳ học", ondelete = 'cascade', required = True)
     subject_id = fields.Many2one("subject", string = "Môn học", ondelete = 'cascade', required = True)
+    subject_code = fields.Char(related = 'subject_id.subject_code', string = "Mã môn học")
     number_lesson_absent = fields.Integer("Số tiết học vắng mặt", default = 4, required = True)
     date_absent = fields.Date("Ngày vắng", required = True)
     reason = fields.Char("Lý do")
@@ -164,3 +166,22 @@ class StudentAbsent(models.Model):
                         'student_class_id': record.student_class_id.id
                     })
                     record.student_class_absent_id = data_cre.id
+
+    def import_data(self, data):
+        # full_data = self.env[model].browse(active_ids)
+        map_stu_absent = {}
+        for x in self:
+            key = f'{x.student_code}_{x.subject_id.subject_code}_{x.year}_{x.month}_{x.day}'
+            if map_stu_absent.get(key) == None:
+                map_stu_absent[key] = x.id
+            break
+        for vl in data:
+            print(type(vl['date_absent']))
+            student_code = vl['student_code']
+            subject_code = vl['subject_code']
+            date_absent = vl['date_absent']
+
+            key_check = f'{student_code}_{subject_code}_{date_absent}'
+            print(key_check)
+            break
+        return ':)))'
