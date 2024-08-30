@@ -5,7 +5,7 @@ class StudentClassAbsent(models.Model):
     _name = 'student_class_absent'
     _description = 'Quản lý sinh viên vắng theo lớp'
     _rec_name = 'display_name'
-    _order = 'class_name asc'
+    _order = 'date_absent desc, class_name asc'
 
     display_name = fields.Char(
                         compute = "_compute_display_name",

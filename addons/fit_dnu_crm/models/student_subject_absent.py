@@ -4,7 +4,7 @@ from odoo import models, fields, api
 class StudentSubjectAbsent(models.Model):
     _name = 'student_subject_absent'
     _description = 'Quản lý sinh viên vắng theo môn học'
-    _order = 'semester_id desc, class_name asc'
+    _order = 'semester_id desc, class_name asc, percent_absent asc'
 
     student_id = fields.Many2one("student", string = "Sinh viên", ondelete = 'cascade', required = True)
     student_code = fields.Char(related = 'student_id.student_code', string = "Mã sinh viên")
@@ -40,7 +40,7 @@ class StudentSubjectAbsent(models.Model):
                                         )
     percent_absent = fields.Float("Phần trăm vắng",
                                     compute = "_compute_percent_absent",
-                                    # store = True
+                                    store = True
                                 )
     
     range_absent = fields.Selection([
@@ -92,3 +92,9 @@ class StudentSubjectAbsent(models.Model):
                     record.range_absent = '10%'
                 else:
                     record.range_absent = '5%'
+                
+    def compute_percent_absent_all(self):
+        for record in self:
+            student_subject_absent = self.env["student_subject_absent"].search([])
+            for vl in student_subject_absent:
+                vl._compute_percent_absent()

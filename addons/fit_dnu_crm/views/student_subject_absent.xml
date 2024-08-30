@@ -6,6 +6,11 @@
             <field name="model">student_subject_absent</field>
             <field name="arch" type="xml">
                 <form>
+                    <header>
+                        <button name="compute_percent_absent_all"
+                                class='btn-primary' type="object" string=" Compute phần trăm"
+                                />
+                    </header>
                     <sheet>
                         <div class="oe_edit_only" style="font-size:25px" attrs="{'invisible': [('id', '=', False)], }">
                             Chỉnh sửa Sinh viên vắng theo môn học

@@ -13,7 +13,7 @@ import math
 class ImportStudentAbsent(models.TransientModel):
     _name = "student_absent.import_wizard"
     _description = "Import sinh viên vắng"
-    _header = ["Mã sinh viên", "Lý do vắng"]
+    _header = ["Mã sinh viên", "Lý do vắng", "Mã môn học"]
 
     date_absent = fields.Date("Ngày vắng", require = True)
     file_import = fields.Binary("File import")

@@ -22,7 +22,7 @@ class Student(models.Model):
     email = fields.Char("Email")
     sex = fields.Selection([
         ('Nam', 'Nam'),
-        ('Nữ', 'Nữ'),
+        ('Nữ', 'Nữ'),
     ], string='Giới tính')
     date_of_birth = fields.Date("Ngày sinh")
     status = fields.Selection([
