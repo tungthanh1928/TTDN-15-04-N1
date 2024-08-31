@@ -12,7 +12,7 @@ class StudentAbsent(models.Model):
     #                     store = True
     #                 )
     student_id = fields.Many2one("student", string = "Sinh viên", ondelete = 'cascade', required = True)
-    student_code = fields.Char(related = 'student_id.student_code', string = "Mã sinh viên")
+    student_code = fields.Char(related = 'student_id.student_code', string = "Mã sinh viên", store = True)
     full_name = fields.Char(related = 'student_id.full_name', string = "Họ tên")
     student_class_id = fields.Many2one(
                 comodel_name='student_class',
@@ -106,6 +106,16 @@ class StudentAbsent(models.Model):
                             compute = "_compute_student_subject_absent_id",
                             store = True,
                         )
+    teaching_schedule_id = fields.Many2one("teaching_schedule", 
+                            string = "Lịch giảng dạy",
+                            compute = "_compute_teaching_schedule_id",
+                            store = True,
+                        )
+    lecturer_ids = fields.Many2many(
+                        "lecturer",
+                        related = 'teaching_schedule_id.lecturer_ids',
+                        relation= "student_absent_lecturer", 
+                        string = "Danh sách giảng viên")
 
 
     _sql_constraints = [
@@ -149,7 +159,8 @@ class StudentAbsent(models.Model):
     @api.depends(
         "date_absent",
         "student_id",
-        "student_class_id"
+        "student_class_id",
+        "semester_id",
     )
     def _compute_student_class_absent_id(self):
         for record in self:
@@ -163,25 +174,25 @@ class StudentAbsent(models.Model):
                 else:
                     data_cre = self.env["student_class_absent"].create({
                         'date_absent': record.date_absent,
-                        'student_class_id': record.student_class_id.id
+                        'student_class_id': record.student_class_id.id,
+                        'semester_id': record.semester_id.id
                     })
                     record.student_class_absent_id = data_cre.id
 
-    def import_data(self, data):
-        # full_data = self.env[model].browse(active_ids)
-        map_stu_absent = {}
-        for x in self:
-            key = f'{x.student_code}_{x.subject_id.subject_code}_{x.year}_{x.month}_{x.day}'
-            if map_stu_absent.get(key) == None:
-                map_stu_absent[key] = x.id
-            break
-        for vl in data:
-            print(type(vl['date_absent']))
-            student_code = vl['student_code']
-            subject_code = vl['subject_code']
-            date_absent = vl['date_absent']
-
-            key_check = f'{student_code}_{subject_code}_{date_absent}'
-            print(key_check)
-            break
-        return ':)))'
+    @api.depends(
+        "semester_id",
+        "subject_id",
+        'student_class_id',
+    )
+    def _compute_teaching_schedule_id(self):
+        for record in self:
+            if record.semester_id and record.subject_id and record.student_class_id:
+                teaching_schedule = self.env["teaching_schedule"].search([
+                    ('subject_id','=', record.subject_id.id),
+                    ('student_class_id', '=', record.student_class_id.id),
+                    ('subject_id', '=', record.subject_id.id)
+                ])
+                if len(teaching_schedule) > 0:
+                    record.teaching_schedule_id = teaching_schedule.id
+                else:
+                    record.teaching_schedule_id = False

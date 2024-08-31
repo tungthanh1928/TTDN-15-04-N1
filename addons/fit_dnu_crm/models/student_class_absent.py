@@ -32,6 +32,8 @@ class StudentClassAbsent(models.Model):
     student_absent_ids = fields.One2many("student_absent", 
                                             inverse_name="student_class_absent_id", 
                                             string = "Danh sách vắng")
+    semester_id = fields.Many2one("semester", string = "Kỳ học", ondelete = 'cascade', required = True)
+    
     
     day = fields.Selection([
         ('1', '1'),
@@ -136,3 +138,4 @@ class StudentClassAbsent(models.Model):
                     if stu_id not in list_student_ids:
                         list_student_ids.append(stu_id) 
             record.number_absent = len(list_student_ids)
+            

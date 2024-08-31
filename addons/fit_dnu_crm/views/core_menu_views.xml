@@ -75,12 +75,19 @@
             sequence="4"
         />
         <menuitem
-            id="menu_subjet"
+            id="menu_subject"
             name="Quản lý môn học"
             action="action_subject"
             parent="menu_general_information"
             sequence="5"
-        />           
+        /> 
+        <menuitem
+            id="menu_subject"
+            name="Quản lý lịch giảng dạy"
+            action="action_teaching_schedule"
+            parent="menu_general_information"
+            sequence="6"
+        />             
 
         <!-- Sub menu quản lý vắng -->
         <menuitem

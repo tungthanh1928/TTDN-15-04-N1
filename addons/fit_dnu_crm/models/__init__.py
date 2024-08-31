@@ -14,3 +14,4 @@ from . import student_tuition_fee
 from . import student_class_absent
 from . import student_class_tuition_fee
 from . import dashboard_base
+from . import teaching_schedule

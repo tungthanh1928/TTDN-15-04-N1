@@ -17,3 +17,4 @@ access_dashboard_base_user,access.dashboard_base_user,model_dashboard_base,base.
 access_subject_user,access.subject_user,model_subject,base.group_user,1,1,1,1
 access_student_subject_absent_user,access.student_subject_absent_user,model_student_subject_absent,base.group_user,1,1,1,1
 access_lecturer_user,access.lecturer_user,model_lecturer,base.group_user,1,1,1,1
+access_teaching_schedule_user,access.teaching_schedule_user,model_teaching_schedule,base.group_user,1,1,1,1
