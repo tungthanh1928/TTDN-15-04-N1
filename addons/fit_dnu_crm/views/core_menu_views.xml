@@ -36,6 +36,12 @@
             parent="menu_core_root" 
             sequence="4"
         />
+        <menuitem name="Quản lý giảng viên" 
+            id="menu_manage_lecturer" 
+            parent="menu_core_root" 
+            sequence="5"
+            action="action_lecturer"
+        />
         
         <!-- Sub menu năm, kỳ học -->
         <menuitem

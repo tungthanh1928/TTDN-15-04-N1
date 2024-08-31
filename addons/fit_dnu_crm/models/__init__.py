@@ -6,6 +6,7 @@ from . import semester
 from . import student_cohort
 from . import student_class
 from . import student
+from . import lecturer
 from . import date_manager
 from . import student_absent
 from . import student_subject_absent

@@ -33,6 +33,7 @@
         'views/student_cohort.xml',
         'views/student_class.xml',
         'views/student.xml',
+        'views/lecturer.xml',
         'views/date_manager.xml',
         'views/student_absent.xml',
         'views/student_tuition_fee.xml',

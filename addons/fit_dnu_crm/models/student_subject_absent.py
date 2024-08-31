@@ -43,15 +43,17 @@ class StudentSubjectAbsent(models.Model):
                                     store = True
                                 )
     
-    range_absent = fields.Selection([
-        ('5%', '5%'),
-        ('10%', '10%'),
-        ('15%', '15%'),
-        ('20%', '20%'),
-    ], string='Mức độ vắng', 
-        compute = "_compute_range_absent", 
-        # store = True
-    )
+    number_study_credits = fields.Integer(related = 'subject_id.number_study_credits', string = "Số tín chỉ")
+    
+    # range_absent = fields.Selection([
+    #     ('5%', '5%'),
+    #     ('10%', '10%'),
+    #     ('15%', '15%'),
+    #     ('20%', '20%'),
+    # ], string='Mức độ vắng', 
+    #     compute = "_compute_range_absent", 
+    #     # store = True
+    # )
 
     _sql_constraints = [
         ('student_subject_semester_uniq', 'unique(student_id, semester_id, subject_id)', 'Đã tồn tại bản ghi sinh viên + môn học + kỳ học'),
@@ -78,20 +80,20 @@ class StudentSubjectAbsent(models.Model):
             if record.total_lesson_absent and record.total_lessons and record.total_lessons != 0:
                 record.percent_absent = round(record.total_lesson_absent/record.total_lessons, 2) * 100
     
-    @api.depends(
-        "percent_absent",
-    )
-    def _compute_range_absent(self):
-        for record in self:
-            if record.percent_absent and record.percent_absent > 0:
-                if record.percent_absent >= 20:
-                    record.range_absent = '20%'
-                elif record.percent_absent >= 15:
-                    record.range_absent = '15%'
-                elif record.percent_absent >= 10:
-                    record.range_absent = '10%'
-                else:
-                    record.range_absent = '5%'
+    # @api.depends(
+    #     "percent_absent",
+    # )
+    # def _compute_range_absent(self):
+    #     for record in self:
+    #         if record.percent_absent and record.percent_absent > 0:
+    #             if record.percent_absent >= 20:
+    #                 record.range_absent = '20%'
+    #             elif record.percent_absent >= 15:
+    #                 record.range_absent = '15%'
+    #             elif record.percent_absent >= 10:
+    #                 record.range_absent = '10%'
+    #             else:
+    #                 record.range_absent = '5%'
                 
     def compute_percent_absent_all(self):
         for record in self:
