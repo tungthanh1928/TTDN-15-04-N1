@@ -5,7 +5,7 @@ class TeachingSchedule(models.Model):
     _name = 'teaching_schedule'
     _description = 'Quản lý lịch giảng dạy'
     # _rec_name = 'display_name'
-    # _order = 'date_absent desc, class_name asc'
+    _order = 'semester_id desc, student_cohort_id desc, student_class_id asc'
 
     # display_name = fields.Char(
     #                     compute = "_compute_display_name",

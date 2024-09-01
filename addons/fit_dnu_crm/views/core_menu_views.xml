@@ -82,7 +82,7 @@
             sequence="5"
         /> 
         <menuitem
-            id="menu_subject"
+            id="menu_teaching_schedule"
             name="Quản lý lịch giảng dạy"
             action="action_teaching_schedule"
             parent="menu_general_information"
