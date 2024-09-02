@@ -43,7 +43,11 @@ class StudentSubjectAbsent(models.Model):
                                     store = True
                                 )
     
-    number_study_credits = fields.Integer(related = 'subject_id.number_study_credits', string = "Số tín chỉ")
+    number_study_credits = fields.Integer(
+                            related = 'subject_id.number_study_credits', 
+                            string = "Số tín chỉ",
+                            store = True
+                        )
     
     # range_absent = fields.Selection([
     #     ('5%', '5%'),

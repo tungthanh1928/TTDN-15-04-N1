@@ -17,7 +17,7 @@ class StudentClassAbsent(models.Model):
                 related = "student_class_id.student_cohort_id", 
                 string = "Khóa",
                 store = True,
-                )
+            )
     class_name = fields.Char("Tên lớp", related = 'student_class_id.class_name', store = True)
     number = fields.Integer("Khoá", related = 'student_cohort_id.number', store = True)
     number_absent = fields.Integer("Số lượng vắng",

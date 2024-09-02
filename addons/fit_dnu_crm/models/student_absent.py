@@ -13,7 +13,7 @@ class StudentAbsent(models.Model):
     #                 )
     student_id = fields.Many2one("student", string = "Sinh viên", ondelete = 'cascade', required = True)
     student_code = fields.Char(related = 'student_id.student_code', string = "Mã sinh viên", store = True)
-    full_name = fields.Char(related = 'student_id.full_name', string = "Họ tên")
+    full_name = fields.Char(related = 'student_id.full_name', string = "Họ tên", store = True)
     student_class_id = fields.Many2one(
                 comodel_name='student_class',
                 related = "student_id.student_class_id", 
@@ -115,7 +115,9 @@ class StudentAbsent(models.Model):
                         "lecturer",
                         related = 'teaching_schedule_id.lecturer_ids',
                         relation= "student_absent_lecturer", 
-                        string = "Danh sách giảng viên")
+                        string = "Danh sách giảng viên",
+                        store = True
+                    )
 
 
     _sql_constraints = [
