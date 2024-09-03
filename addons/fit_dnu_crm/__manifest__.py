@@ -46,6 +46,7 @@
         'views/subject.xml',
         'views/import/import_student_absent.xml',
         'views/import/import_student_tuition_fee.xml',
+        'views/user_account.xml',
         'views/core_menu_views.xml',
     ],
     # only loaded in demonstration mode

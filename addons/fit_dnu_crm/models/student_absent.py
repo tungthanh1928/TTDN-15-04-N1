@@ -116,7 +116,6 @@ class StudentAbsent(models.Model):
                         related = 'teaching_schedule_id.lecturer_ids',
                         relation= "student_absent_lecturer", 
                         string = "Danh sách giảng viên",
-                        store = True
                     )
 
 

@@ -28,6 +28,18 @@
                             <field name="subject_id" required="1" options="{'no_open': True, 'no_create': True, 'no_create_edit': True}"/>
                             <field name="semester_id" required="1" options="{'no_open': True, 'no_create': True, 'no_create_edit': True}"/>
                         </group>
+                        <notebook>
+                            <page string="Danh sách vắng">
+                                <field name="student_absent_ids" options="{'no_create': True, 'no_create_edit': True}" readonly = '1'>
+                                    <tree>
+                                        <field name="student_id"/>
+                                        <field name="full_name"/>
+                                        <field name="date_absent"/>
+                                        <field name="reason"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>

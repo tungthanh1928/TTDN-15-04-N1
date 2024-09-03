@@ -42,6 +42,14 @@
             sequence="5"
             action="action_lecturer"
         />
+        <menuitem
+            id="menu_user_account"
+            name="Quản lý người dùng"
+            action="action_user_account"
+            parent="menu_core_root"
+            sequence="6"
+        />
+             
         
         <!-- Sub menu năm, kỳ học -->
         <menuitem
@@ -87,7 +95,8 @@
             action="action_teaching_schedule"
             parent="menu_general_information"
             sequence="6"
-        />             
+        />
+              
 
         <!-- Sub menu quản lý vắng -->
         <menuitem

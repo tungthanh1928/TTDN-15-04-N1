@@ -130,7 +130,9 @@ class StudentClassAbsent(models.Model):
         "student_absent_ids.student_class_id",
     )
     def _compute_number_absent(self):
+        print("Vào đây 1")
         for record in self:
+            print("Vào đây 2")
             list_student_ids = []
             if record.student_absent_ids:
                 for stu_absent in record.student_absent_ids:

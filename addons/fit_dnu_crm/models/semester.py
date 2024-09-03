@@ -67,4 +67,5 @@ class Semester(models.Model):
                             'student_id': stu.id,
                             'semester_id': record.id
                         })
+                print("???", list_data_cre)
                 self.env["student_tuition_fee"].create(list_data_cre)

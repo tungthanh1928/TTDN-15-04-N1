@@ -5,6 +5,7 @@ class Lecturer(models.Model):
     _name = 'lecturer'
     _description = 'Quản lý giảng viên'
     _rec_name = 'display_name'
+    _order = 'uu_tien asc'
     
     display_name = fields.Char(
                         "Tên hiển thị",
@@ -26,6 +27,7 @@ class Lecturer(models.Model):
         ('CH', 'CH'),
         ('TG', 'TG'),
     ], string='CH/TG', default = 'CH')
+    uu_tien = fields.Integer("Ưu tiên", compute = "_compute_uu_tien", store = True)
     
     @api.depends(
         "lecturer_name",
@@ -44,3 +46,19 @@ class Lecturer(models.Model):
                 }
                 prefix = map_trinh_do.get(record.hoc_ham_hoc_vi)
                 record.display_name = f'{prefix}. {record.lecturer_name}'
+    
+    @api.depends(
+        "hoc_ham_hoc_vi",
+    )
+    def _compute_uu_tien(self):
+        for record in self:
+            map_uu_tien = {
+                "Cử nhân": 6,
+                "Kỹ sư": 5,
+                "Thạc sĩ": 4,
+                "Tiến sĩ": 3,
+                "Phó Giáo sư": 2,
+                "Giáo sư": 1
+            }
+            if record.hoc_ham_hoc_vi:
+                record.uu_tien = map_uu_tien.get(record.hoc_ham_hoc_vi)
