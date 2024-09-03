@@ -9,7 +9,7 @@
                     <field name="user_id" invisible = '1'/>
                     <header>
                         <button name="create_user"
-                            string=" Tạo tài khoản" type="object"
+                            string=" Tạo và kích hoạt tài khoản" type="object"
                             class='btn-primary fa fa-pencil-square-o'
                             attrs="{'invisible': ['|',('id', '=', False), ('user_id', '!=', False)], }"
                         />
@@ -23,9 +23,10 @@
                         </div>
                         <div class="oe_read_only" style="font-size:25px">Người dùng</div>
                         <group col="4" string="Thông tin chung">
-                            <field name="user_name" required="1"/>
+                            <field name="username" required="1"/>
                             <field name="full_name" required="1"/>
                             <field name="role" required="1"/>
+                            <field name="user_id"/>
                             <field name="active_user"/>
                         </group>
                     </sheet>
@@ -38,7 +39,7 @@
             <field name="model">user_account</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="user_name"/>
+                    <field name="username"/>
                     <field name="full_name"/>
                     <field name="role"/>
                     <field name="user_id"/>
@@ -51,7 +52,7 @@
             <field name="model">user_account</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="user_name"/>
+                    <field name="username"/>
                     <!-- <searchpanel>
                         <field name="hoc_ham_hoc_vi" select="multi"/>
                         <field name="ch_tg" select="multi"/>

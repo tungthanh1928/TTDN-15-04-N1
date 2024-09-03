@@ -12,6 +12,7 @@ class Lecturer(models.Model):
                         compute = "_compute_display_name",
                         store = True
                     )
+    lecturer_code = fields.Char("Mã định danh", require = True)
     lecturer_name = fields.Char("Tên giảng viên", require = True)
     hoc_ham_hoc_vi = fields.Selection([
         ('Cử nhân', 'Cử nhân'),

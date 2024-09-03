@@ -17,6 +17,7 @@
                         <group col="4" string="Thông tin chung">
                             <field name="display_name" required="1"/>
                             <field name="lecturer_name" required="1"/>
+                            <field name="lecturer_code"/>
                             <field name="hoc_ham_hoc_vi" required="1"/>
                             <field name="phone_number"/>
                             <field name="email"/>
@@ -34,6 +35,7 @@
                 <tree>
                     <field name="display_name" required="1"/>
                     <field name="lecturer_name" required="1"/>
+                    <field name="lecturer_code"/>
                     <field name="hoc_ham_hoc_vi" required="1"/>
                     <field name="phone_number"/>
                     <field name="email"/>
@@ -47,6 +49,7 @@
             <field name="arch" type="xml">
                 <search>
                     <field name="lecturer_name"/>
+                    <field name="lecturer_code"/>
                     <searchpanel>
                         <field name="hoc_ham_hoc_vi" select="multi"/>
                         <field name="ch_tg" select="multi"/>
