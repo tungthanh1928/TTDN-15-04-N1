@@ -43,6 +43,11 @@
                     <field name="phone_number"/>
                     <field name="email"/>
                     <field name="status"/>
+                    <field name="dia_chi_tt"/>
+                    <field name="ho_va_ten_cha"/>
+                    <field name="so_dien_thoai_cha"/>
+                    <field name="ho_va_ten_me"/>
+                    <field name="so_dien_thoai_me"/>
                 </tree>
             </field>
         </record>

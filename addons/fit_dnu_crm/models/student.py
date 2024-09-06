@@ -29,7 +29,12 @@ class Student(models.Model):
         ('Đang học', 'Đang học'),
         ('Đã tốt nghiệp', 'Đã tốt nghiệp'),
     ], string='Trạng thái', default = 'Đang học')
-
+    dia_chi_tt = fields.Char("Địa chỉ TT")
+    ho_va_ten_cha = fields.Char("Họ và tên cha")
+    so_dien_thoai_cha = fields.Char("Số điện thoại cha")
+    ho_va_ten_me = fields.Char("Họ và tên mẹ")
+    so_dien_thoai_me = fields.Char("Số điện thoại mẹ")
+    
     _sql_constraints = [
         ('student_code_uniq', 'unique (student_code)', """Mã sinh viên đã tồn tại"""),
     ]
