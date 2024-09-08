@@ -5,6 +5,7 @@ class Subject(models.Model):
     _name = 'subject'
     _description = 'Quản lý môn học'
     _rec_name = 'display_name'
+    _order = 'subject_name asc'
 
     subject_code = fields.Char("Mã môn học", required = True)
     subject_name = fields.Char("Tên môn học", required = True)
@@ -18,7 +19,7 @@ class Subject(models.Model):
                                         store = True
                                         )
     display_name = fields.Char("Tên hiển thị", 
-                               compute = "_compute_display_name",
+                               compute = "compute_display_name",
                                store = True
                                )
 
@@ -30,11 +31,17 @@ class Subject(models.Model):
         "subject_code",
         "subject_name",
     )
-    def _compute_display_name(self):
+    def compute_display_name(self):
+        
         for record in self:
             if record.subject_code and record.subject_name:
-                record.display_name = f'{record.subject_code} - {record.subject_name}'
-                
+                record.display_name = f'{record.subject_name} ({record.subject_code})'
+    
+    def compute_display_name_all(self):
+        print("Vào đây zzzz")
+        subject = self.env["subject"].search([
+        ])
+        subject.compute_display_name()
     @api.depends(
         "number_study_credits",
     )

@@ -24,6 +24,7 @@ class TeachingSchedule(models.Model):
     semester_id = fields.Many2one("semester", string = "Kỳ học", ondelete = 'cascade', required = True)
     subject_id = fields.Many2one("subject", string = "Môn học", ondelete = 'cascade', required = True)
     subject_code = fields.Char("Mã môn học", related = 'subject_id.subject_code', store = True)
+    subject_name = fields.Char("Tên môn học", related = 'subject_id.subject_name', store = True)
     # class_name = fields.Char("Tên lớp", related = 'student_class_id.class_name', store = True)
     number = fields.Integer("Khoá", related = 'student_cohort_id.number', store = True)
     
