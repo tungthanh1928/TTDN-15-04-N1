@@ -5,6 +5,7 @@ class Student(models.Model):
     _name = 'student'
     _description = 'Quản lý sinh viên'
     _rec_name = 'display_name'
+    _order = 'number desc, class_name asc, full_name asc'
 
     display_name = fields.Char(
                         compute = "_compute_display_name",
@@ -17,6 +18,8 @@ class Student(models.Model):
                                             store = True, 
                                             string = "Khóa"
                                         )
+    class_name = fields.Char("Tên lớp", related='student_class_id.class_name', store = True)
+    number = fields.Integer("Khóa", related='student_cohort_id.number', store = True)
     full_name = fields.Char("Họ tên")
     phone_number = fields.Char("Số điện thoại")
     email = fields.Char("Email")
@@ -27,6 +30,8 @@ class Student(models.Model):
     date_of_birth = fields.Date("Ngày sinh")
     status = fields.Selection([
         ('Đang học', 'Đang học'),
+        ('Chuyển ngành', 'Chuyển ngành'),
+        ('Thôi học', 'Thôi học'),
         ('Đã tốt nghiệp', 'Đã tốt nghiệp'),
     ], string='Trạng thái', default = 'Đang học')
     dia_chi_tt = fields.Char("Địa chỉ TT")
@@ -34,6 +39,7 @@ class Student(models.Model):
     so_dien_thoai_cha = fields.Char("Số điện thoại cha")
     ho_va_ten_me = fields.Char("Họ và tên mẹ")
     so_dien_thoai_me = fields.Char("Số điện thoại mẹ")
+    student_learn_again_ids = fields.One2many("student_learn_again", inverse_name="student_id", string = "Danh sách các môn học lại")
     
     _sql_constraints = [
         ('student_code_uniq', 'unique (student_code)', """Mã sinh viên đã tồn tại"""),

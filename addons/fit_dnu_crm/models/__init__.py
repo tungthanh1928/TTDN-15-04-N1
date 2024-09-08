@@ -16,3 +16,4 @@ from . import student_class_tuition_fee
 from . import dashboard_base
 from . import teaching_schedule
 from . import user_account
+from . import student_learn_again

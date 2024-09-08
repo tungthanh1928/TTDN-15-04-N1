@@ -42,12 +42,18 @@
             sequence="5"
             action="action_lecturer"
         />
+        <menuitem name="Quản lý nợ môn" 
+            id="menu_manage_student_learn_again" 
+            parent="menu_core_root" 
+            sequence="6"
+            action="action_student_learn_again"
+        />
         <menuitem
             id="menu_user_account"
             name="Quản lý người dùng"
             action="action_user_account"
             parent="menu_core_root"
-            sequence="6"
+            sequence="7"
         />
              
         

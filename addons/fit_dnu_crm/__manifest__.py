@@ -35,6 +35,7 @@
         'views/student.xml',
         'views/lecturer.xml',
         # 'views/date_manager.xml',
+        'views/student_learn_again.xml',
         'views/teaching_schedule.xml',
         'views/student_absent.xml',
         'views/student_tuition_fee.xml',

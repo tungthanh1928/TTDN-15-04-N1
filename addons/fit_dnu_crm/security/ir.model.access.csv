@@ -19,3 +19,4 @@ access_student_subject_absent_user,access.student_subject_absent_user,model_stud
 access_lecturer_user,access.lecturer_user,model_lecturer,base.group_user,1,1,1,1
 access_teaching_schedule_user,access.teaching_schedule_user,model_teaching_schedule,base.group_user,1,1,1,1
 access_user_account_user,access.user_account_user,model_user_account,base.group_user,1,1,1,1
+access_student_learn_again_user,access.student_learn_again_user,model_student_learn_again,base.group_user,1,1,1,1

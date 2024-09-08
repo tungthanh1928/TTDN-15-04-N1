@@ -5,9 +5,11 @@ class StudentClass(models.Model):
     _name = 'student_class'
     _description = 'Quản lý lớp'
     _rec_name = 'class_name'
+    _order = 'number desc, class_name asc'
 
     class_name = fields.Char("Tên lớp", required = True)
     student_cohort_id = fields.Many2one("student_cohort", string = "Khóa", required = True)
+    number = fields.Integer("Khóa", related='student_cohort_id.number', store = True)
     student_ids = fields.One2many("student", inverse_name="student_class_id", string = "Danh sách sinh viên")
 
     _sql_constraints = [
