@@ -39,11 +39,22 @@
                 </tree>
             </field>
         </record>
+        <record model="ir.ui.view" id="subject_search">
+            <field name="model">subject</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="subject_code"/>
+                    <field name="subject_name"/>
+                </search>
+                
+            </field>
+        </record>
 
         <record id="action_subject" model="ir.actions.act_window">
             <field name="name">Môn học</field>
             <field name="res_model">subject</field>
             <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref = "subject_search"/>
         </record>
 
         
