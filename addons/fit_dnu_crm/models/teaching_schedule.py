@@ -27,6 +27,7 @@ class TeachingSchedule(models.Model):
     subject_name = fields.Char("Tên môn học", related = 'subject_id.subject_name', store = True)
     # class_name = fields.Char("Tên lớp", related = 'student_class_id.class_name', store = True)
     number = fields.Integer("Khoá", related = 'student_cohort_id.number', store = True)
+
     
     teaching_session = fields.Selection([
         ('Sáng thứ 2', 'Sáng thứ 2'),

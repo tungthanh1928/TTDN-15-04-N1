@@ -5,7 +5,7 @@ class Lecturer(models.Model):
     _name = 'lecturer'
     _description = 'Quản lý giảng viên'
     _rec_name = 'display_name'
-    _order = 'uu_tien asc, lecturer_name asc, ch_tg asc'
+    _order = 'ch_tg asc, uu_tien asc, lecturer_name asc'
     
     display_name = fields.Char(
                         "Tên hiển thị",
