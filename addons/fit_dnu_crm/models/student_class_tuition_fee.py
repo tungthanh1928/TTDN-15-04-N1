@@ -5,12 +5,15 @@ class StudentClassTuitionFee(models.Model):
     _name = 'student_class_tuition_fee'
     _description = 'Quản lý học phí theo lớp'
     _rec_name = 'display_name'
+    _order = 'number asc, class_name asc'
 
     display_name = fields.Char(
                         compute = "_compute_display_name",
                         store = True
                     )
     student_class_id = fields.Many2one("student_class", string = "Lớp", ondelete = 'cascade', required = True)
+    class_name = fields.Char("Tên lớp", related = 'student_class_id.class_name', store = True)
+    number = fields.Integer("Khóa", related = 'student_cohort_id.number', store = True)
     student_cohort_id = fields.Many2one(
                 comodel_name='student_cohort',
                 related = "student_class_id.student_cohort_id", 
