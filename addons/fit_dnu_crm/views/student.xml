@@ -38,6 +38,7 @@
                     <field name="student_code"/>
                     <field name="full_name"/>
                     <field name="student_class_id"/>
+                    <field name="create_date"/>
                     <field name="sex"/>
                     <field name="date_of_birth"/>
                     <field name="phone_number"/>
