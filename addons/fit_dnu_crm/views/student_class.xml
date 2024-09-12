@@ -43,8 +43,9 @@
             <field name="model">student_class</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="class_name" required="1"/>
+                    <field name="class_name"/>
                     <field name="student_cohort_id"/>
+                    <field name="number_students"/>
                 </tree>
             </field>
         </record>
