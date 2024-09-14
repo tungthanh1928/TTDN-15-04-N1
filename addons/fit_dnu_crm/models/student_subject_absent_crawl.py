@@ -151,7 +151,7 @@ class StudentSubjectAbsentCrawl(models.Model):
                 message_succ = f"Lấy data vắng thành công. Thêm: {total_create}, Update: {total_update}"
                 if list_subject_not_exist:
                     ds_mon = list(set(list_subject_not_exist))
-                    text = f"Môn học chưa có mã: {ds_mon}"
+                    text = f"Không tìm thấy DS môn học trong kỳ: {ds_mon}"
                     url_mon = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={text}"
                     session.get(url_mon)
                 url_succ = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message_succ}"
