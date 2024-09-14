@@ -125,6 +125,12 @@
             sequence="3"
             action="action_student_subject_absent"
         />
+        <menuitem name="Theo môn học crawl" 
+            id="menu_student_subject_absent_crawl" 
+            parent="menu_manage_absent" 
+            sequence="4"
+            action="action_student_subject_absent_crawl"
+        />
 
         <!-- Sub menu quản lý học phí -->
         <menuitem name="Theo sinh viên" 
