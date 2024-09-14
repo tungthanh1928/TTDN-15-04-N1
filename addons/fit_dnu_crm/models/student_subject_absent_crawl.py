@@ -55,12 +55,14 @@ class StudentSubjectAbsentCrawl(models.Model):
                 vl._compute_percent_absent()
  
     def crawl_data_student_subject_absent(self):
+        print("Chạy vào cronjob Vắng")
         url_get_info_study = (
             "https://nhapdiem.dainam.edu.vn/XemThongTinHocTapSinhVien/_DanhSachSinhVien"
         )
         list_sub = ["b9cbcd85-6080-4313-8863-26227d69b63d",'a26be63c-409b-475c-8314-8bee026aef98', '771a3fad-ed2b-4663-b876-b8ba62df8dac']
-        
-        for record in self:
+        TOKEN = "7462680738:AAEva3MCNgAFVIJw5DvigASpgxtlOhxnw48"
+        chat_id = "-4573759753"
+        try:
             with requests.Session() as session:
                 semester_id = self.env["semester"].search([
                     ('current_semester','=', True)
@@ -93,9 +95,10 @@ class StudentSubjectAbsentCrawl(models.Model):
                     x.student_code: x.id
                     for x in student_ids
                 }
-                print("map_student_subject_absent_crawl", map_student_subject_absent_crawl)
                 list_subject_not_exist = []
                 list_student_not_exist = []
+                total_create = 0
+                total_update = 0
                 for sub in list_sub:
                     headers_general, cookies_data = general_info_crawl(session, sub)    
                     dict_class = get_class_id(session, cookies_data, sub, headers_general)
@@ -133,16 +136,30 @@ class StudentSubjectAbsentCrawl(models.Model):
                                             'semester_id': semester_id.id,
                                             'total_lesson_absent': total_lesson_absent_vl
                                         })
+                                        total_create += 1
                                     else:
-                                        if total_lesson_absent_vl != map_student_subject_absent_crawl.get(key)['total_lesson_absent']
+                                        if total_lesson_absent_vl != map_student_subject_absent_crawl.get(key)['total_lesson_absent']:
                                             id_record = map_student_subject_absent_crawl.get(key)['id']
                                             stu_subject_abs_crawl_id = self.env['student_subject_absent_crawl'].browse(id_record)
-                                            if stu_subject_abs_crawl_id.exits():
-                                                stu_subject_abs_crawl_id.write({
-                                                    'total_lesson_absent': total_lesson_absent_vl,
-                                                })
+                                            stu_subject_abs_crawl_id.write({
+                                                'total_lesson_absent': total_lesson_absent_vl,
+                                            })
+                                            total_update += 1
                     if data_create_in_sub:                   
                         self.env["student_subject_absent_crawl"].create(data_create_in_sub)
+                    
+                message_succ = f"Lấy data vắng thành công. Thêm: {total_create}, Update: {total_update}"
+                if list_subject_not_exist:
+                    text = f". Môn học chưa có mã: {list_subject_not_exist}"
+                    url_succ = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={text}"
+                url_succ = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message_succ}"
+                session.get(url_succ)
+        except Exception as e:
+            message_fail = "Lấy data vắng thất bại. Lỗi: "
+            message_fail += str(e)
+            url_fail = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message_fail}"
+            session.get(url_fail)
+                
 
 def extract_jsgrid_data(html):
     soup = BeautifulSoup(html, "html.parser")
@@ -171,7 +188,6 @@ def extract_jsgrid_data(html):
 
 
 def convert_html_to_json(html, class_id):
-    print("???? vào đây")
     result = []
     try:
         jsgrid_data = extract_jsgrid_data(html)
@@ -197,11 +213,6 @@ def convert_html_to_json(html, class_id):
                     result.append(data_entry)
 
         return result
-        with open(
-            f"absent_subject_class_{class_id}.json", "w", encoding="utf-8"
-        ) as json_file:
-            json.dump(result, json_file, ensure_ascii=False, indent=4)
-            print(f"ghi lớp {class_id} thành công")
 
     except Exception as e:
         # print(f"Lỗi khi chuyển đổi HTML sang JSON: {e}")
