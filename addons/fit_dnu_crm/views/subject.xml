@@ -48,6 +48,8 @@
                     <field name="subject_name"/>
                     <field name="number_study_credits"/>
                     <field name="total_lessons"/>
+                    <field name="create_date"/>
+                    <field name="write_date"/>
                 </tree>
             </field>
         </record>
