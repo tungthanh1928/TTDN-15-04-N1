@@ -156,11 +156,14 @@ class StudentSubjectAbsentCrawl(models.Model):
                     session.get(url_mon)
                 url_succ = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message_succ}"
                 session.get(url_succ)
+                return True
         except Exception as e:
             message_fail = "Lấy data vắng thất bại. Lỗi: "
             message_fail += str(e)
             url_fail = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message_fail}"
             session.get(url_fail)
+            return False
+        return True
                 
 
 def extract_jsgrid_data(html):
