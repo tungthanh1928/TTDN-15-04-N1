@@ -27,6 +27,7 @@
 
     # always loaded
     'data': [
+        'views/device.xml',
         'security/ir.model.access.csv',
         'views/school_year.xml',
         'views/semester.xml',

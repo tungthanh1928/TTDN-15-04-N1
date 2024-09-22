@@ -1,0 +1,1361 @@
+2024-09-12 09:50:56,574 17236 INFO ? odoo: Odoo version 15.0 
+2024-09-12 09:50:56,574 17236 INFO ? odoo: Using configuration file at D:\WORKSPACE\fit_dnu_cssv\odoo.conf 
+2024-09-12 09:50:56,574 17236 INFO ? odoo: addons paths: ['D:\\WORKSPACE\\fit_dnu_cssv\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\15.0', 'd:\\workspace\\fit_dnu_cssv\\addons', 'd:\\workspace\\fit_dnu_cssv\\odoo\\addons'] 
+2024-09-12 09:50:56,574 17236 INFO ? odoo: database: odoo@localhost:5432 
+2024-09-12 09:50:56,761 17236 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2024-09-12 09:50:57,083 17236 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-KU6J2CG:8069 
+2024-09-12 09:51:25,849 17236 INFO ? odoo.http: HTTP Configuring static files 
+2024-09-12 09:51:25,914 17236 INFO ? odoo.http: Generating nondb routing 
+2024-09-12 09:51:25,951 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:25] "[32mGET / HTTP/1.1[0m" 303 - 1 0.005 0.088
+2024-09-12 09:51:26,183 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:26] "[32mGET /web HTTP/1.1[0m" 303 - 2 0.012 0.213
+2024-09-12 09:51:27,469 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:27] "GET /web/database/selector HTTP/1.1" 200 - 2 0.012 0.963
+2024-09-12 09:51:27,559 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:27] "GET /web/static/lib/fontawesome/css/font-awesome.css HTTP/1.1" 200 - - - -
+2024-09-12 09:51:27,852 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:27] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 - - - -
+2024-09-12 09:51:27,890 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:27] "GET /web/static/lib/bootstrap/js/index.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:27,903 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:27] "GET /web/static/lib/popper/popper.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:27,903 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:27] "GET /web/static/lib/bootstrap/js/alert.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:27,904 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:27] "GET /web/static/lib/bootstrap/js/util.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:27,939 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:27] "GET /web/static/lib/jquery/jquery.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:28,180 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:28] "GET /web/static/lib/bootstrap/js/button.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:28,233 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:28] "GET /web/static/lib/bootstrap/js/collapse.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:28,238 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:28] "GET /web/static/lib/bootstrap/js/carousel.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:28,251 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:28] "GET /web/static/lib/bootstrap/js/dropdown.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:28,252 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:28] "GET /web/static/lib/bootstrap/js/modal.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:28,278 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:28] "GET /web/static/lib/bootstrap/js/tooltip.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:28,510 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:28] "GET /web/static/lib/bootstrap/js/popover.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:28,558 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:28] "GET /web/static/lib/bootstrap/js/scrollspy.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:28,574 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:28] "GET /web/static/lib/bootstrap/js/tab.js HTTP/1.1" 200 - - - -
+2024-09-12 09:51:29,023 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:51:29] "GET /web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - - - -
+2024-09-12 09:53:10,683 17236 INFO None odoo.service.db: Create database `odoo_db`. 
+2024-09-12 09:53:10,740 17236 ERROR None odoo.sql_db: bad query: CREATE DATABASE "odoo_db" ENCODING 'unicode' LC_COLLATE 'C' TEMPLATE "template0"
+ERROR: permission denied to create database
+ 
+2024-09-12 09:53:10,740 17236 ERROR None odoo.http: permission denied to create database
+ 
+Traceback (most recent call last):
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 141, in dispatch_rpc
+    result = dispatch(method, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\db.py", line 462, in dispatch
+    return g[exp_method_name](*params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<decorator-gen-16>", line 2, in exp_create_database
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\db.py", line 41, in if_db_mgt_enabled
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\db.py", line 130, in exp_create_database
+    _create_empty_database(db_name)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\db.py", line 112, in _create_empty_database
+    cr.execute(
+  File "<decorator-gen-5>", line 2, in execute
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\sql_db.py", line 90, in check
+    return f(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\sql_db.py", line 311, in execute
+    res = self._obj.execute(query, params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied to create database
+
+2024-09-12 09:53:11,554 17236 INFO None werkzeug: 127.0.0.1 - - [12/Sep/2024 09:53:11] "POST /web/database/create HTTP/1.1" 200 - 3 0.013 3.861
+2024-09-12 09:56:32,533 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:56:32] "[32mGET / HTTP/1.1[0m" 303 - 1 0.010 0.062
+2024-09-12 09:56:33,055 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:56:33] "[32mGET /web HTTP/1.1[0m" 303 - 2 0.010 0.319
+2024-09-12 09:56:33,943 17236 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 09:56:33] "GET /web/database/selector HTTP/1.1" 200 - 2 0.010 0.872
+2024-09-12 09:56:55,591 17236 INFO None werkzeug: 127.0.0.1 - - [12/Sep/2024 09:56:55] "POST /web/database/create HTTP/1.1" 200 - 2 0.010 2.402
+2024-09-12 10:06:16,588 17236 INFO ? odoo.service.server: Initiating shutdown 
+2024-09-12 10:06:16,589 17236 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-09-12 10:06:16,897 17236 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
+2024-09-12 10:06:21,254 13284 INFO ? odoo: Odoo version 15.0 
+2024-09-12 10:06:21,255 13284 INFO ? odoo: Using configuration file at D:\WORKSPACE\fit_dnu_cssv\odoo.conf 
+2024-09-12 10:06:21,255 13284 INFO ? odoo: addons paths: ['D:\\WORKSPACE\\fit_dnu_cssv\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\15.0', 'd:\\workspace\\fit_dnu_cssv\\addons', 'd:\\workspace\\fit_dnu_cssv\\odoo\\addons'] 
+2024-09-12 10:06:21,255 13284 INFO ? odoo: database: odoo@localhost:5432 
+2024-09-12 10:06:21,537 13284 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2024-09-12 10:06:21,964 13284 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-KU6J2CG:8069 
+2024-09-12 10:06:22,066 13284 ERROR ? odoo.modules.loading: Database odoo not initialized, you can force it with `-i base` 
+2024-09-12 10:06:22,066 13284 INFO ? odoo.modules.registry: Registry loaded in 0.106s 
+2024-09-12 10:06:45,768 13284 INFO ? odoo.http: HTTP Configuring static files 
+2024-09-12 10:06:45,786 13284 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:06:45] "[35m[1mPOST /web/database/create HTTP/1.1[0m" 500 - 1 0.001 0.009
+2024-09-12 10:06:45,811 13284 ERROR odoo werkzeug: Error on request:
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\server.py", line 482, in app
+    return self.app(e, s)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 112, in application
+    return application_unproxied(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 87, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1355, in __call__
+    return self.dispatch(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1321, in __call__
+    return self.app(environ, start_wrapped)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\middleware\shared_data.py", line 287, in __call__
+    return self.app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1532, in dispatch
+    ir_http = request.registry['ir.http']
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\modules\registry.py", line 182, in __getitem__
+    return self.models[model_name]
+KeyError: 'ir.http' - - -
+2024-09-12 10:06:45,895 13284 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:06:45] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 - 1 0.002 0.006
+2024-09-12 10:06:45,905 13284 ERROR odoo werkzeug: Error on request:
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\server.py", line 482, in app
+    return self.app(e, s)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 112, in application
+    return application_unproxied(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 87, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1355, in __call__
+    return self.dispatch(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1321, in __call__
+    return self.app(environ, start_wrapped)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\middleware\shared_data.py", line 287, in __call__
+    return self.app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1532, in dispatch
+    ir_http = request.registry['ir.http']
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\modules\registry.py", line 182, in __getitem__
+    return self.models[model_name]
+KeyError: 'ir.http' - - -
+2024-09-12 10:07:22,149 13284 ERROR odoo odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2024-09-12 10:07:22,151 13284 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2024-09-12 10:07:23,198 13284 ERROR odoo odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2024-09-12 10:07:23,198 13284 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2024-09-12 10:08:22,156 13284 ERROR odoo odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2024-09-12 10:08:22,157 13284 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2024-09-12 10:08:24,223 13284 ERROR odoo odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2024-09-12 10:08:24,223 13284 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2024-09-12 10:09:22,167 13284 ERROR odoo odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2024-09-12 10:09:22,167 13284 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2024-09-12 10:09:25,243 13284 ERROR odoo odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2024-09-12 10:09:25,244 13284 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2024-09-12 10:10:22,172 13284 ERROR odoo odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2024-09-12 10:10:22,173 13284 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2024-09-12 10:10:26,271 13284 ERROR odoo odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2024-09-12 10:10:26,271 13284 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2024-09-12 10:11:22,174 13284 ERROR odoo odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2024-09-12 10:11:22,174 13284 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2024-09-12 10:11:27,294 13284 ERROR odoo odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2024-09-12 10:11:27,295 13284 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2024-09-12 10:11:54,386 13284 INFO ? odoo.service.server: Initiating shutdown 
+2024-09-12 10:11:54,386 13284 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-09-12 10:11:55,459 13284 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 3 connections  
+2024-09-12 10:12:31,787 14924 INFO ? odoo: Odoo version 15.0 
+2024-09-12 10:12:31,787 14924 INFO ? odoo: Using configuration file at D:\WORKSPACE\fit_dnu_cssv\odoo.conf 
+2024-09-12 10:12:31,787 14924 INFO ? odoo: addons paths: ['D:\\WORKSPACE\\fit_dnu_cssv\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\15.0', 'd:\\workspace\\fit_dnu_cssv\\addons', 'd:\\workspace\\fit_dnu_cssv\\odoo\\addons'] 
+2024-09-12 10:12:31,787 14924 INFO ? odoo: database: odoo@localhost:5432 
+2024-09-12 10:12:31,971 14924 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2024-09-12 10:12:32,267 14924 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-KU6J2CG:8069 
+2024-09-12 10:13:04,365 14924 INFO ? odoo.http: HTTP Configuring static files 
+2024-09-12 10:13:04,508 14924 ERROR odoo odoo.modules.loading: Database odoo not initialized, you can force it with `-i base` 
+2024-09-12 10:13:04,508 14924 INFO odoo odoo.modules.registry: Registry loaded in 0.071s 
+2024-09-12 10:13:04,514 14924 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:13:04] "[35m[1mPOST /web/database/create HTTP/1.1[0m" 500 - 8 0.022 0.117
+2024-09-12 10:13:04,520 14924 ERROR odoo werkzeug: Error on request:
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\server.py", line 482, in app
+    return self.app(e, s)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 112, in application
+    return application_unproxied(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 87, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1355, in __call__
+    return self.dispatch(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1321, in __call__
+    return self.app(environ, start_wrapped)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\middleware\shared_data.py", line 287, in __call__
+    return self.app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1532, in dispatch
+    ir_http = request.registry['ir.http']
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\modules\registry.py", line 182, in __getitem__
+    return self.models[model_name]
+KeyError: 'ir.http' - - -
+2024-09-12 10:13:04,689 14924 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:13:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 - 2 0.010 0.079
+2024-09-12 10:13:04,695 14924 ERROR odoo werkzeug: Error on request:
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\server.py", line 482, in app
+    return self.app(e, s)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 112, in application
+    return application_unproxied(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 87, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1355, in __call__
+    return self.dispatch(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1321, in __call__
+    return self.app(environ, start_wrapped)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\middleware\shared_data.py", line 287, in __call__
+    return self.app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1532, in dispatch
+    ir_http = request.registry['ir.http']
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\modules\registry.py", line 182, in __getitem__
+    return self.models[model_name]
+KeyError: 'ir.http' - - -
+2024-09-12 10:13:07,349 14924 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:13:07] "[35m[1mGET / HTTP/1.1[0m" 500 - 2 0.006 0.081
+2024-09-12 10:13:07,358 14924 ERROR odoo werkzeug: Error on request:
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\server.py", line 482, in app
+    return self.app(e, s)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 112, in application
+    return application_unproxied(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 87, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1355, in __call__
+    return self.dispatch(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1321, in __call__
+    return self.app(environ, start_wrapped)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\middleware\shared_data.py", line 287, in __call__
+    return self.app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1532, in dispatch
+    ir_http = request.registry['ir.http']
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\modules\registry.py", line 182, in __getitem__
+    return self.models[model_name]
+KeyError: 'ir.http' - - -
+2024-09-12 10:13:07,908 14924 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:13:07] "[35m[1mGET / HTTP/1.1[0m" 500 - 2 0.006 0.169
+2024-09-12 10:13:07,914 14924 ERROR odoo werkzeug: Error on request:
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\server.py", line 482, in app
+    return self.app(e, s)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 112, in application
+    return application_unproxied(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 87, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1355, in __call__
+    return self.dispatch(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1321, in __call__
+    return self.app(environ, start_wrapped)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\middleware\shared_data.py", line 287, in __call__
+    return self.app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1532, in dispatch
+    ir_http = request.registry['ir.http']
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\modules\registry.py", line 182, in __getitem__
+    return self.models[model_name]
+KeyError: 'ir.http' - - -
+2024-09-12 10:13:08,065 14924 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:13:08] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 - 2 0.006 0.077
+2024-09-12 10:13:08,069 14924 ERROR odoo werkzeug: Error on request:
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\server.py", line 482, in app
+    return self.app(e, s)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 112, in application
+    return application_unproxied(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\service\wsgi_server.py", line 87, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1355, in __call__
+    return self.dispatch(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1321, in __call__
+    return self.app(environ, start_wrapped)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\middleware\shared_data.py", line 287, in __call__
+    return self.app(environ, start_response)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\http.py", line 1532, in dispatch
+    ir_http = request.registry['ir.http']
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\modules\registry.py", line 182, in __getitem__
+    return self.models[model_name]
+KeyError: 'ir.http' - - -
+2024-09-12 10:13:32,330 14924 ERROR odoo odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2024-09-12 10:13:32,330 14924 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2024-09-12 10:13:33,382 14924 ERROR odoo odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2024-09-12 10:13:33,383 14924 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2024-09-12 10:14:03,665 14924 INFO ? odoo.service.server: Initiating shutdown 
+2024-09-12 10:14:03,666 14924 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-09-12 10:14:04,750 14924 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 3 connections  
+2024-09-12 10:15:07,489 2244 INFO ? odoo: Odoo version 15.0 
+2024-09-12 10:15:07,490 2244 INFO ? odoo: Using configuration file at D:\WORKSPACE\fit_dnu_cssv\odoo.conf 
+2024-09-12 10:15:07,490 2244 INFO ? odoo: addons paths: ['D:\\WORKSPACE\\fit_dnu_cssv\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\15.0', 'd:\\workspace\\fit_dnu_cssv\\addons', 'd:\\workspace\\fit_dnu_cssv\\odoo\\addons'] 
+2024-09-12 10:15:07,490 2244 INFO ? odoo: database: odoo@localhost:5432 
+2024-09-12 10:15:07,699 2244 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2024-09-12 10:15:08,040 2244 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-KU6J2CG:8069 
+2024-09-12 10:15:20,006 2244 INFO ? odoo.http: HTTP Configuring static files 
+2024-09-12 10:15:20,081 2244 INFO ? odoo.http: Generating nondb routing 
+2024-09-12 10:15:20,117 2244 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:15:20] "[32mGET / HTTP/1.1[0m" 303 - 1 0.004 0.092
+2024-09-12 10:15:20,262 2244 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:15:20] "[32mGET /web HTTP/1.1[0m" 303 - 2 0.013 0.124
+2024-09-12 10:15:21,246 2244 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:15:21] "GET /web/database/selector HTTP/1.1" 200 - 2 0.011 0.968
+2024-09-12 10:16:31,066 2244 INFO ? odoo.service.server: Initiating shutdown 
+2024-09-12 10:16:31,066 2244 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-09-12 10:16:31,252 2244 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
+2024-09-12 10:16:37,410 15788 INFO ? odoo: Odoo version 15.0 
+2024-09-12 10:16:37,411 15788 INFO ? odoo: Using configuration file at D:\WORKSPACE\fit_dnu_cssv\odoo.conf 
+2024-09-12 10:16:37,411 15788 INFO ? odoo: addons paths: ['D:\\WORKSPACE\\fit_dnu_cssv\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\15.0', 'd:\\workspace\\fit_dnu_cssv\\addons', 'd:\\workspace\\fit_dnu_cssv\\odoo\\addons'] 
+2024-09-12 10:16:37,411 15788 INFO ? odoo: database: odoo@localhost:5432 
+2024-09-12 10:16:38,795 15788 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2024-09-12 10:16:39,155 15788 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-KU6J2CG:8069 
+2024-09-12 10:16:39,242 15788 INFO ? odoo.modules.loading: init db 
+2024-09-12 10:16:40,707 15788 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 10:16:41,243 15788 INFO odoo odoo.modules.loading: loading 1 modules... 
+2024-09-12 10:16:41,244 15788 INFO odoo odoo.modules.loading: Loading module base (1/1) 
+2024-09-12 10:16:41,304 15788 INFO odoo odoo.modules.registry: module base: creating or updating database tables 
+2024-09-12 10:16:43,927 15788 INFO odoo odoo.models: Storing computed values of ir.module.module.menus_by_module 
+2024-09-12 10:16:43,927 15788 INFO odoo odoo.models: Storing computed values of ir.module.module.reports_by_module 
+2024-09-12 10:16:43,927 15788 INFO odoo odoo.models: Storing computed values of ir.module.module.views_by_module 
+2024-09-12 10:16:43,934 15788 INFO odoo odoo.models: Storing computed values of res.partner.display_name 
+2024-09-12 10:16:43,934 15788 INFO odoo odoo.models: Storing computed values of res.partner.partner_share 
+2024-09-12 10:16:43,934 15788 INFO odoo odoo.models: Storing computed values of res.partner.commercial_partner_id 
+2024-09-12 10:16:43,934 15788 INFO odoo odoo.models: Storing computed values of res.partner.commercial_company_name 
+2024-09-12 10:16:43,935 15788 INFO odoo odoo.models: Storing computed values of res.currency.decimal_places 
+2024-09-12 10:16:43,949 15788 INFO odoo odoo.models: Storing computed values of res.company.logo_web 
+2024-09-12 10:16:43,949 15788 INFO odoo odoo.models: Storing computed values of res.company.company_registry 
+2024-09-12 10:16:43,960 15788 INFO odoo odoo.models: Storing computed values of res.users.share 
+2024-09-12 10:16:46,456 15788 INFO odoo odoo.modules.loading: loading base/data/res_bank.xml 
+2024-09-12 10:16:46,501 15788 INFO odoo odoo.modules.loading: loading base/data/res.lang.csv 
+2024-09-12 10:16:46,620 15788 INFO odoo odoo.modules.loading: loading base/data/res_lang_data.xml 
+2024-09-12 10:16:46,681 15788 INFO odoo odoo.modules.loading: loading base/data/res_partner_data.xml 
+2024-09-12 10:16:46,781 15788 INFO odoo odoo.modules.loading: loading base/data/res_currency_data.xml 
+2024-09-12 10:16:47,301 15788 INFO odoo odoo.modules.loading: loading base/data/res_company_data.xml 
+2024-09-12 10:16:47,347 15788 INFO odoo odoo.modules.loading: loading base/data/res_users_data.xml 
+2024-09-12 10:16:48,992 15788 INFO odoo odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2024-09-12 10:16:49,015 15788 INFO odoo odoo.modules.loading: loading base/data/res_country_data.xml 
+2024-09-12 10:16:49,632 15788 INFO odoo odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2024-09-12 10:16:49,655 15788 INFO odoo odoo.modules.loading: loading base/data/ir_config_parameter_data.xml 
+2024-09-12 10:16:49,677 15788 INFO odoo odoo.modules.loading: loading base/security/base_groups.xml 
+2024-09-12 10:16:49,842 15788 INFO odoo odoo.modules.loading: loading base/security/base_security.xml 
+2024-09-12 10:16:50,225 15788 INFO odoo odoo.modules.loading: loading base/views/base_menus.xml 
+2024-09-12 10:16:50,377 15788 INFO odoo odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2024-09-12 10:16:50,434 15788 INFO odoo odoo.modules.loading: loading base/views/res_config_views.xml 
+2024-09-12 10:16:50,459 15788 INFO odoo odoo.modules.loading: loading base/data/res.country.state.csv 
+2024-09-12 10:16:51,874 15788 INFO odoo odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2024-09-12 10:16:52,048 15788 INFO odoo odoo.modules.loading: loading base/views/ir_asset_views.xml 
+2024-09-12 10:16:52,079 15788 INFO odoo odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2024-09-12 10:16:52,112 15788 INFO odoo odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2024-09-12 10:16:52,170 15788 INFO odoo odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml 
+2024-09-12 10:16:52,210 15788 INFO odoo odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2024-09-12 10:16:52,313 15788 INFO odoo odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2024-09-12 10:16:52,347 15788 INFO odoo odoo.modules.loading: loading base/views/ir_model_views.xml 
+2024-09-12 10:16:52,550 15788 INFO odoo odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2024-09-12 10:16:52,594 15788 INFO odoo odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2024-09-12 10:16:52,632 15788 INFO odoo odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2024-09-12 10:16:52,670 15788 INFO odoo odoo.modules.loading: loading base/views/ir_translation_views.xml 
+2024-09-12 10:16:52,721 15788 INFO odoo odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2024-09-12 10:16:52,754 15788 INFO odoo odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2024-09-12 10:16:52,833 15788 INFO odoo odoo.modules.loading: loading base/views/ir_default_views.xml 
+2024-09-12 10:16:52,871 15788 INFO odoo odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2024-09-12 10:16:52,887 15788 INFO odoo odoo.modules.loading: loading base/report/ir_model_report.xml 
+2024-09-12 10:16:52,899 15788 INFO odoo odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2024-09-12 10:16:52,915 15788 INFO odoo odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2024-09-12 10:16:52,947 15788 INFO odoo odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2024-09-12 10:16:52,970 15788 INFO odoo odoo.modules.loading: loading base/views/ir_module_views.xml 
+2024-09-12 10:16:53,057 15788 INFO odoo odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2024-09-12 10:16:53,150 15788 INFO odoo odoo.modules.loading: loading base/data/ir_module_module.xml 
+2024-09-12 10:16:53,232 15788 INFO odoo odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2024-09-12 10:16:53,245 15788 INFO odoo odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2024-09-12 10:16:53,260 15788 INFO odoo odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2024-09-12 10:16:53,285 15788 INFO odoo odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2024-09-12 10:16:53,307 15788 INFO odoo odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2024-09-12 10:16:53,337 15788 INFO odoo odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2024-09-12 10:16:53,367 15788 INFO odoo odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2024-09-12 10:16:53,385 15788 INFO odoo odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2024-09-12 10:16:53,413 15788 INFO odoo odoo.modules.loading: loading base/wizard/base_update_translations_views.xml 
+2024-09-12 10:16:53,441 15788 INFO odoo odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2024-09-12 10:16:53,475 15788 INFO odoo odoo.modules.loading: loading base/data/ir_actions_data.xml 
+2024-09-12 10:16:53,493 15788 INFO odoo odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2024-09-12 10:16:53,519 15788 INFO odoo odoo.modules.loading: loading base/views/ir_profile_views.xml 
+2024-09-12 10:16:53,564 15788 INFO odoo odoo.modules.loading: loading base/views/res_company_views.xml 
+2024-09-12 10:16:53,603 15788 INFO odoo odoo.modules.loading: loading base/views/res_lang_views.xml 
+2024-09-12 10:16:53,638 15788 INFO odoo odoo.modules.loading: loading base/views/res_partner_views.xml 
+2024-09-12 10:16:53,774 15788 INFO odoo odoo.modules.loading: loading base/views/res_bank_views.xml 
+2024-09-12 10:16:53,819 15788 INFO odoo odoo.modules.loading: loading base/views/res_country_views.xml 
+2024-09-12 10:16:53,880 15788 INFO odoo odoo.modules.loading: loading base/views/res_currency_views.xml 
+2024-09-12 10:16:53,951 15788 INFO odoo odoo.modules.loading: loading base/views/res_users_views.xml 
+2024-09-12 10:16:54,121 15788 INFO odoo odoo.modules.loading: loading base/views/ir_property_views.xml 
+2024-09-12 10:16:54,162 15788 INFO odoo odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2024-09-12 10:16:54,180 15788 INFO odoo odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2024-09-12 10:16:54,221 15788 INFO odoo odoo.modules.loading: loading base/views/onboarding_views.xml 
+2024-09-12 10:16:54,263 15788 INFO odoo odoo.modules.loading: loading base/security/ir.model.access.csv 
+2024-09-12 10:16:54,498 15788 INFO odoo odoo.modules.loading: Module base: loading demo 
+2024-09-12 10:16:54,498 15788 INFO odoo odoo.modules.loading: loading base/data/res_company_demo.xml 
+2024-09-12 10:16:54,524 15788 INFO odoo odoo.modules.loading: loading base/data/res_users_demo.xml 
+2024-09-12 10:16:56,257 15788 INFO odoo odoo.modules.loading: loading base/data/res_partner_bank_demo.xml 
+2024-09-12 10:16:56,276 15788 INFO odoo odoo.modules.loading: loading base/data/res_currency_rate_demo.xml 
+2024-09-12 10:16:56,777 15788 INFO odoo odoo.modules.loading: loading base/data/res_bank_demo.xml 
+2024-09-12 10:16:56,792 15788 INFO odoo odoo.modules.loading: loading base/data/res_partner_demo.xml 
+2024-09-12 10:16:57,163 15788 INFO odoo odoo.modules.loading: loading base/data/res_partner_image_demo.xml 
+2024-09-12 10:16:58,459 15788 INFO odoo odoo.modules.loading: Module base loaded in 17.22s, 11020 queries 
+2024-09-12 10:16:58,459 15788 INFO odoo odoo.modules.loading: 1 modules loaded in 17.22s, 11020 queries (+0 extra) 
+2024-09-12 10:16:58,490 15788 INFO odoo odoo.modules.loading: updating modules list 
+2024-09-12 10:16:58,491 15788 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2024-09-12 10:16:59,474 15788 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 10:16:59,823 15788 INFO odoo odoo.modules.loading: loading 7 modules... 
+2024-09-12 10:16:59,823 15788 INFO odoo odoo.modules.loading: Loading module web (2/7) 
+2024-09-12 10:16:59,868 15788 INFO odoo odoo.modules.registry: module web: creating or updating database tables 
+2024-09-12 10:17:00,570 15788 INFO odoo odoo.modules.loading: loading web/security/ir.model.access.csv 
+2024-09-12 10:17:00,601 15788 INFO odoo odoo.modules.loading: loading web/views/webclient_templates.xml 
+2024-09-12 10:17:00,706 15788 INFO odoo odoo.modules.loading: loading web/views/report_templates.xml 
+2024-09-12 10:17:00,827 15788 INFO odoo odoo.modules.loading: loading web/views/base_document_layout_views.xml 
+2024-09-12 10:17:00,862 15788 INFO odoo odoo.modules.loading: loading web/views/speedscope_template.xml 
+2024-09-12 10:17:00,886 15788 INFO odoo odoo.modules.loading: loading web/views/lazy_assets.xml 
+2024-09-12 10:17:00,916 15788 INFO odoo odoo.modules.loading: loading web/data/report_layout.xml 
+2024-09-12 10:17:00,991 15788 INFO odoo odoo.modules.loading: Module web: loading demo 
+2024-09-12 10:17:01,012 15788 INFO odoo odoo.modules.loading: Module web loaded in 1.19s, 889 queries 
+2024-09-12 10:17:01,013 15788 INFO odoo odoo.modules.loading: Loading module auth_totp (3/7) 
+2024-09-12 10:17:01,104 15788 INFO odoo odoo.modules.registry: module auth_totp: creating or updating database tables 
+2024-09-12 10:17:01,276 15788 INFO odoo odoo.modules.loading: loading auth_totp/security/security.xml 
+2024-09-12 10:17:01,336 15788 INFO odoo odoo.modules.loading: loading auth_totp/security/ir.model.access.csv 
+2024-09-12 10:17:01,357 15788 INFO odoo odoo.modules.loading: loading auth_totp/data/ir_action_data.xml 
+2024-09-12 10:17:01,375 15788 INFO odoo odoo.modules.loading: loading auth_totp/views/res_users_views.xml 
+2024-09-12 10:17:01,413 15788 INFO odoo odoo.modules.loading: loading auth_totp/views/templates.xml 
+2024-09-12 10:17:01,436 15788 INFO odoo odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml 
+2024-09-12 10:17:01,461 15788 INFO odoo odoo.modules.loading: Module auth_totp: loading demo 
+2024-09-12 10:17:01,483 15788 INFO odoo odoo.modules.loading: Module auth_totp loaded in 0.47s, 192 queries 
+2024-09-12 10:17:01,483 15788 INFO odoo odoo.modules.loading: Loading module base_import (4/7) 
+2024-09-12 10:17:01,562 15788 INFO odoo odoo.modules.registry: module base_import: creating or updating database tables 
+2024-09-12 10:17:03,000 15788 INFO odoo odoo.modules.loading: loading base_import/security/ir.model.access.csv 
+2024-09-12 10:17:03,047 15788 INFO odoo odoo.modules.loading: Module base_import: loading demo 
+2024-09-12 10:17:03,064 15788 INFO odoo odoo.modules.loading: Module base_import loaded in 1.58s, 922 queries 
+2024-09-12 10:17:03,064 15788 INFO odoo odoo.modules.loading: Loading module web_editor (5/7) 
+2024-09-12 10:17:03,557 15788 INFO odoo odoo.modules.registry: module web_editor: creating or updating database tables 
+2024-09-12 10:17:03,776 15788 INFO odoo odoo.modules.loading: loading web_editor/security/ir.model.access.csv 
+2024-09-12 10:17:03,798 15788 INFO odoo odoo.modules.loading: loading web_editor/data/editor_assets.xml 
+2024-09-12 10:17:03,811 15788 INFO odoo odoo.modules.loading: loading web_editor/views/editor.xml 
+2024-09-12 10:17:03,857 15788 INFO odoo odoo.modules.loading: loading web_editor/views/snippets.xml 
+2024-09-12 10:17:03,910 15788 INFO odoo odoo.modules.loading: Module web_editor: loading demo 
+2024-09-12 10:17:03,928 15788 INFO odoo odoo.modules.loading: Module web_editor loaded in 0.86s, 246 queries 
+2024-09-12 10:17:03,928 15788 INFO odoo odoo.modules.loading: Loading module web_kanban_gauge (6/7) 
+2024-09-12 10:17:03,992 15788 INFO odoo odoo.modules.loading: Module web_kanban_gauge: loading demo 
+2024-09-12 10:17:04,040 15788 INFO odoo odoo.modules.loading: Module web_kanban_gauge loaded in 0.11s, 20 queries 
+2024-09-12 10:17:04,040 15788 INFO odoo odoo.modules.loading: Loading module web_tour (7/7) 
+2024-09-12 10:17:04,119 15788 INFO odoo odoo.modules.registry: module web_tour: creating or updating database tables 
+2024-09-12 10:17:04,182 15788 INFO odoo odoo.modules.loading: loading web_tour/security/ir.model.access.csv 
+2024-09-12 10:17:04,203 15788 INFO odoo odoo.modules.loading: loading web_tour/security/ir.rule.csv 
+2024-09-12 10:17:04,227 15788 INFO odoo odoo.modules.loading: loading web_tour/views/tour_views.xml 
+2024-09-12 10:17:04,264 15788 INFO odoo odoo.modules.loading: Module web_tour: loading demo 
+2024-09-12 10:17:04,283 15788 INFO odoo odoo.modules.loading: Module web_tour loaded in 0.24s, 118 queries 
+2024-09-12 10:17:04,284 15788 INFO odoo odoo.modules.loading: 7 modules loaded in 4.46s, 2387 queries (+0 extra) 
+2024-09-12 10:17:04,561 15788 INFO odoo odoo.modules.loading: Modules loaded. 
+2024-09-12 10:17:04,574 15788 INFO odoo odoo.modules.registry: Registry loaded in 25.425s 
+2024-09-12 10:17:26,310 15788 INFO ? odoo.http: HTTP Configuring static files 
+2024-09-12 10:17:26,326 15788 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-09-12 10:17:26,507 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:26] "[32mGET / HTTP/1.1[0m" 303 - 1 0.002 0.186
+2024-09-12 10:17:26,522 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:26] "[32mGET /web HTTP/1.1[0m" 303 - 1 0.000 0.007
+2024-09-12 10:17:35,835 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:35] "GET /web/login HTTP/1.1" 200 - 96 0.078 8.916
+2024-09-12 10:17:35,941 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:35] "GET /web/assets/188-1774669/web.assets_common.min.css HTTP/1.1" 200 - 5 0.007 0.028
+2024-09-12 10:17:36,299 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:36] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.011 0.078
+2024-09-12 10:17:36,306 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:36] "GET /web/assets/189-d4fe7ff/web.assets_frontend.min.css HTTP/1.1" 200 - 3 0.002 0.095
+2024-09-12 10:17:36,638 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:36] "GET /web/assets/191-98c778a/web.assets_frontend_minimal.min.js HTTP/1.1" 200 - 3 0.002 0.020
+2024-09-12 10:17:36,650 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:36] "GET /web/assets/190-38e1d75/web.assets_common_minimal.min.js HTTP/1.1" 200 - 3 0.004 0.031
+2024-09-12 10:17:37,926 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:37] "GET /web/assets/192-6859138/web.assets_common_lazy.min.js HTTP/1.1" 200 - 3 0.001 0.871
+2024-09-12 10:17:38,162 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:38] "GET /web/assets/193-e23767c/web.assets_frontend_lazy.min.js HTTP/1.1" 200 - 3 0.003 0.089
+2024-09-12 10:17:38,595 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:38] "GET /web/webclient/translations/1726136258250 HTTP/1.1" 200 - 7 0.030 0.004
+2024-09-12 10:17:39,031 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:39] "GET /web/webclient/qweb/1726136258601?bundle=web.assets_frontend HTTP/1.1" 200 - 10 0.005 0.210
+2024-09-12 10:17:39,048 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:39] "GET /web/webclient/translations/1726136259039 HTTP/1.1" 200 - 4 0.001 0.004
+2024-09-12 10:17:54,883 15788 INFO odoo odoo.addons.base.models.res_users: Login failed for db:odoo login:admin from 127.0.0.1 
+2024-09-12 10:17:54,901 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:54] "POST /web/login HTTP/1.1" 200 - 9 0.012 0.823
+2024-09-12 10:17:55,090 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:55] "GET /web/webclient/translations/1726136275069 HTTP/1.1" 200 - 4 0.004 0.011
+2024-09-12 10:17:55,126 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:55] "GET /web/webclient/qweb/1726136275094?bundle=web.assets_frontend HTTP/1.1" 200 - 10 0.004 0.024
+2024-09-12 10:17:55,447 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:17:55] "GET /web/webclient/translations/1726136275133 HTTP/1.1" 200 - 4 0.004 0.002
+2024-09-12 10:18:04,806 15788 INFO odoo odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2024-09-12 10:18:04,849 15788 INFO odoo odoo.addons.base.models.ir_attachment: filestore gc 56 checked, 0 removed 
+2024-09-12 10:18:04,899 15788 INFO odoo odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2024-09-12 10:18:04,933 15788 INFO odoo odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2024-09-12 10:18:04,947 15788 INFO odoo odoo.addons.base.models.ir_cron: Job `Base: Auto-vacuum internal data` done. 
+2024-09-12 10:18:19,074 15788 INFO odoo odoo.addons.base.models.res_users: Login successful for db:odoo login:admin from 127.0.0.1 
+2024-09-12 10:18:19,089 15788 INFO odoo odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2024-09-12 10:18:19,091 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:19] "[32mPOST /web/login HTTP/1.1[0m" 303 - 43 0.069 0.837
+2024-09-12 10:18:29,947 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:29] "GET /web HTTP/1.1" 200 - 174 0.168 10.680
+2024-09-12 10:18:30,540 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:30] "GET /web/assets/197-911183a/web.assets_backend_prod_only.min.js HTTP/1.1" 200 - 2 0.005 0.210
+2024-09-12 10:18:30,545 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:30] "GET /web/webclient/load_menus/1f5717edb4e7bec8acddc90b224f148fb9c759c1c5c867ed74b93ffc796e8f1b HTTP/1.1" 200 - 1 0.000 0.189
+2024-09-12 10:18:30,577 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:30] "GET /web/assets/194-28b7628/web.assets_backend.min.css HTTP/1.1" 200 - 2 0.008 0.246
+2024-09-12 10:18:30,665 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:30] "GET /web/webclient/qweb/bc00dc7751dd9af87dfa5138f89c77eb1ef849d379a74fd1ce8a61fc3580c96f?bundle=web.assets_qweb HTTP/1.1" 200 - 2 0.003 0.303
+2024-09-12 10:18:30,848 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:30] "GET /web/assets/196-28b7628/web.assets_backend.min.js HTTP/1.1" 200 - 2 0.002 0.521
+2024-09-12 10:18:30,892 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:30] "GET /web/webclient/translations/5227498d9df4b403b0244c75aac21e0c091e50ce?lang=en_US HTTP/1.1" 200 - 5 0.025 0.012
+2024-09-12 10:18:31,680 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:31] "GET /web/assets/195-1774669/web.assets_common.min.js HTTP/1.1" 200 - 2 0.007 1.349
+2024-09-12 10:18:32,300 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:32] "GET /web/webclient/locale/en_US HTTP/1.1" 200 - 1 0.001 0.004
+2024-09-12 10:18:32,642 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:32] "POST /web/action/load HTTP/1.1" 200 - 28 0.062 0.017
+2024-09-12 10:18:32,722 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:32] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 17 0.015 0.020
+2024-09-12 10:18:32,848 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:32] "POST /web/dataset/call_kw/ir.module.module/load_views HTTP/1.1" 200 - 58 0.120 0.058
+2024-09-12 10:18:33,008 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:33] "GET /web/image/res.company/1/favicon HTTP/1.1" 200 - 11 0.016 0.022
+2024-09-12 10:18:33,191 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:33] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 45 0.071 0.023
+2024-09-12 10:18:33,220 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:33] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.007 0.009
+2024-09-12 10:18:33,660 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:33] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:33,661 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:33] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:33,664 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:33] "GET /im_livechat/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:33,681 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:33] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:33,687 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:33] "GET /website_blog/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:33,688 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:33] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:33,987 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:33] "GET /fleet/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:33,991 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:33] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:33,991 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:33] "GET /website_slides/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,006 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /base/static/img/icons/appointment.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,010 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,013 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /project/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,316 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /mrp/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,322 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,324 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,334 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,337 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /website_event/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,342 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /base/static/img/icons/planning.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,647 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,648 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /base/static/img/icons/sign.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,650 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,651 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /website_sale/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,669 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,671 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,977 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,977 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /calendar/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,977 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /mail/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,978 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /hr/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,991 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /hr_expense/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:34,994 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:34] "GET /contacts/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,311 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /survey/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,312 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,313 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /maintenance/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,313 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /fit_dnu_crm/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,316 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /sale_management/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,317 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /account/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,634 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /crm/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,640 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /website/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,653 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,655 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /stock/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,664 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,671 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /board/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,969 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /repair/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,969 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,982 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,983 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /note/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,984 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:35,985 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:35] "GET /website_forum/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,309 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /hr_skills/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,311 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,312 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /base/static/img/icons/voip.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,312 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /lunch/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,313 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,315 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /hr_contract/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,646 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /payment_alipay/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,647 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /payment_authorize/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,652 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /payment_adyen/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,653 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /payment_buckaroo/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,654 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /payment_mollie/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,661 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /payment_ogone/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,980 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /payment_payumoney/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,980 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /payment_paypal/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,981 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /payment_payulatam/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,986 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /payment_stripe/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:18:36,991 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:18:36] "GET /payment_sips/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 10:20:13,405 15788 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['FIT-DNU-CSSV'] to user admin #2 via 127.0.0.1 
+2024-09-12 10:20:13,405 15788 INFO odoo odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2024-09-12 10:20:13,407 15788 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['FIT-DNU-CSSV'] to user admin #2 via 127.0.0.1 
+2024-09-12 10:20:13,429 15788 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 10:20:13,488 15788 INFO odoo odoo.modules.loading: loading 1 modules... 
+2024-09-12 10:20:13,497 15788 INFO odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-09-12 10:20:13,516 15788 INFO odoo odoo.modules.loading: updating modules list 
+2024-09-12 10:20:13,517 15788 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2024-09-12 10:20:14,468 15788 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 10:20:14,900 15788 INFO odoo odoo.modules.loading: loading 7 modules... 
+2024-09-12 10:20:14,907 15788 INFO odoo odoo.modules.loading: 7 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-09-12 10:20:14,910 15788 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 10:20:14,910 15788 INFO odoo odoo.modules.loading: loading 9 modules... 
+2024-09-12 10:20:14,911 15788 INFO odoo odoo.modules.loading: Loading module board (5/9) 
+2024-09-12 10:20:14,978 15788 INFO odoo odoo.modules.registry: module board: creating or updating database tables 
+2024-09-12 10:20:15,017 15788 INFO odoo odoo.modules.loading: loading board/security/ir.model.access.csv 
+2024-09-12 10:20:15,038 15788 INFO odoo odoo.modules.loading: loading board/views/board_views.xml 
+2024-09-12 10:20:15,093 15788 INFO odoo odoo.modules.loading: Module board: loading demo 
+2024-09-12 10:20:15,111 15788 INFO odoo odoo.modules.loading: Module board loaded in 0.20s, 75 queries 
+2024-09-12 10:20:15,111 15788 INFO odoo odoo.modules.loading: Loading module fit_dnu_crm (9/9) 
+2024-09-12 10:20:16,119 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:16] "GET /web/static/img/spin.png HTTP/1.1" 200 - - - -
+2024-09-12 10:20:19,009 15788 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 10:20:19,010 15788 WARNING odoo odoo.models: The model dashboard_base has no _description 
+2024-09-12 10:20:19,027 15788 WARNING odoo odoo.fields: Field lecturer.lecturer_code: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-12 10:20:19,027 15788 WARNING odoo odoo.fields: Field lecturer.lecturer_name: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-12 10:20:19,027 15788 WARNING odoo odoo.fields: Field student_absent.import_wizard.date_absent: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-12 10:20:19,033 15788 INFO odoo odoo.modules.registry: module fit_dnu_crm: creating or updating database tables 
+2024-09-12 10:20:19,625 15788 ERROR odoo odoo.schema: Table 'user_account': unable to add constraint 'user_account_user_name_uniq' as unique(user_name) 
+2024-09-12 10:20:19,720 15788 WARNING odoo odoo.addons.base.models.ir_model: Two fields (number, student_cohort_id) of student_class() have the same label: Khóa. 
+2024-09-12 10:20:19,720 15788 WARNING odoo odoo.addons.base.models.ir_model: Two fields (number, student_cohort_id) of student() have the same label: Khóa. 
+2024-09-12 10:20:19,721 15788 WARNING odoo odoo.addons.base.models.ir_model: Two fields (student_code, student_id) of student_tuition_fee() have the same label: Mã sinh viên. 
+2024-09-12 10:20:19,721 15788 WARNING odoo odoo.addons.base.models.ir_model: Two fields (day, date_absent) of student_class_absent() have the same label: Ngày. 
+2024-09-12 10:20:20,296 15788 WARNING odoo odoo.modules.registry: student_class_tuition_fee: inconsistent 'compute_sudo' for computed fields: number_unpaid, total 
+2024-09-12 10:20:20,337 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/security/ir.model.access.csv 
+2024-09-12 10:20:20,389 15788 ERROR odoo odoo.sql_db: bad query: 
+            INSERT INTO ir_model_data (module, name, model, res_id, noupdate)
+            VALUES ('fit_dnu_crm', 'access_school_year_user', 'ir.model.access', 151, false), ('fit_dnu_crm', 'access_semester_user', 'ir.model.access', 152, false), ('fit_dnu_crm', 'access_student_cohort_user', 'ir.model.access', 153, false), ('fit_dnu_crm', 'access_student_class_user', 'ir.model.access', 154, false), ('fit_dnu_crm', 'access_student_user', 'ir.model.access', 155, false), ('fit_dnu_crm', 'access_student_absent_user', 'ir.model.access', 156, false), ('fit_dnu_crm', 'access_student_tuition_fee_user', 'ir.model.access', 157, false), ('fit_dnu_crm', 'access_student_absent_import_wizard_user', 'ir.model.access', 158, false), ('fit_dnu_crm', 'access_student_class_absent_user', 'ir.model.access', 159, false), ('fit_dnu_crm', 'access_student_class_tuition_fee_user', 'ir.model.access', 160, false), ('fit_dnu_crm', 'access_student_class_tuition_fee_user', 'ir.model.access', 161, false), ('fit_dnu_crm', 'access_custom_noti_user', 'ir.model.access', 162, false), ('fit_dnu_crm', 'access_student_tuition_fee_import_wizard_user', 'ir.model.access', 163, false), ('fit_dnu_crm', 'access_student_tuition_fee_import_wizard_user', 'ir.model.access', 164, false), ('fit_dnu_crm', 'access_dashboard_base_user', 'ir.model.access', 165, false), ('fit_dnu_crm', 'access_subject_user', 'ir.model.access', 166, false), ('fit_dnu_crm', 'access_student_subject_absent_user', 'ir.model.access', 167, false), ('fit_dnu_crm', 'access_lecturer_user', 'ir.model.access', 168, false), ('fit_dnu_crm', 'access_teaching_schedule_user', 'ir.model.access', 169, false), ('fit_dnu_crm', 'access_user_account_user', 'ir.model.access', 170, false), ('fit_dnu_crm', 'access_student_learn_again_user', 'ir.model.access', 171, false)
+            ON CONFLICT (module, name)
+            DO UPDATE SET (model, res_id, write_date) =
+                (EXCLUDED.model, EXCLUDED.res_id, now() at time zone 'UTC')
+                
+        
+ERROR: ON CONFLICT DO UPDATE command cannot affect row a second time
+HINT:  Ensure that no rows proposed for insertion within the same command have duplicate constrained values.
+ 
+2024-09-12 10:20:20,389 15788 ERROR odoo odoo.addons.base.models.ir_model: Failed to insert ir_model_data
+('fit_dnu_crm', 'access_school_year_user', 'ir.model.access', 151, False)
+('fit_dnu_crm', 'access_semester_user', 'ir.model.access', 152, False)
+('fit_dnu_crm', 'access_student_cohort_user', 'ir.model.access', 153, False)
+('fit_dnu_crm', 'access_student_class_user', 'ir.model.access', 154, False)
+('fit_dnu_crm', 'access_student_user', 'ir.model.access', 155, False)
+('fit_dnu_crm', 'access_student_absent_user', 'ir.model.access', 156, False)
+('fit_dnu_crm', 'access_student_tuition_fee_user', 'ir.model.access', 157, False)
+('fit_dnu_crm', 'access_student_absent_import_wizard_user', 'ir.model.access', 158, False)
+('fit_dnu_crm', 'access_student_class_absent_user', 'ir.model.access', 159, False)
+('fit_dnu_crm', 'access_student_class_tuition_fee_user', 'ir.model.access', 160, False)
+('fit_dnu_crm', 'access_student_class_tuition_fee_user', 'ir.model.access', 161, False)
+('fit_dnu_crm', 'access_custom_noti_user', 'ir.model.access', 162, False)
+('fit_dnu_crm', 'access_student_tuition_fee_import_wizard_user', 'ir.model.access', 163, False)
+('fit_dnu_crm', 'access_student_tuition_fee_import_wizard_user', 'ir.model.access', 164, False)
+('fit_dnu_crm', 'access_dashboard_base_user', 'ir.model.access', 165, False)
+('fit_dnu_crm', 'access_subject_user', 'ir.model.access', 166, False)
+('fit_dnu_crm', 'access_student_subject_absent_user', 'ir.model.access', 167, False)
+('fit_dnu_crm', 'access_lecturer_user', 'ir.model.access', 168, False)
+('fit_dnu_crm', 'access_teaching_schedule_user', 'ir.model.access', 169, False)
+('fit_dnu_crm', 'access_user_account_user', 'ir.model.access', 170, False)
+('fit_dnu_crm', 'access_student_learn_again_user', 'ir.model.access', 171, False) 
+2024-09-12 10:20:20,465 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/school_year.xml 
+2024-09-12 10:20:20,498 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/semester.xml 
+2024-09-12 10:20:20,525 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_cohort.xml 
+2024-09-12 10:20:20,559 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_class.xml 
+2024-09-12 10:20:20,593 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student.xml 
+2024-09-12 10:20:20,625 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/lecturer.xml 
+2024-09-12 10:20:20,656 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_learn_again.xml 
+2024-09-12 10:20:20,677 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/teaching_schedule.xml 
+2024-09-12 10:20:20,707 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_absent.xml 
+2024-09-12 10:20:20,738 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_tuition_fee.xml 
+2024-09-12 10:20:20,770 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/dashboard.xml 
+2024-09-12 10:20:20,840 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_class_absent.xml 
+2024-09-12 10:20:20,874 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_subject_absent.xml 
+2024-09-12 10:20:20,909 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_class_tuition_fee.xml 
+2024-09-12 10:20:20,941 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/custom_noti.xml 
+2024-09-12 10:20:20,958 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/subject.xml 
+2024-09-12 10:20:20,990 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/import/import_student_absent.xml 
+2024-09-12 10:20:21,015 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/import/import_student_tuition_fee.xml 
+2024-09-12 10:20:21,033 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/user_account.xml 
+2024-09-12 10:20:21,058 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/core_menu_views.xml 
+2024-09-12 10:20:21,179 15788 INFO odoo odoo.modules.loading: Module fit_dnu_crm: loading demo 
+2024-09-12 10:20:21,179 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/demo/demo.xml 
+2024-09-12 10:20:21,180 15788 WARNING odoo odoo.modules.loading: Module fit_dnu_crm demo data failed to install, installed without demo data 
+Traceback (most recent call last):
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\modules\loading.py", line 86, in load_demo
+    load_data(cr, idref, mode, kind='demo', package=package)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\modules\loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\tools\convert.py", line 742, in convert_file
+    with file_open(pathname, 'rb') as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\tools\misc.py", line 207, in file_open
+    path = file_path(name, filter_ext=filter_ext, env=env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\WORKSPACE\fit_dnu_cssv\odoo\tools\misc.py", line 186, in file_path
+    raise FileNotFoundError("File not found: " + file_path)
+FileNotFoundError: File not found: fit_dnu_crm\demo/demo.xml
+2024-09-12 10:20:21,210 15788 WARNING odoo odoo.modules.loading: The models ['date_manager'] have no access rules in module fit_dnu_crm, consider adding some, like:
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+fit_dnu_crm.access_date_manager,access_date_manager,fit_dnu_crm.model_date_manager,base.group_user,1,0,0,0 
+2024-09-12 10:20:21,229 15788 INFO odoo odoo.modules.loading: Module fit_dnu_crm loaded in 6.12s, 1350 queries 
+2024-09-12 10:20:21,229 15788 INFO odoo odoo.modules.loading: 9 modules loaded in 6.32s, 1425 queries (+0 extra) 
+2024-09-12 10:20:21,248 15788 WARNING odoo odoo.fields: Field lecturer.lecturer_code: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-12 10:20:21,248 15788 WARNING odoo odoo.fields: Field lecturer.lecturer_name: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-12 10:20:21,250 15788 WARNING odoo odoo.fields: Field student_absent.import_wizard.date_absent: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-12 10:20:21,357 15788 WARNING odoo odoo.modules.registry: student_class_tuition_fee: inconsistent 'compute_sudo' for computed fields: number_unpaid, total 
+2024-09-12 10:20:21,489 15788 INFO odoo odoo.modules.loading: Modules loaded. 
+2024-09-12 10:20:21,492 15788 INFO odoo odoo.modules.registry: Registry loaded in 8.022s 
+2024-09-12 10:20:21,492 15788 INFO odoo odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-09-12 10:20:21,499 15788 INFO odoo odoo.addons.base.models.ir_module: next action is "Demo Failure Notification" 
+2024-09-12 10:20:21,551 15788 INFO odoo odoo.modules.registry: Registry changed, signaling through the database 
+2024-09-12 10:20:21,553 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:21] "POST /web/dataset/call_button HTTP/1.1" 200 - 2856 2.443 5.713
+2024-09-12 10:20:21,872 15788 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-09-12 10:20:22,053 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:22] "POST /web/action/run HTTP/1.1" 200 - 22 0.026 0.157
+2024-09-12 10:20:22,157 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:22] "POST /web/dataset/call_kw/ir.demo_failure.wizard/load_views HTTP/1.1" 200 - 20 0.013 0.009
+2024-09-12 10:20:22,384 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:22] "POST /web/dataset/call_kw/ir.demo_failure.wizard/read HTTP/1.1" 200 - 4 0.004 0.006
+2024-09-12 10:20:22,487 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:22] "POST /web/dataset/call_kw/ir.demo_failure/read HTTP/1.1" 200 - 3 0.002 0.004
+2024-09-12 10:20:27,979 15788 INFO odoo odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-09-12 10:20:27,983 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:27] "POST /web/dataset/call_button HTTP/1.1" 200 - 2 0.000 0.009
+2024-09-12 10:20:31,724 15788 INFO odoo odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-09-12 10:20:31,734 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:31] "POST /web/dataset/call_button HTTP/1.1" 200 - 5 0.009 0.005
+2024-09-12 10:20:32,986 15788 INFO odoo odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2024-09-12 10:20:32,989 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:32] "GET /web HTTP/1.1" 200 - 236 0.183 4.497
+2024-09-12 10:20:33,291 15788 INFO odoo odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-09-12 10:20:33,301 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:33] "POST /web/dataset/call_button HTTP/1.1" 200 - 5 0.007 0.008
+2024-09-12 10:20:36,068 15788 ERROR odoo odoo.sql_db: bad query: DELETE FROM ir_attachment WHERE id IN (194)
+ERROR: could not serialize access due to concurrent delete
+ 
+2024-09-12 10:20:36,068 15788 INFO odoo odoo.service.model: SERIALIZATION_FAILURE, retry 1/5 in 0.0188 sec... 
+2024-09-12 10:20:36,208 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:36] "GET /web HTTP/1.1" 200 - 17 0.053 0.221
+2024-09-12 10:20:36,231 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:36] "GET /web HTTP/1.1" 200 - 198 1.298 3.177
+2024-09-12 10:20:36,265 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:36] "GET /web/assets/199-93fe056/web.assets_backend.min.css HTTP/1.1" 200 - 2 0.002 0.015
+2024-09-12 10:20:36,620 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:36] "GET /web/webclient/load_menus/a47ac55df72ad3a592ffe9628b9b6c28c4ea2fa365437ea3bc308b69f0ac0b44 HTTP/1.1" 200 - 1 0.001 0.008
+2024-09-12 10:20:36,690 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:36] "GET /web/assets/200-93fe056/web.assets_backend.min.js HTTP/1.1" 200 - 2 0.002 0.424
+2024-09-12 10:20:36,723 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:20:36] "GET /web/webclient/qweb/7c0351bd8a052cc87f55dfcf70c67d896a03b3e0cb5d2af9a395355c509fa009?bundle=web.assets_qweb HTTP/1.1" 200 - 2 0.001 0.110
+2024-09-12 10:21:07,198 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:07] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 17 0.012 0.017
+2024-09-12 10:21:07,201 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:07] "POST /web/action/load HTTP/1.1" 200 - 14 0.021 0.012
+2024-09-12 10:21:07,455 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:07] "POST /web/dataset/call_kw/board.board/load_views HTTP/1.1" 200 - 29 0.024 0.012
+2024-09-12 10:21:07,522 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:07] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 3 0.005 0.003
+2024-09-12 10:21:08,373 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:08] "POST /web/dataset/call_kw/ir.ui.view/render_public_asset HTTP/1.1" 200 - 25 0.013 0.579
+2024-09-12 10:21:08,393 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:08] "GET /web/assets/202-36dc694/web.assets_backend_legacy_lazy.min.css HTTP/1.1" 200 - 2 0.002 0.012
+2024-09-12 10:21:08,733 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:08] "GET /web/assets/203-36dc694/web.assets_backend_legacy_lazy.min.js HTTP/1.1" 200 - 2 0.002 0.037
+2024-09-12 10:21:09,112 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:09] "POST /web/action/load HTTP/1.1" 200 - 13 0.023 0.021
+2024-09-12 10:21:09,113 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:09] "POST /web/action/load HTTP/1.1" 200 - 13 0.019 0.024
+2024-09-12 10:21:09,148 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:09] "POST /web/action/load HTTP/1.1" 200 - 25 0.058 0.019
+2024-09-12 10:21:09,156 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:09] "POST /web/action/load HTTP/1.1" 200 - 28 0.068 0.019
+2024-09-12 10:21:09,354 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:09] "POST /web/dataset/call_kw/dashboard_base/load_views HTTP/1.1" 200 - 9 0.006 0.012
+2024-09-12 10:21:09,442 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:09] "POST /web/dataset/call_kw/dashboard_base/load_views HTTP/1.1" 200 - 5 0.003 0.008
+2024-09-12 10:21:09,446 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:09] "POST /web/dataset/call_kw/student_class_tuition_fee/load_views HTTP/1.1" 200 - 7 0.006 0.008
+2024-09-12 10:21:09,480 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:09] "POST /web/dataset/call_kw/student_class_absent/load_views HTTP/1.1" 200 - 7 0.007 0.013
+2024-09-12 10:21:09,493 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:09] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 7 0.008 0.008
+2024-09-12 10:21:09,701 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:09] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.011 0.006
+2024-09-12 10:21:09,773 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:09] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 3 0.005 0.006
+2024-09-12 10:21:09,787 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:09] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 3 0.004 0.007
+2024-09-12 10:21:09,867 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:09] "GET /web/static/lib/Chart/Chart.js HTTP/1.1" 200 - - - -
+2024-09-12 10:21:22,422 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:22] "POST /web/dataset/call_kw/dashboard_base/create HTTP/1.1" 200 - 11 0.011 0.009
+2024-09-12 10:21:22,744 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:22] "POST /web/dataset/call_kw/dashboard_base/read HTTP/1.1" 200 - 3 0.003 0.005
+2024-09-12 10:21:23,012 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:23] "POST /web/dataset/call_button HTTP/1.1" 200 - 7 0.003 0.004
+2024-09-12 10:21:23,113 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:23] "POST /web/dataset/call_kw/student_absent/load_views HTTP/1.1" 200 - 43 0.027 0.019
+2024-09-12 10:21:23,338 15788 WARNING odoo odoo.osv.expression: The domain term '('id', 'in', False)' should use the '=' or '!=' operator. 
+2024-09-12 10:21:23,342 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:23] "POST /web/dataset/call_kw/student_absent/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.003 0.004
+2024-09-12 10:21:23,453 15788 WARNING odoo odoo.osv.expression: The domain term '('id', 'in', False)' should use the '=' or '!=' operator. 
+2024-09-12 10:21:23,455 15788 WARNING odoo odoo.osv.expression: The domain term '('id', 'in', False)' should use the '=' or '!=' operator. 
+2024-09-12 10:21:23,457 15788 WARNING odoo odoo.osv.expression: The domain term '('id', 'in', False)' should use the '=' or '!=' operator. 
+2024-09-12 10:21:23,458 15788 WARNING odoo odoo.osv.expression: The domain term '('id', 'in', False)' should use the '=' or '!=' operator. 
+2024-09-12 10:21:23,461 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:23] "POST /web/dataset/call_kw/student_absent/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.004 0.010
+2024-09-12 10:21:23,462 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:23] "POST /web/dataset/call_kw/student_absent/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.002 0.014
+2024-09-12 10:21:23,462 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:23] "POST /web/dataset/call_kw/student_absent/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.001 0.013
+2024-09-12 10:21:23,464 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:23] "POST /web/dataset/call_kw/student_absent/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.003 0.014
+2024-09-12 10:21:23,477 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:23] "POST /web/dataset/search_read HTTP/1.1" 200 - 1 0.001 0.002
+2024-09-12 10:21:23,797 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:23] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.003
+2024-09-12 10:21:31,584 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:31] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.002 0.003
+2024-09-12 10:21:31,931 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:31] "POST /web/action/load HTTP/1.1" 200 - 11 0.011 0.016
+2024-09-12 10:21:31,954 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:31] "POST /web/action/load HTTP/1.1" 200 - 11 0.021 0.027
+2024-09-12 10:21:31,955 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:31] "POST /web/action/load HTTP/1.1" 200 - 15 0.023 0.027
+2024-09-12 10:21:31,957 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:31] "POST /web/action/load HTTP/1.1" 200 - 15 0.024 0.025
+2024-09-12 10:21:32,182 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:32] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.004 0.006
+2024-09-12 10:21:32,273 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:32] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.002 0.006
+2024-09-12 10:21:32,283 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:32] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 2 0.002 0.004
+2024-09-12 10:21:32,285 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:32] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 2 0.004 0.005
+2024-09-12 10:21:33,642 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:33] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.002 0.004
+2024-09-12 10:21:34,006 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:34] "POST /web/action/load HTTP/1.1" 200 - 11 0.014 0.018
+2024-09-12 10:21:34,014 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:34] "POST /web/action/load HTTP/1.1" 200 - 15 0.015 0.024
+2024-09-12 10:21:34,017 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:34] "POST /web/action/load HTTP/1.1" 200 - 11 0.024 0.017
+2024-09-12 10:21:34,022 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:34] "POST /web/action/load HTTP/1.1" 200 - 15 0.028 0.017
+2024-09-12 10:21:34,231 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:34] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.002 0.005
+2024-09-12 10:21:34,343 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:34] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 2 0.002 0.007
+2024-09-12 10:21:34,345 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:34] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 2 0.005 0.008
+2024-09-12 10:21:34,348 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:34] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.006 0.009
+2024-09-12 10:21:39,492 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:39] "POST /web/action/load HTTP/1.1" 200 - 12 0.010 0.013
+2024-09-12 10:21:39,827 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:39] "POST /web/dataset/call_kw/school_year/load_views HTTP/1.1" 200 - 18 0.011 0.009
+2024-09-12 10:21:40,078 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:40] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.003 0.004
+2024-09-12 10:21:44,297 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:44] "POST /web/action/load HTTP/1.1" 200 - 22 0.019 0.014
+2024-09-12 10:21:44,651 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:44] "POST /web/dataset/call_kw/student/load_views HTTP/1.1" 200 - 21 0.011 0.018
+2024-09-12 10:21:44,887 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:44] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 3 0.008 0.003
+2024-09-12 10:21:44,980 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:44] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.001 0.008
+2024-09-12 10:21:44,981 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:44] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.003 0.007
+2024-09-12 10:21:44,981 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:44] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.001 0.007
+2024-09-12 10:21:44,984 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:44] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.004 0.010
+2024-09-12 10:21:49,776 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:49] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2024-09-12 10:21:50,123 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:50] "POST /web/action/load HTTP/1.1" 200 - 11 0.013 0.019
+2024-09-12 10:21:50,132 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:50] "POST /web/action/load HTTP/1.1" 200 - 11 0.023 0.015
+2024-09-12 10:21:50,145 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:50] "POST /web/action/load HTTP/1.1" 200 - 15 0.029 0.024
+2024-09-12 10:21:50,166 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:50] "POST /web/action/load HTTP/1.1" 200 - 15 0.027 0.025
+2024-09-12 10:21:50,371 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:50] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.005 0.007
+2024-09-12 10:21:50,462 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:50] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 2 0.002 0.007
+2024-09-12 10:21:50,465 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:50] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.008 0.004
+2024-09-12 10:21:50,479 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:50] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 2 0.004 0.003
+2024-09-12 10:21:53,966 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:53] "POST /web/action/load HTTP/1.1" 200 - 28 0.015 0.024
+2024-09-12 10:21:54,373 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:54] "POST /web/dataset/call_kw/ir.module.module/load_views HTTP/1.1" 200 - 53 0.057 0.030
+2024-09-12 10:21:54,592 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:54] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 45 0.026 0.013
+2024-09-12 10:21:54,721 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 10:21:54] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.006 0.007
+2024-09-12 12:42:49,267 15788 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 12:42:49,280 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:42:49] "POST /web/dataset/call_kw/ir.module.module/read HTTP/1.1" 200 - 14 0.021 0.022
+2024-09-12 12:42:49,510 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:42:49] "POST /web/dataset/call_kw/ir.module.module.dependency/read HTTP/1.1" 200 - 4 0.006 0.003
+2024-09-12 12:42:49,625 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 12:42:49] "GET /base/static/src/css/description.css HTTP/1.1" 200 - - - -
+2024-09-12 12:42:49,856 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:42:49] "GET /web/image?model=ir.module.module&id=317&field=icon_image&unique=09122024172021 HTTP/1.1" 200 - 3 0.003 0.005
+2024-09-12 12:42:49,887 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 12:42:49] "GET /web/static/img/form_sheetbg.png HTTP/1.1" 200 - - - -
+2024-09-12 12:43:02,198 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:02] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.004 0.004
+2024-09-12 12:43:03,511 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:03] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.018 0.010
+2024-09-12 12:43:03,754 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:03] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.002 0.006
+2024-09-12 12:43:13,706 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:13] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.022 0.011
+2024-09-12 12:43:14,000 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:14] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.004 0.004
+2024-09-12 12:43:17,063 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:17] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.002 0.008
+2024-09-12 12:43:17,090 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:17] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.025 0.013
+2024-09-12 12:43:18,754 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:18] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.017 0.013
+2024-09-12 12:43:19,037 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:19] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.004 0.005
+2024-09-12 12:43:21,251 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:21] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.005 0.003
+2024-09-12 12:43:21,279 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:21] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.020 0.017
+2024-09-12 12:43:22,288 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:22] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.020 0.009
+2024-09-12 12:43:22,574 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:22] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.003 0.004
+2024-09-12 12:43:23,590 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:23] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.003 0.005
+2024-09-12 12:43:23,620 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:23] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.024 0.015
+2024-09-12 12:43:24,937 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:24] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.018 0.012
+2024-09-12 12:43:25,225 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:25] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.004 0.003
+2024-09-12 12:43:26,895 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:26] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.003 0.006
+2024-09-12 12:43:26,924 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:26] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.024 0.014
+2024-09-12 12:43:27,853 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:27] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.015 0.012
+2024-09-12 12:43:28,144 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:28] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.005 0.002
+2024-09-12 12:43:29,221 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:29] "POST /web/dataset/search_read HTTP/1.1" 200 - 5 0.003 0.004
+2024-09-12 12:43:29,249 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:29] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.020 0.018
+2024-09-12 12:43:30,871 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:30] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.016 0.014
+2024-09-12 12:43:31,163 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:31] "POST /web/dataset/search_read HTTP/1.1" 200 - 4 0.003 0.003
+2024-09-12 12:43:31,495 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:31] "GET /web/static/img/empty_folder.svg HTTP/1.1" 200 - - - -
+2024-09-12 12:43:33,215 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:33] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.022 0.007
+2024-09-12 12:43:33,504 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:33] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.002 0.005
+2024-09-12 12:43:35,631 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:35] "POST /web/dataset/search_read HTTP/1.1" 200 - 4 0.004 0.006
+2024-09-12 12:43:35,651 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:35] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.022 0.009
+2024-09-12 12:43:35,879 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:35] "GET /base/static/description/icon.png HTTP/1.1" 200 - - - -
+2024-09-12 12:43:51,659 15788 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 12:43:51,668 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:51] "POST /web/dataset/call_kw/ir.module.module/read HTTP/1.1" 200 - 10 0.017 0.016
+2024-09-12 12:43:51,994 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:51] "POST /web/dataset/call_kw/ir.module.module.dependency/read HTTP/1.1" 200 - 4 0.004 0.003
+2024-09-12 12:43:53,627 15788 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['FIT-DNU-CSSV'] to user admin #2 via 127.0.0.1 
+2024-09-12 12:43:53,628 15788 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['FIT-DNU-CSSV'] to user admin #2 via 127.0.0.1 
+2024-09-12 12:43:53,628 15788 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['FIT-DNU-CSSV'] to user admin #2 via 127.0.0.1 
+2024-09-12 12:43:54,368 15788 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 12:43:54,680 15788 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 12:43:54,682 15788 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 12:43:54,687 15788 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 12:43:54,689 15788 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user admin #2 via 127.0.0.1 
+2024-09-12 12:43:54,783 15788 INFO odoo odoo.modules.loading: loading 1 modules... 
+2024-09-12 12:43:54,793 15788 INFO odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-09-12 12:43:54,819 15788 INFO odoo odoo.modules.loading: updating modules list 
+2024-09-12 12:43:54,820 15788 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2024-09-12 12:43:55,542 15788 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 12:43:55,870 15788 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-12 12:43:55,872 15788 INFO odoo odoo.modules.loading: loading 9 modules... 
+2024-09-12 12:43:55,877 15788 INFO odoo odoo.modules.loading: Loading module fit_dnu_crm (9/9) 
+2024-09-12 12:43:55,902 15788 WARNING odoo odoo.models: The model dashboard_base has no _description 
+2024-09-12 12:43:55,917 15788 WARNING odoo odoo.fields: Field lecturer.lecturer_code: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-12 12:43:55,917 15788 WARNING odoo odoo.fields: Field lecturer.lecturer_name: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-12 12:43:55,918 15788 WARNING odoo odoo.fields: Field student_absent.import_wizard.date_absent: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-12 12:43:55,922 15788 INFO odoo odoo.modules.registry: module fit_dnu_crm: creating or updating database tables 
+2024-09-12 12:43:56,011 15788 INFO odoo odoo.schema: Table 'user_account': unable to add constraint 'user_account_user_name_uniq' as unique(user_name) 
+2024-09-12 12:43:56,032 15788 WARNING odoo odoo.addons.base.models.ir_model: Two fields (number, student_cohort_id) of student_class() have the same label: Khóa. 
+2024-09-12 12:43:56,032 15788 WARNING odoo odoo.addons.base.models.ir_model: Two fields (number, student_cohort_id) of student() have the same label: Khóa. 
+2024-09-12 12:43:56,032 15788 WARNING odoo odoo.addons.base.models.ir_model: Two fields (student_code, student_id) of student_tuition_fee() have the same label: Mã sinh viên. 
+2024-09-12 12:43:56,032 15788 WARNING odoo odoo.addons.base.models.ir_model: Two fields (day, date_absent) of student_class_absent() have the same label: Ngày. 
+2024-09-12 12:43:56,100 15788 WARNING odoo odoo.modules.registry: student_class_tuition_fee: inconsistent 'compute_sudo' for computed fields: number_unpaid, total 
+2024-09-12 12:43:56,120 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/security/ir.model.access.csv 
+2024-09-12 12:43:56,183 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/school_year.xml 
+2024-09-12 12:43:56,203 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/semester.xml 
+2024-09-12 12:43:56,220 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_cohort.xml 
+2024-09-12 12:43:56,241 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_class.xml 
+2024-09-12 12:43:56,264 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student.xml 
+2024-09-12 12:43:56,287 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/lecturer.xml 
+2024-09-12 12:43:56,307 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_learn_again.xml 
+2024-09-12 12:43:56,326 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/teaching_schedule.xml 
+2024-09-12 12:43:56,352 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_absent.xml 
+2024-09-12 12:43:56,375 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_tuition_fee.xml 
+2024-09-12 12:43:56,397 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/dashboard.xml 
+2024-09-12 12:43:56,448 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_class_absent.xml 
+2024-09-12 12:43:56,466 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_subject_absent.xml 
+2024-09-12 12:43:56,487 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/student_class_tuition_fee.xml 
+2024-09-12 12:43:56,506 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/custom_noti.xml 
+2024-09-12 12:43:56,517 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/subject.xml 
+2024-09-12 12:43:56,536 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/import/import_student_absent.xml 
+2024-09-12 12:43:56,545 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/import/import_student_tuition_fee.xml 
+2024-09-12 12:43:56,556 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/user_account.xml 
+2024-09-12 12:43:56,575 15788 INFO odoo odoo.modules.loading: loading fit_dnu_crm/views/core_menu_views.xml 
+2024-09-12 12:43:56,720 15788 WARNING odoo odoo.modules.loading: The models ['date_manager'] have no access rules in module fit_dnu_crm, consider adding some, like:
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+fit_dnu_crm.access_date_manager,access_date_manager,fit_dnu_crm.model_date_manager,base.group_user,1,0,0,0 
+2024-09-12 12:43:56,730 15788 INFO odoo odoo.modules.loading: Module fit_dnu_crm loaded in 0.85s, 1057 queries 
+2024-09-12 12:43:56,730 15788 INFO odoo odoo.modules.loading: 9 modules loaded in 0.86s, 1057 queries (+0 extra) 
+2024-09-12 12:43:56,748 15788 WARNING odoo odoo.fields: Field lecturer.lecturer_code: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-12 12:43:56,748 15788 WARNING odoo odoo.fields: Field lecturer.lecturer_name: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-12 12:43:56,750 15788 WARNING odoo odoo.fields: Field student_absent.import_wizard.date_absent: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-12 12:43:56,759 15788 WARNING odoo odoo.schema: Table 'user_account': unable to add constraint 'user_account_user_name_uniq' as unique(user_name) 
+2024-09-12 12:43:56,943 15788 WARNING odoo odoo.modules.registry: student_class_tuition_fee: inconsistent 'compute_sudo' for computed fields: number_unpaid, total 
+2024-09-12 12:43:57,066 15788 INFO odoo odoo.modules.loading: Modules loaded. 
+2024-09-12 12:43:57,110 15788 INFO odoo odoo.modules.registry: Registry loaded in 2.348s 
+2024-09-12 12:43:57,110 15788 INFO odoo odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-09-12 12:43:57,116 15788 INFO odoo odoo.modules.registry: Registry changed, signaling through the database 
+2024-09-12 12:43:57,118 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:57] "POST /web/dataset/call_button HTTP/1.1" 200 - 3496 1.576 1.921
+2024-09-12 12:43:57,448 15788 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-09-12 12:43:58,043 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:58] "GET /web HTTP/1.1" 200 - 197 0.091 0.507
+2024-09-12 12:43:58,441 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:58] "POST /web/action/load HTTP/1.1" 200 - 14 0.018 0.036
+2024-09-12 12:43:58,446 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:58] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 17 0.041 0.021
+2024-09-12 12:43:58,803 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:58] "POST /web/dataset/call_kw/board.board/load_views HTTP/1.1" 200 - 28 0.021 0.008
+2024-09-12 12:43:59,048 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:59] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 3 0.003 0.004
+2024-09-12 12:43:59,145 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:59] "POST /web/dataset/call_kw/ir.ui.view/render_public_asset HTTP/1.1" 200 - 19 0.006 0.019
+2024-09-12 12:43:59,378 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:59] "POST /web/action/load HTTP/1.1" 200 - 13 0.010 0.009
+2024-09-12 12:43:59,517 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:59] "POST /web/action/load HTTP/1.1" 200 - 11 0.019 0.014
+2024-09-12 12:43:59,525 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:59] "POST /web/dataset/call_kw/dashboard_base/load_views HTTP/1.1" 200 - 9 0.020 0.017
+2024-09-12 12:43:59,540 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:59] "POST /web/action/load HTTP/1.1" 200 - 24 0.033 0.021
+2024-09-12 12:43:59,547 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:59] "POST /web/action/load HTTP/1.1" 200 - 29 0.037 0.024
+2024-09-12 12:43:59,698 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:59] "POST /web/dataset/call_kw/dashboard_base/load_views HTTP/1.1" 200 - 5 0.004 0.006
+2024-09-12 12:43:59,858 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:59] "POST /web/dataset/call_kw/student_class_tuition_fee/load_views HTTP/1.1" 200 - 7 0.005 0.009
+2024-09-12 12:43:59,859 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:59] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 7 0.009 0.007
+2024-09-12 12:43:59,875 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:59] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.003 0.010
+2024-09-12 12:43:59,878 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:43:59] "POST /web/dataset/call_kw/student_class_absent/load_views HTTP/1.1" 200 - 7 0.007 0.011
+2024-09-12 12:44:00,023 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:00] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 3 0.004 0.005
+2024-09-12 12:44:00,178 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:00] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 3 0.002 0.004
+2024-09-12 12:44:14,765 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:14] "POST /web/action/load HTTP/1.1" 200 - 19 0.009 0.011
+2024-09-12 12:44:15,115 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:15] "POST /web/dataset/call_kw/user_account/load_views HTTP/1.1" 200 - 25 0.017 0.012
+2024-09-12 12:44:15,341 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:15] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.003 0.003
+2024-09-12 12:44:15,433 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:15] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.002
+2024-09-12 12:44:18,482 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:18] "POST /web/dataset/call_kw/user_account/onchange HTTP/1.1" 200 - 3 0.005 0.006
+2024-09-12 12:44:24,184 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:24] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.000 0.003
+2024-09-12 12:44:25,480 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:25] "POST /web/action/load HTTP/1.1" 200 - 12 0.010 0.007
+2024-09-12 12:44:25,814 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:25] "POST /web/dataset/call_kw/student_learn_again/load_views HTTP/1.1" 200 - 24 0.014 0.010
+2024-09-12 12:44:26,061 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:26] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.003 0.002
+2024-09-12 12:44:27,384 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:27] "POST /web/action/load HTTP/1.1" 200 - 22 0.012 0.011
+2024-09-12 12:44:27,719 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:27] "POST /web/dataset/call_kw/lecturer/load_views HTTP/1.1" 200 - 23 0.014 0.008
+2024-09-12 12:44:27,969 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:27] "POST /web/dataset/call_kw/lecturer/search_panel_select_multi_range HTTP/1.1" 200 - 3 0.002 0.004
+2024-09-12 12:44:28,050 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:28] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.001 0.005
+2024-09-12 12:44:28,050 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:28] "POST /web/dataset/call_kw/lecturer/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.001 0.006
+2024-09-12 12:44:31,290 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:31] "POST /web/dataset/call_kw/lecturer/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.002 0.003
+2024-09-12 12:44:31,597 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:31] "POST /web/dataset/call_kw/lecturer/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.002 0.004
+2024-09-12 12:44:31,599 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:31] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.000 0.005
+2024-09-12 12:44:34,892 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:34] "POST /web/action/load HTTP/1.1" 200 - 22 0.013 0.010
+2024-09-12 12:44:35,142 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:35] "POST /web/dataset/call_kw/student/load_views HTTP/1.1" 200 - 21 0.012 0.013
+2024-09-12 12:44:35,206 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:35] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 3 0.002 0.003
+2024-09-12 12:44:35,473 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:35] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.002 0.011
+2024-09-12 12:44:35,473 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:35] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.003 0.011
+2024-09-12 12:44:35,474 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:35] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.004 0.010
+2024-09-12 12:44:35,474 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:35] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.002 0.014
+2024-09-12 12:44:38,745 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:38] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.000 0.006
+2024-09-12 12:44:39,059 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:39] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.002 0.009
+2024-09-12 12:44:39,059 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:39] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.001 0.009
+2024-09-12 12:44:39,062 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:39] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.002 0.010
+2024-09-12 12:44:39,063 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:39] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.001 0.010
+2024-09-12 12:44:42,137 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:42] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2024-09-12 12:44:42,403 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:42] "POST /web/action/load HTTP/1.1" 200 - 11 0.008 0.005
+2024-09-12 12:44:42,482 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:42] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.009 0.016
+2024-09-12 12:44:42,483 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:42] "POST /web/action/load HTTP/1.1" 200 - 11 0.015 0.013
+2024-09-12 12:44:42,489 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:42] "POST /web/action/load HTTP/1.1" 200 - 15 0.018 0.018
+2024-09-12 12:44:42,498 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:42] "POST /web/action/load HTTP/1.1" 200 - 15 0.025 0.017
+2024-09-12 12:44:42,726 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:42] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.004 0.003
+2024-09-12 12:44:42,820 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:42] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 2 0.001 0.005
+2024-09-12 12:44:42,821 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:42] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 2 0.002 0.005
+2024-09-12 12:44:42,994 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:42] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2024-09-12 12:44:43,352 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:43] "POST /web/action/load HTTP/1.1" 200 - 11 0.012 0.022
+2024-09-12 12:44:43,354 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:43] "POST /web/action/load HTTP/1.1" 200 - 15 0.018 0.020
+2024-09-12 12:44:43,365 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:43] "POST /web/action/load HTTP/1.1" 200 - 15 0.027 0.018
+2024-09-12 12:44:43,366 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:43] "POST /web/action/load HTTP/1.1" 200 - 11 0.035 0.016
+2024-09-12 12:44:43,589 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:43] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.006 0.005
+2024-09-12 12:44:43,675 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:43] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 2 0.002 0.002
+2024-09-12 12:44:43,688 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:43] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.004 0.007
+2024-09-12 12:44:43,696 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:43] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 2 0.004 0.005
+2024-09-12 12:44:46,792 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:46] "POST /web/action/load HTTP/1.1" 200 - 12 0.006 0.011
+2024-09-12 12:44:47,115 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:47] "POST /web/dataset/call_kw/board.board/load_views HTTP/1.1" 200 - 12 0.006 0.006
+2024-09-12 12:44:47,372 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:47] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2024-09-12 12:44:47,443 15788 INFO ? werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:47] "GET /web/static/img/neutral_face.svg HTTP/1.1" 200 - - - -
+2024-09-12 12:44:50,330 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:50] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.001 0.006
+2024-09-12 12:44:51,466 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:51] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.000 0.003
+2024-09-12 12:44:55,287 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:55] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.002 0.003
+2024-09-12 12:44:55,646 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:55] "POST /web/action/load HTTP/1.1" 200 - 11 0.018 0.015
+2024-09-12 12:44:55,657 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:55] "POST /web/action/load HTTP/1.1" 200 - 11 0.021 0.021
+2024-09-12 12:44:55,658 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:55] "POST /web/action/load HTTP/1.1" 200 - 15 0.029 0.015
+2024-09-12 12:44:55,659 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:55] "POST /web/action/load HTTP/1.1" 200 - 15 0.023 0.020
+2024-09-12 12:44:55,868 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:55] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.001 0.006
+2024-09-12 12:44:55,982 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:55] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 2 0.001 0.008
+2024-09-12 12:44:55,985 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:55] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.004 0.008
+2024-09-12 12:44:55,985 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:44:55] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 2 0.003 0.008
+2024-09-12 12:45:18,109 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:45:18] "POST /web/action/load HTTP/1.1" 200 - 28 0.016 0.012
+2024-09-12 12:45:18,408 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:45:18] "POST /web/dataset/call_kw/ir.module.module/load_views HTTP/1.1" 200 - 53 0.030 0.031
+2024-09-12 12:45:18,471 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:45:18] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 45 0.017 0.014
+2024-09-12 12:45:18,728 15788 INFO odoo werkzeug: 127.0.0.1 - - [12/Sep/2024 12:45:18] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.003 0.004
+2024-09-13 06:17:54,163 9180 INFO ? odoo: Odoo version 15.0 
+2024-09-13 06:17:54,164 9180 INFO ? odoo: Using configuration file at D:\WORKSPACE\fit_dnu_cssv\odoo.conf 
+2024-09-13 06:17:54,164 9180 INFO ? odoo: addons paths: ['D:\\WORKSPACE\\fit_dnu_cssv\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\15.0', 'd:\\workspace\\fit_dnu_cssv\\addons', 'd:\\workspace\\fit_dnu_cssv\\odoo\\addons'] 
+2024-09-13 06:17:54,164 9180 INFO ? odoo: database: odoo@localhost:5432 
+2024-09-13 06:17:55,135 9180 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2024-09-13 06:17:56,587 9180 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-KU6J2CG:8069 
+2024-09-13 06:17:57,115 9180 INFO odoo odoo.modules.loading: loading 1 modules... 
+2024-09-13 06:17:57,123 9180 INFO odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-09-13 06:17:57,329 9180 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-13 06:17:57,496 9180 INFO odoo odoo.modules.loading: loading 9 modules... 
+2024-09-13 06:18:02,368 9180 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-13 06:18:02,372 9180 WARNING odoo odoo.models: The model dashboard_base has no _description 
+2024-09-13 06:18:02,373 9180 INFO odoo odoo.modules.loading: 9 modules loaded in 4.88s, 0 queries (+0 extra) 
+2024-09-13 06:18:02,487 9180 WARNING odoo odoo.fields: Field lecturer.lecturer_code: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-13 06:18:02,487 9180 WARNING odoo odoo.fields: Field lecturer.lecturer_name: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-13 06:18:02,488 9180 WARNING odoo odoo.fields: Field student_absent.import_wizard.date_absent: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-13 06:18:02,507 9180 INFO odoo odoo.modules.loading: Modules loaded. 
+2024-09-13 06:18:02,526 9180 INFO odoo odoo.modules.registry: Registry loaded in 5.950s 
+2024-09-13 06:18:12,308 9180 INFO ? odoo.http: HTTP Configuring static files 
+2024-09-13 06:18:12,328 9180 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-09-13 06:18:12,569 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:12] "[32mGET / HTTP/1.1[0m" 303 - 2 0.028 0.223
+2024-09-13 06:18:12,848 9180 WARNING odoo odoo.modules.registry: student_class_tuition_fee: inconsistent 'compute_sudo' for computed fields: number_unpaid, total 
+2024-09-13 06:18:24,270 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:24] "GET /web HTTP/1.1" 200 - 197 0.398 11.294
+2024-09-13 06:18:30,015 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:30] "POST /web/action/load HTTP/1.1" 200 - 14 0.161 0.055
+2024-09-13 06:18:30,237 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:30] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 17 0.015 0.030
+2024-09-13 06:18:30,440 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:30] "POST /web/dataset/call_kw/board.board/load_views HTTP/1.1" 200 - 28 0.056 0.033
+2024-09-13 06:18:30,771 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:30] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 3 0.009 0.004
+2024-09-13 06:18:31,397 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:31] "POST /web/dataset/call_kw/ir.ui.view/render_public_asset HTTP/1.1" 200 - 19 0.010 0.361
+2024-09-13 06:18:31,458 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:31] "POST /web/action/load HTTP/1.1" 200 - 13 0.010 0.018
+2024-09-13 06:18:31,924 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:31] "POST /web/action/load HTTP/1.1" 200 - 11 0.052 0.134
+2024-09-13 06:18:31,942 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:31] "POST /web/dataset/call_kw/dashboard_base/load_views HTTP/1.1" 200 - 9 0.006 0.166
+2024-09-13 06:18:32,029 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:32] "POST /web/action/load HTTP/1.1" 200 - 24 0.093 0.196
+2024-09-13 06:18:32,045 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:32] "POST /web/action/load HTTP/1.1" 200 - 29 0.106 0.202
+2024-09-13 06:18:32,251 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:32] "POST /web/dataset/call_kw/dashboard_base/load_views HTTP/1.1" 200 - 5 0.003 0.006
+2024-09-13 06:18:32,292 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:32] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 7 0.027 0.008
+2024-09-13 06:18:32,366 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:32] "POST /web/dataset/call_kw/student_class_tuition_fee/load_views HTTP/1.1" 200 - 7 0.006 0.007
+2024-09-13 06:18:32,382 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:32] "POST /web/dataset/call_kw/student_class_absent/load_views HTTP/1.1" 200 - 7 0.006 0.009
+2024-09-13 06:18:32,589 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:32] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.008 0.007
+2024-09-13 06:18:32,708 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:32] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 3 0.020 0.005
+2024-09-13 06:18:32,708 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:32] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 3 0.005 0.005
+2024-09-13 06:18:37,533 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:37] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.005 0.002
+2024-09-13 06:18:37,792 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:37] "POST /web/action/load HTTP/1.1" 200 - 11 0.006 0.006
+2024-09-13 06:18:37,906 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:37] "POST /web/action/load HTTP/1.1" 200 - 11 0.016 0.026
+2024-09-13 06:18:37,913 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:37] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.029 0.014
+2024-09-13 06:18:37,918 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:37] "POST /web/action/load HTTP/1.1" 200 - 15 0.027 0.024
+2024-09-13 06:18:37,919 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:37] "POST /web/action/load HTTP/1.1" 200 - 15 0.029 0.028
+2024-09-13 06:18:38,120 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:38] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.003 0.004
+2024-09-13 06:18:38,225 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:38] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 2 0.002 0.003
+2024-09-13 06:18:38,245 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:38] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 2 0.004 0.005
+2024-09-13 06:18:51,854 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:51] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.001 0.005
+2024-09-13 06:18:52,221 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:52] "POST /web/action/load HTTP/1.1" 200 - 11 0.013 0.028
+2024-09-13 06:18:52,223 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:52] "POST /web/action/load HTTP/1.1" 200 - 11 0.021 0.019
+2024-09-13 06:18:52,236 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:52] "POST /web/action/load HTTP/1.1" 200 - 15 0.024 0.027
+2024-09-13 06:18:52,238 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:52] "POST /web/action/load HTTP/1.1" 200 - 15 0.028 0.028
+2024-09-13 06:18:52,452 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:52] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.002 0.005
+2024-09-13 06:18:52,548 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:52] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.006 0.006
+2024-09-13 06:18:52,557 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:52] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 2 0.002 0.005
+2024-09-13 06:18:52,560 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:52] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 2 0.003 0.006
+2024-09-13 06:18:54,938 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:54] "POST /web/action/load HTTP/1.1" 200 - 22 0.015 0.021
+2024-09-13 06:18:55,287 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:55] "POST /web/dataset/call_kw/student/load_views HTTP/1.1" 200 - 23 0.021 0.014
+2024-09-13 06:18:55,528 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:55] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 3 0.005 0.004
+2024-09-13 06:18:55,635 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:55] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.005 0.014
+2024-09-13 06:18:55,635 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:55] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.007 0.012
+2024-09-13 06:18:55,637 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:55] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.005 0.015
+2024-09-13 06:18:55,637 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:55] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.003 0.015
+2024-09-13 06:18:55,653 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:18:55] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.003
+2024-09-13 06:19:49,707 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:19:49] "POST /web/dataset/call_kw/student/onchange HTTP/1.1" 200 - 3 0.015 0.006
+2024-09-13 06:19:56,935 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:19:56] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 4 0.003 0.003
+2024-09-13 06:20:06,626 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:06] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.003
+2024-09-13 06:20:06,927 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:06] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.003
+2024-09-13 06:20:28,886 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:28] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.003
+2024-09-13 06:20:29,132 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:29] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.004
+2024-09-13 06:20:30,402 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:30] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.005
+2024-09-13 06:20:31,165 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:31] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.005
+2024-09-13 06:20:31,431 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:31] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.003
+2024-09-13 06:20:31,677 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:31] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.002 0.004
+2024-09-13 06:20:32,533 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:32] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.000 0.005
+2024-09-13 06:20:32,795 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:32] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.005
+2024-09-13 06:20:34,608 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:34] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.000 0.006
+2024-09-13 06:20:35,558 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:35] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.002 0.004
+2024-09-13 06:20:35,921 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:35] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.002 0.003
+2024-09-13 06:20:37,710 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:37] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.002 0.002
+2024-09-13 06:20:37,977 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:37] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.003
+2024-09-13 06:20:39,285 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:39] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.002 0.002
+2024-09-13 06:20:40,303 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:40] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.000 0.003
+2024-09-13 06:20:40,747 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:40] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.000 0.005
+2024-09-13 06:20:43,338 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:43] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.002 0.002
+2024-09-13 06:20:45,574 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:45] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.003
+2024-09-13 06:20:46,202 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:46] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.005
+2024-09-13 06:20:46,745 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:46] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.009
+2024-09-13 06:20:47,491 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:47] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.003
+2024-09-13 06:20:48,662 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:48] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.002 0.002
+2024-09-13 06:20:49,208 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:49] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.004
+2024-09-13 06:20:49,877 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:49] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.004
+2024-09-13 06:20:50,478 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:50] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.000 0.004
+2024-09-13 06:20:50,745 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:20:50] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.005
+2024-09-13 06:21:00,682 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:21:00] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.002
+2024-09-13 06:22:00,622 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:22:00] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.001 0.005
+2024-09-13 06:22:00,940 9180 INFO odoo werkzeug: 127.0.0.1 - - [13/Sep/2024 06:22:00] "POST /web/dataset/call_kw/student_class/name_search HTTP/1.1" 200 - 2 0.002 0.007
+2024-09-14 02:19:42,608 6624 INFO ? odoo: Odoo version 15.0 
+2024-09-14 02:19:42,622 6624 INFO ? odoo: Using configuration file at D:\WORKSPACE\fit_dnu_cssv\odoo.conf 
+2024-09-14 02:19:42,622 6624 INFO ? odoo: addons paths: ['D:\\WORKSPACE\\fit_dnu_cssv\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\15.0', 'd:\\workspace\\fit_dnu_cssv\\addons', 'd:\\workspace\\fit_dnu_cssv\\odoo\\addons'] 
+2024-09-14 02:19:42,622 6624 INFO ? odoo: database: odoo@localhost:5432 
+2024-09-14 02:19:43,310 6624 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2024-09-14 02:19:44,674 6624 INFO odoo odoo.modules.loading: loading 1 modules... 
+2024-09-14 02:19:44,680 6624 INFO odoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-09-14 02:19:44,754 6624 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-14 02:19:44,841 6624 INFO odoo odoo.modules.loading: loading 9 modules... 
+2024-09-14 02:19:45,451 6624 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-KU6J2CG:8069 
+2024-09-14 02:19:50,396 6624 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-14 02:19:50,397 6624 WARNING odoo odoo.models: The model dashboard_base has no _description 
+2024-09-14 02:19:50,397 6624 INFO odoo odoo.modules.loading: 9 modules loaded in 5.56s, 0 queries (+0 extra) 
+2024-09-14 02:19:50,432 6624 WARNING odoo odoo.fields: Field lecturer.lecturer_code: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-14 02:19:50,433 6624 WARNING odoo odoo.fields: Field lecturer.lecturer_name: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-14 02:19:50,433 6624 WARNING odoo odoo.fields: Field student_absent.import_wizard.date_absent: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-14 02:19:50,445 6624 INFO odoo odoo.modules.loading: Modules loaded. 
+2024-09-14 02:19:50,452 6624 INFO odoo odoo.modules.registry: Registry loaded in 5.906s 
+2024-09-14 02:20:50,603 6624 WARNING odoo odoo.modules.registry: student_class_tuition_fee: inconsistent 'compute_sudo' for computed fields: number_unpaid, total 
+2024-09-14 02:20:50,678 6624 INFO odoo odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2024-09-14 02:20:50,762 6624 INFO odoo odoo.addons.base.models.ir_attachment: filestore gc 9 checked, 2 removed 
+2024-09-14 02:20:50,879 6624 INFO odoo odoo.models.unlink: User #1 deleted ir.demo_failure records with IDs: [1] 
+2024-09-14 02:20:50,904 6624 INFO odoo odoo.models.unlink: User #1 deleted ir.demo_failure.wizard records with IDs: [1] 
+2024-09-14 02:20:50,953 6624 INFO odoo odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2024-09-14 02:20:51,039 6624 INFO odoo odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2024-09-14 02:20:51,393 6624 INFO odoo odoo.addons.base.models.ir_cron: Job `Base: Auto-vacuum internal data` done. 
+2024-09-14 02:21:31,022 6624 INFO odoo odoo.service.server: Initiating shutdown 
+2024-09-14 02:21:31,022 6624 INFO odoo odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-09-14 02:21:31,146 6624 INFO odoo odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 5 connections  
+2024-09-14 02:21:41,834 9340 INFO ? odoo: Odoo version 15.0 
+2024-09-14 02:21:41,835 9340 INFO ? odoo: Using configuration file at D:\WORKSPACE\fit_dnu_cssv\odoo.conf 
+2024-09-14 02:21:41,835 9340 INFO ? odoo: addons paths: ['D:\\WORKSPACE\\fit_dnu_cssv\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\15.0', 'd:\\workspace\\fit_dnu_cssv\\addons', 'd:\\workspace\\fit_dnu_cssv\\odoo\\addons'] 
+2024-09-14 02:21:41,836 9340 INFO ? odoo: database: odoo@localhost:5432 
+2024-09-14 02:21:42,438 9340 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2024-09-14 02:21:43,453 9340 INFO odoo odoo.modules.loading: loading 1 modules... 
+2024-09-14 02:21:43,469 9340 INFO odoo odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2024-09-14 02:21:43,489 9340 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-14 02:21:43,496 9340 INFO odoo odoo.modules.loading: loading 9 modules... 
+2024-09-14 02:21:44,113 9340 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-KU6J2CG:8069 
+2024-09-14 02:21:44,866 9340 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-14 02:21:44,868 9340 WARNING odoo odoo.models: The model dashboard_base has no _description 
+2024-09-14 02:21:44,869 9340 INFO odoo odoo.modules.loading: 9 modules loaded in 1.37s, 0 queries (+0 extra) 
+2024-09-14 02:21:44,913 9340 WARNING odoo odoo.fields: Field lecturer.lecturer_code: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-14 02:21:44,913 9340 WARNING odoo odoo.fields: Field lecturer.lecturer_name: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-14 02:21:44,914 9340 WARNING odoo odoo.fields: Field student_absent.import_wizard.date_absent: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-14 02:21:44,927 9340 INFO odoo odoo.modules.loading: Modules loaded. 
+2024-09-14 02:21:44,935 9340 INFO odoo odoo.modules.registry: Registry loaded in 1.683s 
+2024-09-14 02:22:51,994 9340 INFO ? odoo.http: HTTP Configuring static files 
+2024-09-14 02:22:52,015 9340 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-09-14 02:22:52,210 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:22:52] "[32mGET / HTTP/1.1[0m" 303 - 2 0.007 0.200
+2024-09-14 02:22:52,420 9340 WARNING odoo odoo.modules.registry: student_class_tuition_fee: inconsistent 'compute_sudo' for computed fields: number_unpaid, total 
+2024-09-14 02:23:04,612 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:04] "GET /web HTTP/1.1" 200 - 197 0.254 12.139
+2024-09-14 02:23:05,366 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:05] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 17 0.022 0.024
+2024-09-14 02:23:05,684 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:05] "POST /web/action/load HTTP/1.1" 200 - 14 0.028 0.033
+2024-09-14 02:23:06,034 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:06] "POST /web/dataset/call_kw/board.board/load_views HTTP/1.1" 200 - 28 0.022 0.014
+2024-09-14 02:23:06,271 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:06] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 3 0.004 0.004
+2024-09-14 02:23:06,741 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:06] "POST /web/dataset/call_kw/ir.ui.view/render_public_asset HTTP/1.1" 200 - 19 0.010 0.377
+2024-09-14 02:23:06,806 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:06] "POST /web/action/load HTTP/1.1" 200 - 13 0.019 0.016
+2024-09-14 02:23:07,297 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:07] "POST /web/action/load HTTP/1.1" 200 - 11 0.058 0.163
+2024-09-14 02:23:07,312 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:07] "POST /web/dataset/call_kw/dashboard_base/load_views HTTP/1.1" 200 - 9 0.009 0.177
+2024-09-14 02:23:07,395 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:07] "POST /web/action/load HTTP/1.1" 200 - 24 0.093 0.224
+2024-09-14 02:23:07,400 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:07] "POST /web/action/load HTTP/1.1" 200 - 29 0.091 0.234
+2024-09-14 02:23:07,626 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:07] "POST /web/dataset/call_kw/dashboard_base/load_views HTTP/1.1" 200 - 5 0.004 0.004
+2024-09-14 02:23:07,665 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:07] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 7 0.024 0.005
+2024-09-14 02:23:07,728 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:07] "POST /web/dataset/call_kw/student_class_absent/load_views HTTP/1.1" 200 - 7 0.005 0.007
+2024-09-14 02:23:07,729 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:07] "POST /web/dataset/call_kw/student_class_tuition_fee/load_views HTTP/1.1" 200 - 7 0.004 0.011
+2024-09-14 02:23:07,957 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:07] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.009 0.002
+2024-09-14 02:23:08,074 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:08] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 3 0.011 0.005
+2024-09-14 02:23:08,079 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:23:08] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 3 0.017 0.007
+2024-09-14 02:24:18,570 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:18] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.007 0.004
+2024-09-14 02:24:18,850 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:18] "POST /web/action/load HTTP/1.1" 200 - 11 0.007 0.017
+2024-09-14 02:24:18,949 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:18] "POST /web/action/load HTTP/1.1" 200 - 11 0.015 0.029
+2024-09-14 02:24:18,963 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:18] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.011 0.031
+2024-09-14 02:24:18,966 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:18] "POST /web/action/load HTTP/1.1" 200 - 15 0.029 0.033
+2024-09-14 02:24:18,967 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:18] "POST /web/action/load HTTP/1.1" 200 - 15 0.038 0.023
+2024-09-14 02:24:19,190 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:19] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.009 0.010
+2024-09-14 02:24:19,268 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:19] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 2 0.002 0.002
+2024-09-14 02:24:19,329 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:19] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 2 0.010 0.008
+2024-09-14 02:24:20,515 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:20] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.004 0.003
+2024-09-14 02:24:20,949 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:20] "POST /web/action/load HTTP/1.1" 200 - 11 0.050 0.053
+2024-09-14 02:24:20,966 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:20] "POST /web/action/load HTTP/1.1" 200 - 11 0.057 0.056
+2024-09-14 02:24:20,985 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:20] "POST /web/action/load HTTP/1.1" 200 - 15 0.088 0.049
+2024-09-14 02:24:20,987 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:20] "POST /web/action/load HTTP/1.1" 200 - 15 0.078 0.052
+2024-09-14 02:24:21,130 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:21] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.015 0.014
+2024-09-14 02:24:21,302 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:21] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 2 0.003 0.006
+2024-09-14 02:24:21,317 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:21] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.026 0.007
+2024-09-14 02:24:21,320 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:21] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 2 0.002 0.005
+2024-09-14 02:24:21,823 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:21] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 2 0.003 0.005
+2024-09-14 02:24:22,188 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:22] "POST /web/action/load HTTP/1.1" 200 - 11 0.020 0.027
+2024-09-14 02:24:22,193 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:22] "POST /web/action/load HTTP/1.1" 200 - 11 0.029 0.018
+2024-09-14 02:24:22,217 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:22] "POST /web/action/load HTTP/1.1" 200 - 15 0.034 0.035
+2024-09-14 02:24:22,218 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:22] "POST /web/action/load HTTP/1.1" 200 - 15 0.032 0.044
+2024-09-14 02:24:22,413 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:22] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.001 0.009
+2024-09-14 02:24:22,527 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:22] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.003 0.010
+2024-09-14 02:24:22,540 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:22] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 2 0.005 0.004
+2024-09-14 02:24:22,550 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:22] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 2 0.002 0.006
+2024-09-14 02:24:24,593 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:24] "POST /web/action/load HTTP/1.1" 200 - 22 0.032 0.029
+2024-09-14 02:24:24,934 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:24] "POST /web/dataset/call_kw/student/load_views HTTP/1.1" 200 - 23 0.014 0.014
+2024-09-14 02:24:25,182 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:25] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 3 0.010 0.002
+2024-09-14 02:24:25,295 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:25] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.005 0.023
+2024-09-14 02:24:25,297 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:25] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.006 0.026
+2024-09-14 02:24:25,299 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:25] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.004 0.024
+2024-09-14 02:24:25,302 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:25] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.009 0.029
+2024-09-14 02:24:25,340 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:25] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.010
+2024-09-14 02:24:26,193 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:26] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.003 0.102
+2024-09-14 02:24:26,194 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:26] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.002 0.101
+2024-09-14 02:24:26,195 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:26] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.002 0.104
+2024-09-14 02:24:26,202 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:26] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.003 0.104
+2024-09-14 02:24:26,204 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:26] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.007 0.105
+2024-09-14 02:24:30,470 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:30] "POST /web/action/load HTTP/1.1" 200 - 22 0.019 0.016
+2024-09-14 02:24:30,811 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:30] "POST /web/dataset/call_kw/lecturer/load_views HTTP/1.1" 200 - 23 0.012 0.013
+2024-09-14 02:24:31,064 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:31] "POST /web/dataset/call_kw/lecturer/search_panel_select_multi_range HTTP/1.1" 200 - 3 0.008 0.003
+2024-09-14 02:24:31,138 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:31] "POST /web/dataset/call_kw/lecturer/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.002 0.006
+2024-09-14 02:24:31,139 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:31] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.002 0.005
+2024-09-14 02:24:33,454 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:33] "POST /web/dataset/call_kw/lecturer/onchange HTTP/1.1" 200 - 3 0.001 0.004
+2024-09-14 02:24:55,018 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:55] "POST /web/dataset/call_kw/lecturer/onchange HTTP/1.1" 200 - 1 0.000 0.004
+2024-09-14 02:24:57,521 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:57] "POST /web/dataset/call_kw/lecturer/create HTTP/1.1" 200 - 7 0.028 0.014
+2024-09-14 02:24:57,846 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:24:57] "POST /web/dataset/call_kw/lecturer/read HTTP/1.1" 200 - 2 0.001 0.002
+2024-09-14 02:25:09,791 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:25:09] "POST /web/dataset/call_kw/lecturer/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.003 0.003
+2024-09-14 02:25:10,105 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:25:10] "POST /web/dataset/call_kw/lecturer/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.000 0.006
+2024-09-14 02:25:10,108 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:25:10] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.001 0.006
+2024-09-14 02:25:15,337 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:25:15] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.001 0.004
+2024-09-14 02:25:15,936 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:25:15] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.001 0.009
+2024-09-14 02:25:27,412 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:25:27] "POST /web/action/load HTTP/1.1" 200 - 19 0.009 0.013
+2024-09-14 02:25:27,693 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:25:27] "POST /web/dataset/call_kw/user_account/load_views HTTP/1.1" 200 - 25 0.018 0.017
+2024-09-14 02:25:27,756 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:25:27] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.007 0.003
+2024-09-14 02:41:30,521 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:41:30] "GET /web HTTP/1.1" 200 - 12 0.045 0.069
+2024-09-14 02:41:31,005 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:41:31] "POST /web/action/load HTTP/1.1" 200 - 13 0.009 0.016
+2024-09-14 02:41:31,071 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:41:31] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 6 0.009 0.020
+2024-09-14 02:41:31,389 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:41:31] "POST /web/dataset/call_kw/user_account/load_views HTTP/1.1" 200 - 17 0.014 0.016
+2024-09-14 02:41:31,448 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:41:31] "GET /web/image/res.company/1/favicon HTTP/1.1" 200 - 11 0.007 0.017
+2024-09-14 02:41:31,713 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:41:31] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.002 0.003
+2024-09-14 02:41:32,040 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:41:32] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.003
+2024-09-14 02:49:22,734 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:49:22] "POST /web/action/load HTTP/1.1" 200 - 13 0.060 0.012
+2024-09-14 02:49:22,958 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:49:22] "POST /web/dataset/call_kw/student/load_views HTTP/1.1" 200 - 17 0.010 0.019
+2024-09-14 02:49:23,073 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:49:23] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.000 0.004
+2024-09-14 02:49:23,298 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:49:23] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.002 0.011
+2024-09-14 02:49:23,301 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:49:23] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.004 0.010
+2024-09-14 02:49:23,302 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:49:23] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.002 0.014
+2024-09-14 02:49:23,303 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:49:23] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.002 0.012
+2024-09-14 02:49:25,128 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:49:25] "POST /web/action/load HTTP/1.1" 200 - 12 0.008 0.016
+2024-09-14 02:49:25,504 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:49:25] "POST /web/dataset/call_kw/semester/load_views HTTP/1.1" 200 - 28 0.040 0.018
+2024-09-14 02:49:25,718 9340 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:49:25] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.011 0.005
+2024-09-14 02:59:00,628 9340 INFO odoo odoo.service.server: Initiating shutdown 
+2024-09-14 02:59:00,628 9340 INFO odoo odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-09-14 02:59:00,993 9340 INFO odoo odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 7 connections  
+2024-09-14 02:59:05,184 10524 INFO ? odoo: Odoo version 15.0 
+2024-09-14 02:59:05,187 10524 INFO ? odoo: Using configuration file at D:\WORKSPACE\fit_dnu_cssv\odoo.conf 
+2024-09-14 02:59:05,187 10524 INFO ? odoo: addons paths: ['D:\\WORKSPACE\\fit_dnu_cssv\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\15.0', 'd:\\workspace\\fit_dnu_cssv\\addons', 'd:\\workspace\\fit_dnu_cssv\\odoo\\addons'] 
+2024-09-14 02:59:05,188 10524 INFO ? odoo: database: odoo@localhost:5432 
+2024-09-14 02:59:05,975 10524 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2024-09-14 02:59:06,648 10524 INFO odoo odoo.modules.loading: loading 1 modules... 
+2024-09-14 02:59:06,673 10524 INFO odoo odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2024-09-14 02:59:06,695 10524 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-14 02:59:06,699 10524 INFO odoo odoo.modules.loading: loading 9 modules... 
+2024-09-14 02:59:07,401 10524 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-KU6J2CG:8069 
+2024-09-14 02:59:07,960 10524 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'fit_dnu_crm', defaulting to LGPL-3 
+2024-09-14 02:59:07,962 10524 WARNING odoo odoo.models: The model dashboard_base has no _description 
+2024-09-14 02:59:07,962 10524 INFO odoo odoo.modules.loading: 9 modules loaded in 1.26s, 0 queries (+0 extra) 
+2024-09-14 02:59:08,025 10524 WARNING odoo odoo.fields: Field lecturer.lecturer_code: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-14 02:59:08,025 10524 WARNING odoo odoo.fields: Field lecturer.lecturer_name: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-14 02:59:08,027 10524 WARNING odoo odoo.fields: Field student_absent.import_wizard.date_absent: unknown parameter 'require', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2024-09-14 02:59:08,055 10524 INFO odoo odoo.modules.loading: Modules loaded. 
+2024-09-14 02:59:08,060 10524 INFO odoo odoo.modules.registry: Registry loaded in 1.530s 
+2024-09-14 02:59:24,001 10524 INFO ? odoo.http: HTTP Configuring static files 
+2024-09-14 02:59:24,016 10524 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-09-14 02:59:24,413 10524 WARNING odoo odoo.modules.registry: student_class_tuition_fee: inconsistent 'compute_sudo' for computed fields: number_unpaid, total 
+2024-09-14 02:59:24,905 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:24] "GET /web HTTP/1.1" 200 - 198 0.214 0.678
+2024-09-14 02:59:25,636 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:25] "POST /web/action/load HTTP/1.1" 200 - 12 0.021 0.320
+2024-09-14 02:59:25,669 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:25] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 17 0.020 0.192
+2024-09-14 02:59:26,035 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:26] "POST /web/dataset/call_kw/semester/load_views HTTP/1.1" 200 - 41 0.045 0.029
+2024-09-14 02:59:26,055 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:26] "GET /web/image/res.company/1/favicon HTTP/1.1" 200 - 11 0.055 0.007
+2024-09-14 02:59:26,375 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:26] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.007 0.004
+2024-09-14 02:59:26,693 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:26] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.003 0.003
+2024-09-14 02:59:29,480 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:29] "POST /web/action/load HTTP/1.1" 200 - 14 0.043 0.014
+2024-09-14 02:59:29,838 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:29] "POST /web/dataset/call_kw/board.board/load_views HTTP/1.1" 200 - 24 0.023 0.011
+2024-09-14 02:59:30,068 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:30] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 - 3 0.005 0.004
+2024-09-14 02:59:30,217 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:30] "POST /web/dataset/call_kw/ir.ui.view/render_public_asset HTTP/1.1" 200 - 19 0.016 0.037
+2024-09-14 02:59:30,402 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:30] "POST /web/action/load HTTP/1.1" 200 - 13 0.007 0.011
+2024-09-14 02:59:30,730 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:30] "POST /web/action/load HTTP/1.1" 200 - 11 0.014 0.154
+2024-09-14 02:59:30,755 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:30] "POST /web/action/load HTTP/1.1" 200 - 19 0.032 0.159
+2024-09-14 02:59:30,772 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:30] "POST /web/dataset/call_kw/dashboard_base/load_views HTTP/1.1" 200 - 9 0.056 0.150
+2024-09-14 02:59:30,773 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:30] "POST /web/dataset/call_kw/dashboard_base/load_views HTTP/1.1" 200 - 5 0.004 0.022
+2024-09-14 02:59:30,822 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:30] "POST /web/action/load HTTP/1.1" 200 - 27 0.101 0.158
+2024-09-14 02:59:31,092 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:31] "POST /web/dataset/call_kw/student_class_tuition_fee/load_views HTTP/1.1" 200 - 7 0.005 0.007
+2024-09-14 02:59:31,127 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:31] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 7 0.018 0.015
+2024-09-14 02:59:31,136 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:31] "POST /web/dataset/call_kw/dashboard_base/onchange HTTP/1.1" 200 - 6 0.028 0.013
+2024-09-14 02:59:31,172 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:31] "POST /web/dataset/call_kw/student_class_absent/load_views HTTP/1.1" 200 - 7 0.033 0.007
+2024-09-14 02:59:31,429 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:31] "POST /web/dataset/call_kw/student_class_tuition_fee/read_group HTTP/1.1" 200 - 3 0.016 0.005
+2024-09-14 02:59:31,506 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:31] "POST /web/dataset/call_kw/student_class_absent/read_group HTTP/1.1" 200 - 3 0.012 0.007
+2024-09-14 02:59:31,873 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:31] "POST /web/action/load HTTP/1.1" 200 - 22 0.068 0.020
+2024-09-14 02:59:32,233 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:32] "POST /web/dataset/call_kw/student/load_views HTTP/1.1" 200 - 21 0.021 0.016
+2024-09-14 02:59:32,468 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:32] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 3 0.003 0.003
+2024-09-14 02:59:32,587 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:32] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.008 0.017
+2024-09-14 02:59:32,589 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:32] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.004 0.021
+2024-09-14 02:59:32,590 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:32] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.018 0.012
+2024-09-14 02:59:32,592 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:32] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.007 0.017
+2024-09-14 02:59:32,597 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:32] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.003 0.011
+2024-09-14 02:59:32,819 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:32] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.003 0.004
+2024-09-14 02:59:32,923 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:32] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.003 0.014
+2024-09-14 02:59:32,926 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:32] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.002 0.014
+2024-09-14 02:59:32,926 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:32] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.008 0.011
+2024-09-14 02:59:33,765 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:33] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.001 0.165
+2024-09-14 02:59:33,768 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:33] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.002 0.166
+2024-09-14 02:59:33,773 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:33] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.004 0.165
+2024-09-14 02:59:33,774 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:33] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.004 0.165
+2024-09-14 02:59:33,775 10524 INFO odoo werkzeug: 127.0.0.1 - - [14/Sep/2024 02:59:33] "POST /web/dataset/call_kw/student/search_panel_select_multi_range HTTP/1.1" 200 - 2 0.010 0.165
