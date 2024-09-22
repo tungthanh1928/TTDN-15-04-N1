@@ -13,6 +13,7 @@ class StudentLearnAgain(models.Model):
     subject_id = fields.Many2one("subject", string = "Môn học", ondelete = 'cascade', required = True)
     subject_code = fields.Char(related = 'subject_id.subject_code', string = "Mã môn học", store = True)
     subject_name = fields.Char("Tên môn học", related = 'subject_id.subject_name', store = True)
+    is_studying = fields.Boolean("Đang học", default = False)
     _sql_constraints = [
         ('subject_id_student_id_uniq', 'unique (student_id,subject_id)', """Môn học lại của sinh viên đã tồn tại"""),
     ]

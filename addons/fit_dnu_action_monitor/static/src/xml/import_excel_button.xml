@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+    <t t-extend="ListView.buttons">
+        <t t-jquery="div.o_list_buttons" t-operation="append" >
+            <!-- <button t-if="widget.modelName=='nhan_vien_thang'" type="button" class="btn btn-primary import-lich-lam-viec" accesskey="u">
+                Import lịch làm việc
+            </button> -->
+            <button t-if="widget.modelName=='student_absent'" type="button" class="btn btn-primary import-student-absent" accesskey="u">
+                Import danh sách vắng
+            </button>
+            <button t-if="widget.modelName=='student_tuition_fee'" type="button" class="btn btn-primary import-student-tuition-fee" accesskey="u">
+                Import học phí
+            </button>            
+        </t>
+    </t>
+</templates>

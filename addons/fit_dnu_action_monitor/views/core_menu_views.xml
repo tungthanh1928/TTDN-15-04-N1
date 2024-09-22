@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem
+            id="menu_core_root"
+            name="FIT-DNU-ACTION-MONITOR"
+            web_icon="fit_dnu_crm,static/src/img/icon.png"
+            sequence="0"/>
+
+        <!-- Các menu chính -->
+        <menuitem name="Quản lý log Sinh viên" 
+            id="menu_student_log_action" 
+            parent="menu_core_root" 
+            sequence="0"
+            action="action_student_log_action"
+        />
+    </data>
+</odoo>
