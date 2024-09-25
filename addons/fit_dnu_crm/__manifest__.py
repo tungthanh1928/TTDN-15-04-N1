@@ -39,7 +39,7 @@
         'views/teaching_schedule.xml',
         'views/student_absent.xml',
         'views/student_tuition_fee.xml',
-        'views/dashboard.xml',
+        # 'views/dashboard.xml',
         'views/student_class_absent.xml',
         'views/student_subject_absent.xml',
         'views/student_subject_absent_crawl.xml',
