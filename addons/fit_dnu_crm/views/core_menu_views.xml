@@ -9,12 +9,12 @@
             sequence="0"/>
 
         <!-- Các menu chính -->
-        <menuitem name="Dashboard" 
+        <!-- <menuitem name="Dashboard" 
             id="menu_dashboard" 
             parent="menu_core_root" 
             sequence="0"
             action="action_dashboard"
-        />
+        /> -->
         <menuitem name="Quản lý thông tin chung" 
             id="menu_general_information" 
             parent="menu_core_root" 
