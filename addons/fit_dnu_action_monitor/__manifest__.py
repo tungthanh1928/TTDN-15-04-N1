@@ -30,6 +30,7 @@
         'security/ir.model.access.csv',
         'views/student_log_action.xml',
         'views/core_menu_views.xml',
+        'views/ca_hoc.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
