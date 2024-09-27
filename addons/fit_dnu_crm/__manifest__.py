@@ -34,7 +34,7 @@
         'views/student_class.xml',
         'views/student.xml',
         'views/lecturer.xml',
-        # 'views/date_manager.xml',
+        'views/lich_cong_tac.xml',
         'views/student_learn_again.xml',
         'views/teaching_schedule.xml',
         'views/student_absent.xml',
@@ -50,7 +50,7 @@
         'views/import/import_student_tuition_fee.xml',
         'views/user_account.xml',
         'views/core_menu_views.xml',
-        'data/cronjob_absent.xml',
+        # 'data/cronjob_absent.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
