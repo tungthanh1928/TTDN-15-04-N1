@@ -7,7 +7,7 @@ class CaHoc(models.Model):
     # _rec_name = 'display_name'
     # _order = 'number desc, class_name asc, full_name asc'
 
-    id_ca_hoc = fields.Char("Mã ca học")
+    # ca_hoc_id = fields.Char("Mã ca học")
     date = fields.Date(
         compute = "_compute_date",
         store = True

@@ -15,7 +15,7 @@
                         </div>
                         <div class="oe_read_only" style="font-size:25px">Ca học</div>
                         <group col="2" string="Thông tin chung">
-                            <field name="id_ca_hoc" required="1"/>
+                            <!-- <field name="ca_hoc_id" required="1"/> -->
                             <field name="start_time" required="1"/>
                             <field name="end_time" required="1"/>
                             <field name="student_class_id" required="1"/>
@@ -33,7 +33,7 @@
             <field name="model">ca_hoc</field>
             <field name="arch" type="xml">
                 <tree string="Ca hoc">
-                    <field name="id_ca_hoc"/>
+                    <!-- <field name="ca_hoc_id"/> -->
                     <field name="date"/>
                     <field name="start_time"/>
                     <field name="end_time"/>
@@ -49,7 +49,7 @@
             <field name="model">ca_hoc</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="id_ca_hoc"/>
+                    <!-- <field name="ca_hoc_id"/> -->
                 </search>  
             </field>
         </record>
