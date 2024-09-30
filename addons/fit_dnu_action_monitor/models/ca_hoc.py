@@ -8,21 +8,18 @@ class CaHoc(models.Model):
     # _order = 'number desc, class_name asc, full_name asc'
 
     id_ca_hoc = fields.Char("Mã ca học")
-    date = fields.Date(compute = "_compute_date",
-                       store = True
-                       )
+    date = fields.Date(
+        compute = "_compute_date",
+        store = True
+    )
     start_time = fields.Datetime(string="Thời gian bắt đầu")
     end_time = fields.Datetime(string="Thời gian Ket thuc")
-    student_class_id = fields.Char(
-                string = "Lớp",
-                store = True,
-            )
-    
+    student_class_id = fields.Many2one(
+        "student_class",   
+        string = "Lớp"
+    )
     student_list = fields.Many2many(
         "student", 
-        relation="ca_hoc_student_rel", 
-        column1="id_ca_hoc", 
-        column2="student_code", 
         string="Danh sách sinh viên"
     ) 
     alowwed_app_list = fields.Text("Danh sách app được phép sử dụng")
