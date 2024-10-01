@@ -22,6 +22,8 @@
                             <field name="student_list" required="1" options="{'no_open': True, 'no_create': True, 'no_create_edit': True}"/>
                             <field name="alowwed_app_list" required="1"/>
                             <field name="status" required="1"/>
+                            <field name="log_sinh_vien_ca_hoc_ids" required="1"/>
+                            
                      </group>
                     </sheet>
                 </form>
@@ -33,7 +35,6 @@
             <field name="model">ca_hoc</field>
             <field name="arch" type="xml">
                 <tree string="Ca hoc">
-                    <!-- <field name="ca_hoc_id"/> -->
                     <field name="date"/>
                     <field name="start_time"/>
                     <field name="end_time"/>
@@ -41,6 +42,7 @@
                     <field name="student_list"/>
                     <field name="alowwed_app_list"/>
                     <field name="status"/>
+                    <field name="log_sinh_vien_ca_hoc_ids"/>
                 </tree>
             </field>
         </record>

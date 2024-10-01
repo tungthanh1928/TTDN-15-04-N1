@@ -25,6 +25,13 @@ class CaHoc(models.Model):
     alowwed_app_list = fields.Text("Danh sách app được phép sử dụng")
     status = fields.Boolean(string="Status", default=False)
 
+    # log_sinh_vien_ca_hoc_ids = fields.One2many(model_name='log_sinh_vien_ca_hoc', invert_name='ca_hoc_id')
+    log_sinh_vien_ca_hoc_ids = fields.One2many(
+        comodel_name='log_sinh_vien_ca_hoc',
+        inverse_name='ca_hoc_id',
+        string='Log Sinh Viên Ca Học'
+    )
+
     @api.depends(
         "start_time"
     )
