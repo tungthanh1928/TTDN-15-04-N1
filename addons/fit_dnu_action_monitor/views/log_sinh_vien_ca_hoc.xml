@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_log_sinh_vien_ca_hoc_form" model="ir.ui.view">
+            <field name="name">log_sinh_vien_ca_hoc</field>
+            <field name="model">log_sinh_vien_ca_hoc</field>
+            <field name="arch" type="xml">
+                <form string="Log Sinh viên Ca học">
+                    <sheet>
+                        <div class="oe_edit_only" style="font-size:25px" attrs="{'invisible': [('id', '=', False)], }">
+                            Chỉnh sửa Log Sinh vien Ca học
+                        </div>
+                        <div class="oe_edit_only" style="font-size:25px" attrs="{'invisible': [('id', '!=', False)], }">
+                            Tạo mới Log Sinh vien Ca học
+                        </div>
+                        <div class="oe_read_only" style="font-size:25px">Log Sinh vien Ca học</div>
+                        <group col="2" string="Thông tin chung">
+                            <field name="thong_tin" required="1"/>
+                            <field name="student_id" required="1"/>
+                            <field name="dia_chi_ip" required="1"/>
+                            <field name="thoi_gian_login" required="1"/>
+                            <field name="ca_hoc_id" required="1"/>
+                     </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_log_sinh_vien_ca_hoc_tree" model="ir.ui.view">
+            <field name="name">log_sinh_vien_ca_hoc</field>
+            <field name="model">log_sinh_vien_ca_hoc</field>
+            <field name="arch" type="xml">
+                <tree string="Log Sinh vien Ca học">
+                    <field name="thong_tin"/>
+                    <field name="student_id"/>
+                    <field name="dia_chi_ip"/>
+                    <field name="thoi_gian_login"/>
+                    <field name="ca_hoc_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="log_sinh_vien_ca_hoc_search">
+            <field name="model">log_sinh_vien_ca_hoc</field>
+            <field name="arch" type="xml">
+                <search>
+
+                </search>  
+            </field>
+        </record>
+
+        <record id="action_log_sinh_vien_ca_hoc" model="ir.actions.act_window">
+            <field name="name">Log Sinh Viên Ca Học</field>
+            <field name="res_model">log_sinh_vien_ca_hoc</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref = "log_sinh_vien_ca_hoc_search"/>
+        </record>
+        
+    </data>
+</odoo>

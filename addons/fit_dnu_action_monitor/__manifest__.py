@@ -29,8 +29,10 @@
     'data': [
         'security/ir.model.access.csv',
         'views/student_log_action.xml',
-        'views/core_menu_views.xml',
         'views/ca_hoc.xml',
+        'views/log_sinh_vien_ca_hoc.xml',
+
+        'views/core_menu_views.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
