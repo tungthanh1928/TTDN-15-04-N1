@@ -55,6 +55,13 @@
             parent="menu_core_root"
             sequence="7"
         />
+        <menuitem
+            id="menu_lich_cong_tac"
+            name="Quản lý lịch công tác"
+            action="action_lich_cong_tac"
+            parent="menu_core_root"
+            sequence="8"
+        />
              
         
         <!-- Sub menu năm, kỳ học -->
