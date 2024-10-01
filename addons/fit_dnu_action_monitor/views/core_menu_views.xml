@@ -15,5 +15,17 @@
             sequence="0"
             action="action_student_log_action"
         />
+        <menuitem name="Quản lý Ca học" 
+            id="menu_ca_hoc_action" 
+            parent="menu_core_root" 
+            sequence="1"
+            action="action_ca_hoc"
+        />
+        <menuitem name="Quản lý Log Sinh viên Ca học" 
+            id="menu_log_sinh_vien_ca_hoc_action" 
+            parent="menu_core_root" 
+            sequence="2"
+            action="action_log_sinh_vien_ca_hoc"
+        />
     </data>
 </odoo>
