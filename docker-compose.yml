@@ -1,8 +1,8 @@
 version: '3.5'
 
 services:
-  postgres-cssv-dev:
-    container_name: postgres_container_cssv_dev_1
+  postgres-odoo-base:
+    container_name: postgres_odoo-base
     image: postgres:10-alpine
     environment:
       POSTGRES_DB: ${POSTGRES_DB:-postgres}
@@ -10,12 +10,12 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-odoo}
       PGDATA: /data/postgres
     volumes:
-       - /home/cssv/odoo-cssv-dev/_data:/data/postgres
+       - /project/anhlt/odoo/db-odoo-base/_data:/data/postgres
     ports:
-      - "4771:5432"
-#    networks:
-#      - postgres
-#    restart: unless-stopped
+      - "5432:5432"
+    # networks:
+    #   - postgres
+    # restart: unless-stopped
 
   # pgadmin:
   #   container_name: pgadmin_container

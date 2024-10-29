@@ -26,7 +26,7 @@ Người sử dụng thực thi các lệnh sau đề cài đặt các thư vi�
 
 ```
 sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev
-python3-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev
+python3-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
 ```
 
 Thay đổi trình thông dịch sang môi trường ảo và chạy requirements.txt để cài đặt tiếp các thư viện được yêu cầu
