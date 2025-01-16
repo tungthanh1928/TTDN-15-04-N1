@@ -12,8 +12,8 @@
                 <meta charset="utf-8"/>
                 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-                <title>FIT-DNU-CSSV</title>
-                <!-- <title t-esc="title or 'FIT-DNU-CSSV'"/> -->
+                <title>TTDN-FIT-DNU</title>
+                <!-- <title t-esc="title or 'TTDN-FIT-DNU'"/> -->
                 <link type="image/x-icon" rel="shortcut icon" t-att-href="x_icon or '/web/static/img/favicon.ico'"/>
 
                 <script id="web.layout.odooscript" type="text/javascript">

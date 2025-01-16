@@ -1,4 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_student_log_action_user,access.student_log_action_user,model_student_log_action,base.group_user,1,1,1,1
-access_ca_hoc_user,access.ca_hoc_user,model_ca_hoc,base.group_user,1,1,1,1
-access_log_sinh_vien_ca_hoc_user,access.log_sinh_vien_ca_hoc_user,model_log_sinh_vien_ca_hoc,base.group_user,1,1,1,1
