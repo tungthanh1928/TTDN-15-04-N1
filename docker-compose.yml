@@ -10,9 +10,9 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-odoo}
       PGDATA: /data/postgres
     volumes:
-       - /project/anhlt/odoo/db-odoo-base/_data:/data/postgres
+       - /home/ttdn/ttdn_k15/database_ttdn/_data:/data/postgres
     ports:
-      - "5432:5432"
+      - "5431:5432"
     # networks:
     #   - postgres
     # restart: unless-stopped
