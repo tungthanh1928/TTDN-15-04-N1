@@ -10,15 +10,30 @@
 
 # 1. Cài đặt công cụ, môi trường và các thư viện cần thiết
 
+<<<<<<< HEAD
 ## 1.1. Cài đặt VS code.
 
 ## 1.2. cài đặt các thư viện cần thiết
+=======
+## 1.1. Cài đặt Vscode
+
+## 1.2. khởi tạo môi trường ảo.
+
+`python3 -m venv ./venv`
+
+## 1.3. cài đặt các thư viện cần thiết
+>>>>>>> 76ccd09eab70bafa89b71f418ca493012da4155e
 
 Người sử dụng thực thi các lệnh sau đề cài đặt các thư viện cần thiết
 
 ```
+<<<<<<< HEAD
 sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev
 python3.10-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
+=======
+sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev python3.10-venv
+python3-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
+>>>>>>> 76ccd09eab70bafa89b71f418ca493012da4155e
 ```
 ## 1.3. khởi tạo môi trường ảo.
 
@@ -34,7 +49,11 @@ pip3 install -r requirements.txt
 
 Khởi tạo database trên docker bằng việc thực thi file dockercompose.yml.
 
+<<<<<<< HEAD
 `docker-compose up -d`
+=======
+`dockercompose up -d`
+>>>>>>> 76ccd09eab70bafa89b71f418ca493012da4155e
 
 # 3. Setup tham số chạy cho hệ thống
 
