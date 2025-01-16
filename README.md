@@ -10,11 +10,7 @@
 
 # 1. Cài đặt công cụ, môi trường và các thư viện cần thiết
 
-## 1.1. Cài đặt pycharm.
-
-Nhóm phát triển khuyến nghị người sử dụng chạy hệ thống trên Pycharm
-
-`sudo snap install pycharm-community –classic`
+## 1.1. Cài đặt Vscode
 
 ## 1.2. khởi tạo môi trường ảo.
 
@@ -25,7 +21,7 @@ Nhóm phát triển khuyến nghị người sử dụng chạy hệ thống tr�
 Người sử dụng thực thi các lệnh sau đề cài đặt các thư viện cần thiết
 
 ```
-sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev
+sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev python3.10-venv
 python3-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
 ```
 
@@ -41,19 +37,6 @@ pip3 install -r requirements.txt
 Khởi tạo database trên docker bằng việc thực thi file dockercompose.yml.
 
 `dockercompose up -d`
-
-**_thiếu đoạn connect odoo và đặt tên db_**
-
-```buildoutcfg
-Config database hiện tại cho APD:
-
-container_name: postgres_container_apd
-POSTGRES_DB: postgres
-POSTGRES_USER: odoo_apd
-POSTGRES_PASSWORD: odoo_apd
-port: 5435:5432
-
-```
 
 # 3. Setup tham số chạy cho hệ thống
 
