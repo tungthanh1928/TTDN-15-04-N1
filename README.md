@@ -16,7 +16,7 @@ git clone https://gitlab.com/anhlta/odoo-fitdnu.git
 ```
 
 ```
-git checkout cntt15_01
+git checkout cntt15_04
 ```
 
 
@@ -25,8 +25,7 @@ git checkout cntt15_01
 Người sử dụng thực thi các lệnh sau đề cài đặt các thư viện cần thiết
 
 ```
-sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev
-python3.10-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
+sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev python3.10-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
 ```
 ## 1.3. khởi tạo môi trường ảo.
 
@@ -56,21 +55,17 @@ addons_path = addons
 db_host = localhost
 db_password = odoo
 db_user = odoo
-db_port = 5432
+db_port = 5434
 xmlrpc_port = 8069
-```
-Có thể kế thừa từ **odoo.conf.template**
-
-Ngoài ra có thể thêm mổ số parameters như:
-
-```
--c _<đường dẫn đến tệp odoo.conf>_
--u _<tên addons>_ giúp cập nhật addons đó trước khi khởi chạy
--d _<tên database>_ giúp chỉ rõ tên database được sử dụng
---dev=all giúp bật chế độ nhà phát triển 
 ```
 
 # 4. Chạy hệ thống và cài đặt các ứng dụng cần thiết
+
+Lệnh chạy
+```
+python3 odoo-bin.py -c odoo.conf -u all
+```
+
 
 Người sử dụng truy cập theo đường dẫn _http://localhost:8069/_ để đăng nhập vào hệ thống.
 
