@@ -14,6 +14,9 @@
 ```
 git clone https://gitlab.com/anhlta/odoo-fitdnu.git
 ```
+```
+cd odoo-fitdnu
+```
 
 ```
 git checkout cntt15_04
