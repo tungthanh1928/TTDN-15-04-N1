@@ -29,19 +29,26 @@ sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-de
 ```
 ## 1.3. khởi tạo môi trường ảo.
 
-`python3.10 -m venv ./venv`
 Thay đổi trình thông dịch sang môi trường ảo và chạy requirements.txt để cài đặt tiếp các thư viện được yêu cầu
-
+```
+python3.10 -m venv ./venv
+```
 ```
 source venv/bin/activate
+```
+```
 pip3 install -r requirements.txt
 ```
 
 # 2. Setup database
 
 Khởi tạo database trên docker bằng việc thực thi file dockercompose.yml.
-
-`docker-compose up -d`
+```
+sudo apt install docker-compose
+```
+```
+sudo docker-compose up -d
+```
 
 # 3. Setup tham số chạy cho hệ thống
 
