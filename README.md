@@ -8,7 +8,7 @@
   <pre>
     <code>git clone https://github.com/tungthanh1928/TTDN-15-04-N1.git</code>
   </pre>
-  <button onclick="copyCode('git clone https://github.com/tungthanh1928/TTDN-15-04-N1.git')">Copy</button>
+  <button onclick="copyCode('git clone https://github.com/tungthanh1928/TTDN-15-04-N1.git')"></button>
 </div>
 
 Di chuyển vào thư mục project:
@@ -16,7 +16,7 @@ Di chuyển vào thư mục project:
   <pre>
     <code>cd TTDN-15-04-N1</code>
   </pre>
-  <button onclick="copyCode('cd TTDN-15-04-N1')">Copy</button>
+  <button onclick="copyCode('cd TTDN-15-04-N1')"></button>
 </div>
 
 Chuyển sang nhánh cần làm việc:
@@ -24,7 +24,7 @@ Chuyển sang nhánh cần làm việc:
   <pre>
     <code>git checkout TTDN-15-04-N1</code>
   </pre>
-  <button onclick="copyCode('git checkout TTDN-15-04-N1')">Copy</button>
+  <button onclick="copyCode('git checkout TTDN-15-04-N1')"></button>
 </div>
 
 ### 1.2. Cài đặt các thư viện cần thiết
@@ -42,7 +42,7 @@ Khởi tạo môi trường ảo và cài đặt các thư viện yêu cầu t�
   <pre>
     <code>python3.10 -m venv ./venv</code>
   </pre>
-  <button onclick="copyCode('python3.10 -m venv ./venv')">Copy</button>
+  <button onclick="copyCode('python3.10 -m venv ./venv')"></button>
 </div>
 
 Kích hoạt môi trường ảo:
@@ -50,7 +50,7 @@ Kích hoạt môi trường ảo:
   <pre>
     <code>source venv/bin/activate</code>
   </pre>
-  <button onclick="copyCode('source venv/bin/activate')">Copy</button>
+  <button onclick="copyCode('source venv/bin/activate')"></button>
 </div>
 
 Cài đặt các thư viện từ `requirements.txt`:
@@ -58,7 +58,7 @@ Cài đặt các thư viện từ `requirements.txt`:
   <pre>
     <code>pip3 install -r requirements.txt</code>
   </pre>
-  <button onclick="copyCode('pip3 install -r requirements.txt')">Copy</button>
+  <button onclick="copyCode('pip3 install -r requirements.txt')"></button>
 </div>
 
 ## 2. Setup Database
@@ -69,7 +69,7 @@ Cài đặt Docker Compose:
   <pre>
     <code>sudo apt install docker-compose</code>
   </pre>
-  <button onclick="copyCode('sudo apt install docker-compose')">Copy</button>
+  <button onclick="copyCode('sudo apt install docker-compose')"></button>
 </div>
 
 Khởi động Docker Compose:
@@ -77,22 +77,22 @@ Khởi động Docker Compose:
   <pre>
     <code>sudo docker-compose up -d</code>
   </pre>
-  <button onclick="copyCode('sudo docker-compose up -d')">Copy</button>
+  <button onclick="copyCode('sudo docker-compose up -d')"></button>
 </div>
 
 ## 3. Setup tham số chạy cho hệ thống
 
 ### 3.1. Khởi tạo `odoo.conf`
-Tạo tệp `odoo.conf` trong thư mục gốc với nội dung sau bằng lệnh `nano`:
+
 
 Mở file `odoo.conf` để chỉnh sửa:
 <div class="code-block">
   <pre>
     <code>nano odoo.conf</code>
   </pre>
-  <button onclick="copyCode('nano odoo.conf')">Copy</button>
+  <button onclick="copyCode('nano odoo.conf')"></button>
 </div>
-
+ Tệp odoo.conf có nội dung như sau:
 <div class="code-block">
   <pre>
     <code>[options]
@@ -103,7 +103,7 @@ db_user = odoo
 db_port = 5434
 xmlrpc_port = 8069</code>
   </pre>
-  <button onclick="copyCode('[options]\naddons_path = addons\ndb_host = localhost\ndb_password = odoo\ndb_user = odoo\ndb_port = 5434\nxmlrpc_port = 8069')">Copy</button>
+  <button onclick="copyCode('[options]\naddons_path = addons\ndb_host = localhost\ndb_password = odoo\ndb_user = odoo\ndb_port = 5434\nxmlrpc_port = 8069')"></button>
 </div>
 
 
@@ -114,5 +114,5 @@ Chạy hệ thống Odoo và cài đặt các ứng dụng:
   <pre>
     <code>python3 odoo-bin.py -c odoo.conf -u all</code>
   </pre>
-  <button onclick="copyCode('python3 odoo-bin.py -c odoo.conf -u all')">Copy</button>
+  <button onclick="copyCode('python3 odoo-bin.py -c odoo.conf -u all')"></button>
 </div>
