@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="view_thanh_vien_tree" model="ir.ui.view">
+        <field name="name">thanh.vien.tree</field>
+        <field name="model">thanh.vien</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="chuc_vu"/>
+                <field name="email"/>
+                <field name="so_dien_thoai"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_thanh_vien_form" model="ir.ui.view">
+        <field name="name">thanh.vien.form</field>
+        <field name="model">thanh.vien</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="chuc_vu"/>
+                        <field name="email"/>
+                        <field name="so_dien_thoai"/>
+                    </group>
+                    <field name="du_an_ids" widget="many2many_tags"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_thanh_vien_list" model="ir.actions.act_window">
+        <field name="name">Danh sách thành viên</field>
+        <field name="res_model">thanh.vien</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

@@ -1,16 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+        <!-- Root Menu -->
         <menuitem
             id="menu_root"
-            name="QLNS"
-            sequence="0"/>
-          
-        <menuitem name="Quản lý nhân viên" 
-            id="menu_nhan_vien" 
-            parent="menu_root" 
+            name="Quản lý dự án"
+            sequence="0"
+        />
+        
+        <menuitem
+            id="menu_du_an"
+            name="Dự án"
+            parent="menu_root"
             sequence="1"
-            action="action_nhan_vien"
+            action="action_du_an_list"
+        />
+        
+        <menuitem
+            id="menu_giai_doan"
+            name="Giai Đoạn"
+            parent="menu_root"
+            sequence="4"
+            action="action_giai_doan_list"
+        />
+
+        <!-- Submenu for Cong Viec -->
+        <menuitem
+            id="menu_cong_viec"
+            name="Công Việc"
+            parent="menu_root"
+            sequence="2"
+            action="action_cong_viec_list"
+        />
+
+        <!-- Submenu for Chi Phi -->
+        <menuitem
+            id="menu_chi_phi"
+            name="Chi Phí"
+            parent="menu_root"
+            sequence="5"
+            action="action_chi_phi_list"
+        />
+
+        <!-- Submenu for Thanh Vien -->
+        <menuitem
+            id="menu_thanh_vien"
+            name="Thành Viên"
+            parent="menu_root"
+            sequence="3"
+            action="action_thanh_vien_list"
         />
     </data>
 </odoo>
