@@ -83,7 +83,16 @@ Khởi động Docker Compose:
 ## 3. Setup tham số chạy cho hệ thống
 
 ### 3.1. Khởi tạo `odoo.conf`
-Tạo tệp `odoo.conf` trong thư mục gốc với nội dung sau:
+Tạo tệp `odoo.conf` trong thư mục gốc với nội dung sau bằng lệnh `nano`:
+
+Mở file `odoo.conf` để chỉnh sửa:
+<div class="code-block">
+  <pre>
+    <code>nano odoo.conf</code>
+  </pre>
+  <button onclick="copyCode('nano odoo.conf')">Copy</button>
+</div>
+
 <div class="code-block">
   <pre>
     <code>[options]
@@ -97,6 +106,7 @@ xmlrpc_port = 8069</code>
   <button onclick="copyCode('[options]\naddons_path = addons\ndb_host = localhost\ndb_password = odoo\ndb_user = odoo\ndb_port = 5434\nxmlrpc_port = 8069')">Copy</button>
 </div>
 
+
 ## 4. Chạy hệ thống và cài đặt các ứng dụng cần thiết
 
 Chạy hệ thống Odoo và cài đặt các ứng dụng:
@@ -106,5 +116,3 @@ Chạy hệ thống Odoo và cài đặt các ứng dụng:
   </pre>
   <button onclick="copyCode('python3 odoo-bin.py -c odoo.conf -u all')">Copy</button>
 </div>
-
-Sau khi hoàn tất, bạn có thể truy cập hệ thống qua đường dẫn:
