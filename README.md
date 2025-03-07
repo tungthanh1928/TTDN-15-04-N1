@@ -116,3 +116,6 @@ Chạy hệ thống Odoo và cài đặt các ứng dụng:
   </pre>
   <button onclick="copyCode('python3 odoo-bin.py -c odoo.conf -u all')"></button>
 </div>
+Người sử dụng truy cập theo đường dẫn http://localhost:8069/ để đăng nhập vào hệ thống.
+
+Hoàn tất
