@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <!-- Root Menu -->
         <menuitem
             id="menu_root"
             name="Quản lý dự án"
             sequence="0"
-        />
-        
+        />        
         <menuitem
             id="menu_du_an"
             name="Dự án"
@@ -16,15 +14,7 @@
             action="action_du_an_list"
         />
         
-        <menuitem
-            id="menu_giai_doan"
-            name="Giai Đoạn"
-            parent="menu_root"
-            sequence="4"
-            action="action_giai_doan_list"
-        />
-
-        <!-- Submenu for Cong Viec -->
+       
         <menuitem
             id="menu_cong_viec"
             name="Công Việc"
@@ -42,13 +32,7 @@
             action="action_chi_phi_list"
         />
 
-        <!-- Submenu for Thanh Vien -->
-        <menuitem
-            id="menu_thanh_vien"
-            name="Thành Viên"
-            parent="menu_root"
-            sequence="3"
-            action="action_thanh_vien_list"
-        />
+       
+        
     </data>
 </odoo>

@@ -7,7 +7,6 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
-                <field name="giai_doan_id"/>
                 <field name="nguoi_phu_trach"/>
                 <field name="trang_thai"/>
             </tree>
@@ -23,7 +22,6 @@
                 <sheet>
                     <group>
                         <field name="name"/>
-                        <field name="giai_doan_id"/>
                         <field name="nguoi_phu_trach"/>
                         <field name="trang_thai"/>
                     </group>
@@ -32,6 +30,7 @@
             </form>
         </field>
     </record>
+
     <record id="action_cong_viec_list" model="ir.actions.act_window">
         <field name="name">Danh sách công việc</field>
         <field name="res_model">cong.viec</field>

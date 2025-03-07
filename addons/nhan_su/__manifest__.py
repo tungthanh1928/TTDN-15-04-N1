@@ -1,5 +1,5 @@
 {
-    'name': 'Quản lý dự án',
+    'name': 'Nhân Sự',
     'version': '1.0',
     'summary': 'Module quản lý dự án, công việc và chi phí',
     'description': 'Quản lý các dự án, giai đoạn, công việc và chi phí liên quan',
@@ -10,9 +10,10 @@
     'data': [
         
         'security/ir.model.access.csv',
-        'views/du_an_views.xml',
-        'views/cong_viec_views.xml',
-        'views/chi_phi_views.xml',
+        'views/nhan_vien.xml',
+        'views/chuc_vu.xml',
+        'views/lich_su_cong_tac.xml',
+        'views/phong_ban.xml',
         'views/menu.xml',
     ],
     'demo': [],

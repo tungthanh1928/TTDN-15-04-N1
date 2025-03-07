@@ -23,20 +23,15 @@
                         <field name="name"/>
                         <field name="ngay_bat_dau"/>
                         <field name="ngay_ket_thuc"/>
+                        <field name="mo_ta"/>
+                        <field name="thanh_vien_ids" widget="many2many_tags"/>
                     </group>
-                    <field name="mo_ta"/>
-                    <field name="thanh_vien_ids" widget="many2many_tags"/>
-                    <field name="giai_doan_ids" mode="tree,form">
-                        <tree>
-                            <field name="name"/>
-                            <field name="ngay_bat_dau"/>
-                            <field name="ngay_ket_thuc"/>
-                        </tree>
-                    </field>
+                    <!-- Nếu cần thêm các trường One2many khác, hãy thêm chúng ở đây -->
                 </sheet>
             </form>
         </field>
     </record>
+
     <record id="action_du_an_list" model="ir.actions.act_window">
         <field name="name">Danh sách dự án</field>
         <field name="res_model">du.an</field>

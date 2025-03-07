@@ -9,7 +9,6 @@
                 <field name="name"/>
                 <field name="so_tien"/>
                 <field name="ngay_chi"/>
-                <field name="giai_doan_id"/>
                 <field name="du_an_id"/>
             </tree>
         </field>
@@ -26,7 +25,6 @@
                         <field name="name"/>
                         <field name="so_tien"/>
                         <field name="ngay_chi"/>
-                        <field name="giai_doan_id"/>
                         <field name="du_an_id"/>
                     </group>
                     <field name="mo_ta"/>
