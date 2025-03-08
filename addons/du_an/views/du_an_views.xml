@@ -4,11 +4,14 @@
         <field name="name">du.an.tree</field>
         <field name="model">du.an</field>
         <field name="arch" type="xml">
-            <tree>
+            <tree >
                 <field name="name"/>
                 <field name="ngay_bat_dau"/>
                 <field name="ngay_ket_thuc"/>
                 <field name="tong_chi_phi"/>
+                <field name="trang_thai"/>
+                <field name="cong_viec_ids"/>
+                <field name="phan_tram_hoan_thanh"/>
             </tree>
         </field>
     </record>
@@ -20,21 +23,48 @@
             <form>
                 <sheet>
                     <group>
-                        <field name="name"/>
-                        <field name="ngay_bat_dau"/>
-                        <field name="ngay_ket_thuc"/>
-                        <field name="mo_ta"/>
+                        <group>
+                            <field name="name" style="font-weight: bold; font-size: 20px; color: #2c3e50;"/>
+                            <field name="ngay_bat_dau" widget="date"/>
+                            <field name="ngay_ket_thuc" widget="date"/>
+                            <field name="mo_ta"/>
+                            <field name="tong_chi_phi"/>
+                            <field name="trang_thai"/>
+                            <field name="cong_viec_ids" widget="many2many_tags"/>
+                            <field name="phan_tram_hoan_thanh"/>
+                        </group>
+                    </group>
+
+                    <separator string="Danh sách người tham gia"/>
+                    <group>
                         <field name="thanh_vien_ids" widget="many2many_tags"/>
                     </group>
-                    <!-- Nếu cần thêm các trường One2many khác, hãy thêm chúng ở đây -->
+                    <note string="Danh sách chi phí">
+                    
+                        <field name="chi_phi_ids" widget="many2many_tags"/>
+                    </note>
                 </sheet>
             </form>
         </field>
     </record>
 
+    <record id="view_du_an_search" model="ir.ui.view">
+        <field name="name">du.an.search</field>
+        <field name="model">du.an</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="ngay_bat_dau"/>
+                <field name="ngay_ket_thuc"/>
+                <field name="tong_chi_phi"/>
+            </search>
+        </field>
+    </record>
+
+    
     <record id="action_du_an_list" model="ir.actions.act_window">
         <field name="name">Danh sách dự án</field>
         <field name="res_model">du.an</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,search</field>
     </record>
 </odoo>

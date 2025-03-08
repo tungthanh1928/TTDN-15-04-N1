@@ -18,6 +18,7 @@ class NhanVien(models.Model):
 
     lich_su_cong_tac_ids = fields.One2many("lich_su_cong_tac", "nhan_vien_id", string="Danh sách lịch sử công tác")
     phong_ban_id = fields.Many2one("phong_ban", string="Phòng ban")
+    cong_viec_ids = fields.Many2many('cong.viec', string='Công việc tham gia')  # Kết nối với công việc
 
     @api.depends("ho_ten_dem", "ten")
     def _compute_ho_va_ten(self):

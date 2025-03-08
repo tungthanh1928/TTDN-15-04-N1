@@ -6,7 +6,7 @@
     'category': 'Project Management',
     'author': 'Your Name',
     'website': 'https://www.example.com',
-    'depends': ['base'],
+    'depends': ['base','nhan_su'],
     'data': [
         
         'security/ir.model.access.csv',

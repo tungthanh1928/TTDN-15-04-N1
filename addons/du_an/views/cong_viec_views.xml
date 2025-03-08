@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Tree View -->
     <record id="view_cong_viec_tree" model="ir.ui.view">
         <field name="name">cong.viec.tree</field>
         <field name="model">cong.viec</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
-                <field name="nguoi_phu_trach"/>
+                <field name="tong_so_nguoi_tham_gia"/>
+                <field name="tong_so_du_an"/>
                 <field name="trang_thai"/>
             </tree>
         </field>
     </record>
 
-    <!-- Form View -->
     <record id="view_cong_viec_form" model="ir.ui.view">
         <field name="name">cong.viec.form</field>
         <field name="model">cong.viec</field>
@@ -22,7 +21,10 @@
                 <sheet>
                     <group>
                         <field name="name"/>
-                        <field name="nguoi_phu_trach"/>
+                        <field name="tong_so_nguoi_tham_gia"/>
+                        <field name="thanh_vien_ids" widget="many2many_tags"/>
+                        <field name="tong_so_du_an" />
+                        <field name="du_an_id" widget="many2many_tags"/>
                         <field name="trang_thai"/>
                     </group>
                     <field name="mo_ta"/>
