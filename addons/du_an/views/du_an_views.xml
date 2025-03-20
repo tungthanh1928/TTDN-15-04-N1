@@ -30,18 +30,31 @@
                             <field name="mo_ta"/>
                             <field name="tong_chi_phi"/>
                             <field name="trang_thai"/>
-                            <field name="cong_viec_ids" widget="many2many_tags"/>
                             <field name="phan_tram_hoan_thanh"/>
                         </group>
                     </group>
-
-                    <separator string="Danh sách người tham gia"/>
                     <group>
-                        <field name="thanh_vien_ids" widget="many2many_tags"/>
-                    </group>
-                    <separator string="Danh sách chi phí"/>
-                    <group>
-                        <field name="chi_phi_ids" widget="many2many_tags"/>
+                        <notebook>
+                            <page string="Danh sách công việc">
+                                <field name="cong_viec_ids">
+                                    <tree editable="bottom">
+                                        <field name="name"/>
+                                        <field name="mo_ta"/>
+                                        <field name="uu_tien"/>
+                                        <field name="trang_thai"/>
+                                        <field name="phan_tram_hoan_thanh"/>
+                                        <field name="thoi_gian_du_kien"/>
+                                        <field name="deadline"/>
+                                    </tree>   
+                                </field>
+                            </page>
+                            <page string="Danh sách nhân sự">
+                                <field name="thanh_vien_ids" />
+                            </page>
+                            <page string="Chi phí dự án">
+                                <field name="chi_phi_ids" />
+                            </page>
+                        </notebook>
                     </group>
                 </sheet>
             </form>

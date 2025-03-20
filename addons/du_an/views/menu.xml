@@ -34,7 +34,11 @@
             sequence="6"
             action="action_project_risk"
         />
-
         
+        <menuitem id="menu_du_an_report" name="Báo cáo Dự Án" parent="menu_root" sequence="7"/>
+        <menuitem id="menu_chart_status" name="Phân bố trạng thái dự án" parent="menu_du_an_report" action="action_du_an_status_chart"/>
+        <menuitem id="menu_chart_progress" name="Tiến độ hoàn thành các dự án" parent="menu_du_an_report" action="action_du_an_progress_chart"/>
+        <menuitem id="menu_chart_cong_viec" name="Phân bố công việc" parent="menu_du_an_report" action="action_cong_viec_status_chart"/>
+        <menuitem id="menu_chart_cost" name="Tổng chi phí từng dự án" parent="menu_du_an_report" action="action_du_an_cost_chart"/>
     </data>
 </odoo>

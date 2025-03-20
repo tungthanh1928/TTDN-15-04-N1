@@ -6,14 +6,14 @@
     'category': 'Project Management',
     'author': 'Your Name',
     'website': 'https://www.example.com',
-    'depends': ['base','nhan_su'],
+    'depends': ['base', 'nhan_su'],
     'data': [
-        
         'security/ir.model.access.csv',
         'views/du_an_views.xml',
         'views/cong_viec_views.xml',
         'views/chi_phi_views.xml',
         'views/rui_ro.xml',
+        'views/du_an_charts.xml',
         'views/menu.xml',
     ],
     'demo': [],

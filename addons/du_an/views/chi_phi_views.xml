@@ -26,8 +26,8 @@
                         <field name="so_tien"/>
                         <field name="ngay_chi"/>
                         <field name="du_an_id"/>
+                        <field name="mo_ta"/>
                     </group>
-                    <field name="mo_ta"/>
                 </sheet>
             </form>
         </field>

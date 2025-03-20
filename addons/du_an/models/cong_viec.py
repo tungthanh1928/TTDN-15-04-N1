@@ -6,7 +6,7 @@ class CongViec(models.Model):
 
     name = fields.Char('Tên công việc', required=True)
     mo_ta = fields.Text('Mô tả công việc')
-    du_an_id = fields.Many2many('du.an', string='Dự án' )
+    du_an_id = fields.Many2one('du.an', string='Thuộc dự án', required=True)
     thanh_vien_ids = fields.Many2many('nhan_vien', string='Thành viên')
     phan_tram_hoan_thanh = fields.Float('Phần trăm hoàn thành', compute='_compute_phan_tram_hoan_thanh', store=True, readonly=False)
     trang_thai = fields.Selection([
