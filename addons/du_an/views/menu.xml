@@ -13,8 +13,6 @@
             sequence="1"
             action="action_du_an_list"
         />
-        
-       
         <menuitem
             id="menu_cong_viec"
             name="Công Việc"
@@ -22,8 +20,6 @@
             sequence="2"
             action="action_cong_viec_list"
         />
-
-        <!-- Submenu for Chi Phi -->
         <menuitem
             id="menu_chi_phi"
             name="Chi Phí"
@@ -31,9 +27,14 @@
             sequence="5"
             action="action_chi_phi_list"
         />
-      
-       
-       
+         <menuitem
+            id="menu_rui_ro"
+            name="Rủi Ro"
+            parent="menu_root"
+            sequence="6"
+            action="action_project_risk"
+        />
+
         
     </data>
 </odoo>

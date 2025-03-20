@@ -6,9 +6,11 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
-                <field name="tong_so_nguoi_tham_gia"/>
-                <field name="tong_so_du_an"/>
+                <field name="uu_tien"/>
                 <field name="trang_thai"/>
+                <field name="phan_tram_hoan_thanh"/>
+                <field name="thoi_gian_du_kien"/>
+                <field name="deadline"/>
             </tree>
         </field>
     </record>
@@ -21,13 +23,16 @@
                 <sheet>
                     <group>
                         <field name="name"/>
-                        <field name="tong_so_nguoi_tham_gia"/>
+                        <field name="mo_ta"/>
                         <field name="thanh_vien_ids" widget="many2many_tags"/>
-                        <field name="tong_so_du_an" />
                         <field name="du_an_id" widget="many2many_tags"/>
+                        <field name="uu_tien"/>
                         <field name="trang_thai"/>
+                        <field name="phan_tram_hoan_thanh"/>
+                        <field name="thoi_gian_du_kien"/>
+                        <field name="thoi_gian_thuc_te" readonly="1"/>
+                        <field name="deadline"/>
                     </group>
-                    <field name="mo_ta"/>
                 </sheet>
             </form>
         </field>

@@ -39,14 +39,14 @@
                     <group>
                         <field name="thanh_vien_ids" widget="many2many_tags"/>
                     </group>
-                    <note string="Danh sách chi phí">
-                    
+                    <separator string="Danh sách chi phí"/>
+                    <group>
                         <field name="chi_phi_ids" widget="many2many_tags"/>
-                    </note>
+                    </group>
                 </sheet>
             </form>
         </field>
-    </record>
+    </record>   
 
     <record id="view_du_an_search" model="ir.ui.view">
         <field name="name">du.an.search</field>

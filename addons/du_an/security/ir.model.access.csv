@@ -2,3 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_du_an_user,du_an.user,model_du_an,base.group_user,1,1,1,0
 access_cong_viec_user,cong_viec.user,model_cong_viec,base.group_user,1,1,1,0
 access_chi_phi_user,chi_phi.user,model_chi_phi,base.group_user,1,1,1,0
+access_rui_ro_user,rui_ro.user,model_rui_ro,base.group_user,1,1,1,0

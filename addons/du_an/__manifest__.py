@@ -13,6 +13,7 @@
         'views/du_an_views.xml',
         'views/cong_viec_views.xml',
         'views/chi_phi_views.xml',
+        'views/rui_ro.xml',
         'views/menu.xml',
     ],
     'demo': [],
