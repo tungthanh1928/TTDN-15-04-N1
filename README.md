@@ -1,3 +1,8 @@
+---
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) 
+![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)  [![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
+
+
 # 1. Giới thiệu về dự án Quản lý dự án
 ### Dự án quản lý dự án là một hệ thống hỗ trợ quản lý và theo dõi các dự án. Dưới đây là mô tả tổng quan về các chức năng chính của dự án:
 1. Danh sách dự án
@@ -38,7 +43,7 @@
 ## 2.1. Clone project.
 
 ```
-git clone https://github.com/nguyenngocdantruong/TTDN-15-04-N6.git
+git clone https://github.com/tungthanh1928/TTDN-15-04-N1.git
 git checkout 
 ```
 
