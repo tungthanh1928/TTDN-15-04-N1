@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem
+            id="menu_root"
+            name="Quản lý dự án"
+            sequence="0"
+        />        
+        <menuitem
+            id="menu_du_an"
+            name="Dự án"
+            parent="menu_root"
+            sequence="1"
+            action="action_du_an_list"
+        />
+        <menuitem
+            id="menu_cong_viec"
+            name="Công Việc"
+            parent="menu_root"
+            sequence="2"
+            action="action_cong_viec_list"
+        />
+        <menuitem
+            id="menu_chi_phi"
+            name="Chi Phí"
+            parent="menu_root"
+            sequence="5"
+            action="action_chi_phi_list"
+        />
+         <menuitem
+            id="menu_rui_ro"
+            name="Rủi Ro"
+            parent="menu_root"
+            sequence="6"
+            action="action_project_risk"
+        />
+        
+        <menuitem id="menu_du_an_report" name="Báo cáo Dự Án" parent="menu_root" sequence="7"/>
+        <menuitem id="menu_chart_status" name="Phân bố trạng thái dự án" parent="menu_du_an_report" action="action_du_an_status_chart"/>
+        <menuitem id="menu_chart_progress" name="Tiến độ hoàn thành các dự án" parent="menu_du_an_report" action="action_du_an_progress_chart"/>
+        <menuitem id="menu_chart_cong_viec" name="Phân bố công việc" parent="menu_du_an_report" action="action_cong_viec_status_chart"/>
+        <menuitem id="menu_chart_cost" name="Tổng chi phí từng dự án" parent="menu_du_an_report" action="action_du_an_cost_chart"/>
+    </data>
+</odoo>

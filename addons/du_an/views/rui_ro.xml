@@ -1,0 +1,48 @@
+<odoo>
+    <record id="view_rui_ro_form" model="ir.ui.view">
+        <field name="name">rui_ro.form</field>
+        <field name="model">rui_ro</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="project_id"/>  <!-- Liên kết với dự án -->
+                        <field name="risk_level"/>
+                        <field name="likelihood"/>
+                        <field name="impact"/>
+                        <field name="response_plan"/>
+                        <field name="status"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_rui_ro_tree" model="ir.ui.view">
+        <field name="name">rui_ro.tree</field>
+        <field name="model">rui_ro</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="project_id"/>  
+                <field name="risk_level"/>
+                <field name="likelihood"/>
+                <field name="impact"/>
+                <field name="status"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_project_risk" model="ir.actions.act_window">
+        <field name="name">Rủi ro</field>
+        <field name="res_model">rui_ro</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Nhấn vào đây để tạo một Rủi ro mới.
+            </p>
+        </field>
+    </record>
+</odoo>

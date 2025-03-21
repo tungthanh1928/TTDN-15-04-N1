@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_du_an_status_chart" model="ir.ui.view">
+        <field name="name">du.an.status.graph</field>
+        <field name="model">du.an</field>
+        <field name="arch" type="xml">
+            <graph type="pie" string="Phân bố trạng thái dự án">
+                <field name="trang_thai" type="row"/>
+                <field name="id" type="measure"/>
+            </graph>
+        </field>
+    </record>
+    <record id="action_du_an_status_chart" model="ir.actions.act_window">
+        <field name="name">Phân bố trạng thái dự án</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">du.an</field>
+        <field name="view_mode">graph</field>
+        <field name="view_id" ref="view_du_an_status_chart"/>
+    </record>
+
+    <record id="view_du_an_progress_chart" model="ir.ui.view">
+        <field name="name">du.an.progress.graph</field>
+        <field name="model">du.an</field>
+        <field name="arch" type="xml">
+            <graph type="bar" string="Tiến độ hoàn thành các dự án">
+                <field name="name" type="row"/>
+                <field name="phan_tram_hoan_thanh" type="measure"/>
+            </graph>
+        </field>
+    </record>
+    <record id="action_du_an_progress_chart" model="ir.actions.act_window">
+        <field name="name">Tiến độ hoàn thành các dự án</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">du.an</field>
+        <field name="view_mode">graph</field>
+        <field name="view_id" ref="view_du_an_progress_chart"/>
+    </record>
+
+    <record id="view_cong_viec_status_chart" model="ir.ui.view">
+        <field name="name">cong.viec.status.graph</field>
+        <field name="model">cong.viec</field>
+        <field name="arch" type="xml">
+            <graph type="pie" string="Phân bố công việc">
+                <field name="trang_thai" type="row"/>
+                <field name="id" type="measure"/>
+            </graph>
+        </field>
+    </record>
+    <record id="action_cong_viec_status_chart" model="ir.actions.act_window">
+        <field name="name">Phân bố công việc</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cong.viec</field>
+        <field name="view_mode">graph</field>
+        <field name="view_id" ref="view_cong_viec_status_chart"/>
+    </record>
+
+    <record id="view_du_an_cost_chart" model="ir.ui.view">
+        <field name="name">du.an.cost.graph</field>
+        <field name="model">du.an</field>
+        <field name="arch" type="xml">
+            <graph type="bar" string="Tổng chi phí cho từng dự án">
+                <field name="name" type="row"/>
+                <field name="tong_chi_phi" type="measure"/>
+            </graph>
+        </field>
+    </record>
+    <record id="action_du_an_cost_chart" model="ir.actions.act_window">
+        <field name="name">Tổng chi phí từng dự án</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">du.an</field>
+        <field name="view_mode">graph</field>
+        <field name="view_id" ref="view_du_an_cost_chart"/>
+    </record>
+</odoo>

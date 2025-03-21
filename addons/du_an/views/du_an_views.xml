@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_du_an_tree" model="ir.ui.view">
+        <field name="name">du.an.tree</field>
+        <field name="model">du.an</field>
+        <field name="arch" type="xml">
+            <tree >
+                <field name="name"/>
+                <field name="ngay_bat_dau"/>
+                <field name="ngay_ket_thuc"/>
+                <field name="tong_chi_phi"/>
+                <field name="trang_thai"/>
+                <field name="cong_viec_ids"/>
+                <field name="phan_tram_hoan_thanh"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_du_an_form" model="ir.ui.view">
+        <field name="name">du.an.form</field>
+        <field name="model">du.an</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" style="font-weight: bold; font-size: 20px; color: #2c3e50;"/>
+                            <field name="ngay_bat_dau" widget="date"/>
+                            <field name="ngay_ket_thuc" widget="date"/>
+                            <field name="mo_ta"/>
+                            <field name="tong_chi_phi"/>
+                            <field name="trang_thai"/>
+                            <field name="phan_tram_hoan_thanh"/>
+                        </group>
+                    </group>
+                    <group>
+                        <notebook>
+                            <page string="Danh sách công việc">
+                                <field name="cong_viec_ids">
+                                    <tree editable="bottom">
+                                        <field name="name"/>
+                                        <field name="mo_ta"/>
+                                        <field name="uu_tien"/>
+                                        <field name="trang_thai"/>
+                                        <field name="phan_tram_hoan_thanh"/>
+                                        <field name="thoi_gian_du_kien"/>
+                                        <field name="deadline"/>
+                                    </tree>   
+                                </field>
+                            </page>
+                            <page string="Danh sách nhân sự">
+                                <field name="thanh_vien_ids" />
+                            </page>
+                            <page string="Chi phí dự án">
+                                <field name="chi_phi_ids" />
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>   
+
+    <record id="view_du_an_search" model="ir.ui.view">
+        <field name="name">du.an.search</field>
+        <field name="model">du.an</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="ngay_bat_dau"/>
+                <field name="ngay_ket_thuc"/>
+                <field name="tong_chi_phi"/>
+            </search>
+        </field>
+    </record>
+
+    
+    <record id="action_du_an_list" model="ir.actions.act_window">
+        <field name="name">Danh sách dự án</field>
+        <field name="res_model">du.an</field>
+        <field name="view_mode">tree,form,search</field>
+    </record>
+</odoo>
