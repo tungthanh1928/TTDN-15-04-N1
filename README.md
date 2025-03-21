@@ -20,18 +20,7 @@
 - Giúp các bên liên quan có cái nhìn tổng quan và đưa ra quyết định hợp lý.
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-
-# 1. Cài đặt công cụ, môi trường và các thư viện cần thiết
-
-## 1.1. Clone project.
-git clone https://gitlab.com/anhlta/odoo-fitdnu.git
-git checkout 
-
-## 1.2. cài đặt các thư viện cần thiết
-=======
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
@@ -46,43 +35,21 @@ git checkout
 
 # 2. Cài đặt công cụ, môi trường và các thư viện cần thiết
 
-### 2.1. Clone project.
+## 2.1. Clone project.
 
 ```
 git clone https://github.com/nguyenngocdantruong/TTDN-15-04-N6.git
 git checkout 
 ```
 
-### 2.2. cài đặt các thư viện cần thiết
->>>>>>> phuc
+## 2.2. cài đặt các thư viện cần thiết
 
 Người sử dụng thực thi các lệnh sau đề cài đặt các thư viện cần thiết
 
 ```
 sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev python3.10-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
 ```
-<<<<<<< HEAD
-## 1.3. khởi tạo môi trường ảo.
-
-`python3.10 -m venv ./venv`
-Thay đổi trình thông dịch sang môi trường ảo và chạy requirements.txt để cài đặt tiếp các thư viện được yêu cầu
-
-```
-source venv/bin/activate
-pip3 install -r requirements.txt
-```
-
-# 2. Setup database
-
-Khởi tạo database trên docker bằng việc thực thi file dockercompose.yml.
-
-`docker-compose up -d`
-
-# 3. Setup tham số chạy cho hệ thống
-
-## 3.1. Khởi tạo odoo.conf
-=======
-### 2.3. khởi tạo môi trường ảo.
+## 2.3. khởi tạo môi trường ảo.
 
 Thay đổi trình thông dịch sang môi trường ảo và chạy requirements.txt để cài đặt tiếp các thư viện được yêu cầu
 ```
@@ -107,29 +74,12 @@ sudo docker-compose up -d
 
 # 4. Setup tham số chạy cho hệ thống
 
-### 4.1. Khởi tạo odoo.conf
->>>>>>> phuc
+## 4.1. Khởi tạo odoo.conf
 
 Tạo tệp **odoo.conf** có nội dung như sau:
 
 ```
 [options]
-<<<<<<< HEAD
-=======
-Mở file `odoo.conf` để chỉnh sửa:
-<div class="code-block">
-  <pre>
-    <code>nano odoo.conf</code>
-  </pre>
-  <button onclick="copyCode('nano odoo.conf')"></button>
-</div>
- Tệp odoo.conf có nội dung như sau:
-<div class="code-block">
-  <pre>
-    <code>[options]
->>>>>>> phuc
-=======
->>>>>>> phuc
 addons_path = addons
 db_host = localhost
 db_password = odoo
