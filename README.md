@@ -34,91 +34,50 @@
 
 # 2. Cài đặt công cụ, môi trường và các thư viện cần thiết
 
-### 2.1. Clone Project
-Đầu tiên, clone project từ GitHub:
-<div class="code-block">
-  <pre>
-    <code>git clone https://github.com/tungthanh1928/TTDN-15-04-N1.git</code>
-  </pre>
-  <button onclick="copyCode('git clone https://github.com/tungthanh1928/TTDN-15-04-N1.git')"></button>
-</div>
+### 2.1. Clone project.
 
-Di chuyển vào thư mục project:
-<div class="code-block">
-  <pre>
-    <code>cd TTDN-15-04-N1</code>
-  </pre>
-  <button onclick="copyCode('cd TTDN-15-04-N1')"></button>
-</div>
+```
+git clone https://github.com/nguyenngocdantruong/TTDN-15-04-N6.git
+git checkout 
+```
 
-Chuyển sang nhánh cần làm việc:
-<div class="code-block">
-  <pre>
-    <code>git checkout TTDN-15-04-N1</code>
-  </pre>
-  <button onclick="copyCode('git checkout TTDN-15-04-N1')"></button>
-</div>
+### 2.2. cài đặt các thư viện cần thiết
 
-### 2.2. Cài đặt các thư viện cần thiết
-Người sử dụng thực thi các lệnh sau để cài đặt các thư viện cần thiết:
-<div class="code-block">
-  <pre>
-    <code>sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev python3.10-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev</code>
-  </pre>
-  <button onclick="copyCode('sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev python3.10-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev')"></button>
-</div>
+Người sử dụng thực thi các lệnh sau đề cài đặt các thư viện cần thiết
 
-### 2.3. Khởi tạo môi trường ảo
-Khởi tạo môi trường ảo và cài đặt các thư viện yêu cầu từ file `requirements.txt`:
-<div class="code-block">
-  <pre>
-    <code>python3.10 -m venv ./venv</code>
-  </pre>
-  <button onclick="copyCode('python3.10 -m venv ./venv')"></button>
-</div>
+```
+sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev python3.10-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
+```
+### 2.3. khởi tạo môi trường ảo.
 
-Kích hoạt môi trường ảo:
-<div class="code-block">
-  <pre>
-    <code>source venv/bin/activate</code>
-  </pre>
-  <button onclick="copyCode('source venv/bin/activate')"></button>
-</div>
+Thay đổi trình thông dịch sang môi trường ảo và chạy requirements.txt để cài đặt tiếp các thư viện được yêu cầu
+```
+python3.10 -m venv ./venv
+```
+```
+source venv/bin/activate
+```
+```
+pip3 install -r requirements.txt
+```
 
-Cài đặt các thư viện từ `requirements.txt`:
-<div class="code-block">
-  <pre>
-    <code>pip3 install -r requirements.txt</code>
-  </pre>
-  <button onclick="copyCode('pip3 install -r requirements.txt')"></button>
-</div>
+# 3. Setup database
 
-# 3. Setup Database
-Khởi tạo database trên Docker bằng việc thực thi file `docker-compose.yml`.
-
-Cài đặt Docker Compose:
-<div class="code-block">
-  <pre>
-    <code>sudo apt install docker-compose</code>
-  </pre>
-  <button onclick="copyCode('sudo apt install docker-compose')"></button>
-</div>
-
-Khởi động Docker Compose:
-<div class="code-block">
-  <pre>
-    <code>sudo docker-compose up -d</code>
-  </pre>
-  <button onclick="copyCode('sudo docker-compose up -d')"></button>
-</div>
+Khởi tạo database trên docker bằng việc thực thi file dockercompose.yml.
+```
+sudo apt install docker-compose
+```
+```
+sudo docker-compose up -d
+```
 
 # 4. Setup tham số chạy cho hệ thống
 
-### 4.1. Khởi tạo `odoo.conf`
+### 4.1. Khởi tạo odoo.conf
 
+Tạo tệp **odoo.conf** có nội dung như sau:
 
-Mở file `odoo.conf` để chỉnh sửa:
-
+```
 [options]
 addons_path = addons
 db_host = localhost
@@ -126,13 +85,16 @@ db_password = odoo
 db_user = odoo
 db_port = 5434
 xmlrpc_port = 8069
+```
 
 # 5. Chạy hệ thống và cài đặt các ứng dụng cần thiết
 
-Chạy hệ thống Odoo và cài đặt các ứng dụng:
-
+Lệnh chạy
+```
 python3 odoo-bin.py -c odoo.conf -u all
+```
 
-Người sử dụng truy cập theo đường dẫn http://localhost:8069/ để đăng nhập vào hệ thống.
+
+Người sử dụng truy cập theo đường dẫn _http://localhost:8069/_ để đăng nhập vào hệ thống.
 
 Hoàn tất
