@@ -44,7 +44,7 @@
 
 ```
 git clone https://github.com/tungthanh1928/TTDN-15-04-N1.git
-git checkout 
+git checkout TTDN-15-04-N1
 ```
 
 ## 2.2. cài đặt các thư viện cần thiết
